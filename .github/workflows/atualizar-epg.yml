@@ -1,6 +1,6 @@
 name: Atualizar EPG Xtream
 
-on:
+"on":
   workflow_dispatch:
   schedule:
     # Todos os dias às 06:20 UTC (03:20 no horário de Brasília).

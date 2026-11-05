@@ -1,1 +1,50 @@
+name: Atualizar EPG Xtream
 
+on:
+  workflow_dispatch:
+  schedule:
+    # Todos os dias às 06:20 UTC (03:20 no horário de Brasília).
+    - cron: "20 6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-epg
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Gerar XMLTV personalizado
+        env:
+          XTREAM_BASE_URL: ${{ secrets.XTREAM_BASE_URL }}
+          XTREAM_USERNAME: ${{ secrets.XTREAM_USERNAME }}
+          XTREAM_PASSWORD: ${{ secrets.XTREAM_PASSWORD }}
+        run: python src/gerar_epg.py
+
+      - name: Publicar EPG atualizado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/epg.xml
+          if git diff --cached --quiet; then
+            echo "EPG sem alterações; nenhum commit necessário."
+          else
+            git commit -m "Atualiza EPG automaticamente"
+            git push
+          fi

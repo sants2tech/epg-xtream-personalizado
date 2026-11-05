@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 """Gera XMLTV personalizado a partir dos canais de uma conta Xtream."""
 
@@ -479,6 +480,28 @@ def main():
                 ]
             )
 
+    # NOVO: relatório dos canais que realmente possuem programação.
+    with (
+        OUT.parent / "canais_com_epg.csv"
+    ).open("w", newline="", encoding="utf-8-sig") as file:
+        writer = csv.writer(file, delimiter=";")
+        writer.writerow(
+            ["stream_id", "nome_xtream", "programas"]
+        )
+
+        for ch in channels:
+            sid = str(ch.get("stream_id", "")).strip()
+            quantidade = programmes_per_channel.get(sid, 0)
+
+            if sid and quantidade > 0:
+                writer.writerow(
+                    [
+                        sid,
+                        ch.get("name", ""),
+                        quantidade,
+                    ]
+                )
+
     if count == 0:
         raise RuntimeError(
             "Nenhum programa foi encontrado. O XMLTV anterior foi preservado; "
@@ -511,6 +534,7 @@ def main():
         f"IDs XMLTV disponíveis: "
         f"{OUT.parent / 'canais_xmltv_disponiveis.csv'}"
     )
+    print(f"Canais com EPG: {OUT.parent / 'canais_com_epg.csv'}")
     print(f"Arquivo: {OUT}")
 
 

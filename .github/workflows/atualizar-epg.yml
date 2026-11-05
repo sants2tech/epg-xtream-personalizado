@@ -1,3 +1,4 @@
+
 name: Atualizar EPG Xtream
 
 "on":
@@ -17,6 +18,7 @@ jobs:
   gerar:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+
     steps:
       - name: Baixar repositório
         uses: actions/checkout@v4
@@ -37,14 +39,19 @@ jobs:
           XTREAM_PASSWORD: ${{ secrets.XTREAM_PASSWORD }}
         run: python src/gerar_epg.py
 
-      - name: Publicar EPG atualizado
+      - name: Publicar EPG e relatórios
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add public/epg.xml
+          git add public/canais_com_epg.csv
+          git add public/canais_sem_epg.csv
+          git add public/canais_xmltv_disponiveis.csv
+
           if git diff --cached --quiet; then
-            echo "EPG sem alterações; nenhum commit necessário."
+            echo "EPG e relatórios sem alterações."
           else
-            git commit -m "Atualiza EPG automaticamente"
+            git commit -m "Atualiza EPG e relatórios de canais"
             git push
           fi

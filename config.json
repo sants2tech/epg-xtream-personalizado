@@ -3,5 +3,7 @@
   "prev_days": 1,
   "next_days": 1,
   "fallback_short_epg": true,
-  "max_programmes_per_channel": 20
+  "max_programmes_per_channel": 20,
+  "max_fallback_channels_per_run": 800,
+  "fallback_workers": 8
 }

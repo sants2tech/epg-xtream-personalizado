@@ -1,7 +1,7 @@
 {
   "request_timeout_seconds": 60,
   "prev_days": 1,
-  "next_days": 6,
+  "next_days": 1,
   "fallback_short_epg": true,
   "max_programmes_per_channel": 20
 }

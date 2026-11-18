@@ -1211,6 +1211,75 @@ def main():
     tmp.replace(OUT)
 
     # --------------------------------------------------
+    # ÍNDICE JSON LEVE PARA A KAMUFLATV (CATÁLOGO STREMIO)
+    # Evita baixar e interpretar o XMLTV completo de 38+ MB
+    # no navegador. Mantém os mesmos IDs cs:channel do addon.
+    # --------------------------------------------------
+
+    stremio_ids = {
+        str(ch.get("stream_id", "")).strip()
+        for ch in stremio_channels
+        if str(ch.get("stream_id", "")).strip()
+    }
+
+    epg_index = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "channel_names": {},
+        "channels": {}
+    }
+
+    for channel_node in out.findall("channel"):
+        channel_id = str(channel_node.get("id", "")).strip()
+        if channel_id not in stremio_ids:
+            continue
+
+        channel_name = (
+            channel_node.findtext("display-name")
+            or channel_id
+        )
+        epg_index["channel_names"][channel_id] = channel_name
+
+    stremio_programme_count = 0
+
+    for programme in out.findall("programme"):
+        channel_id = str(programme.get("channel", "")).strip()
+        if channel_id not in stremio_ids:
+            continue
+
+        entry = {
+            "start": programme.get("start", ""),
+            "stop": programme.get("stop", ""),
+            "title": programme.findtext("title") or "Programa",
+            "desc": programme.findtext("desc") or ""
+        }
+
+        category = programme.findtext("category")
+        if category:
+            entry["category"] = category
+
+        epg_index["channels"].setdefault(channel_id, []).append(entry)
+        stremio_programme_count += 1
+
+    json_path = OUT.parent / "epg-stremio.json"
+    json_tmp = json_path.with_suffix(".json.tmp")
+
+    json_tmp.write_text(
+        json.dumps(
+            epg_index,
+            ensure_ascii=False,
+            separators=(",", ":")
+        ),
+        encoding="utf-8"
+    )
+    json_tmp.replace(json_path)
+
+    print(
+        f"Índice EPG Stremio: {len(epg_index['channels'])} canais; "
+        f"{stremio_programme_count} programas; arquivo: {json_path}",
+        flush=True
+    )
+
+    # --------------------------------------------------
     # ESTATÍSTICAS FINAIS
     # --------------------------------------------------
 

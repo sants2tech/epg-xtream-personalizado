@@ -119,11 +119,7 @@ def channel_name_keys(value):
 
 def load_alias_library(channels):
     """Aplica aliases curados por nome normalizado, sem depender da grafia HD/TV."""
-    path = Path("biblioteca_aliases.json")
-    if not path.exists():
-        return {}
-    data = json.loads(path.read_text(encoding="utf-8"))
-    configured = data.get("channels", {}) if isinstance(data, dict) else {}
+    configured = CONFIG.get("channel_alias_library", {})
     result = {}
     for channel in channels:
         name = str(channel.get("name", "")).strip()

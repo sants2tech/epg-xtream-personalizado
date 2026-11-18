@@ -1321,10 +1321,10 @@ def main():
     # no navegador. Mantém os mesmos IDs cs:channel do addon.
     # --------------------------------------------------
 
-    stremio_ids = {
-        str(ch.get("stream_id", "")).strip()
-        for ch in stremio_channels
-        if str(ch.get("stream_id", "")).strip()
+    all_channel_ids = {
+        str(sid).strip()
+        for sid in valid_streams
+        if str(sid).strip()
     }
 
     epg_index = {
@@ -1335,7 +1335,7 @@ def main():
 
     for channel_node in out.findall("channel"):
         channel_id = str(channel_node.get("id", "")).strip()
-        if channel_id not in stremio_ids:
+        if channel_id not in all_channel_ids:
             continue
 
         channel_name = (
@@ -1344,11 +1344,11 @@ def main():
         )
         epg_index["channel_names"][channel_id] = channel_name
 
-    stremio_programme_count = 0
+    indexed_programme_count = 0
 
     for programme in out.findall("programme"):
         channel_id = str(programme.get("channel", "")).strip()
-        if channel_id not in stremio_ids:
+        if channel_id not in all_channel_ids:
             continue
 
         entry = {
@@ -1363,7 +1363,7 @@ def main():
             entry["category"] = category
 
         epg_index["channels"].setdefault(channel_id, []).append(entry)
-        stremio_programme_count += 1
+        indexed_programme_count += 1
 
     json_path = OUT.parent / "epg-stremio.json"
     json_tmp = json_path.with_suffix(".json.tmp")
@@ -1379,8 +1379,8 @@ def main():
     json_tmp.replace(json_path)
 
     print(
-        f"Índice EPG Stremio: {len(epg_index['channels'])} canais; "
-        f"{stremio_programme_count} programas; arquivo: {json_path}",
+        f"Índice EPG completo: {len(epg_index['channels'])} canais; "
+        f"{indexed_programme_count} programas; arquivo: {json_path}",
         flush=True
     )
 

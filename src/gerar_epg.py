@@ -89,19 +89,31 @@ def normalize(value):
 
 def regional_aliases(value):
     """
-    Cria uma chave alternativa para afiliadas regionais.
-    Remove somente prefixos genéricos de rede/TV; preserva o nome
-    específico da afiliada e a cidade/estado para não cruzar regiões.
+    Gera chaves de afiliadas regionais sem misturar redes diferentes.
+    Padroniza Record TV/RecordTV e remove apenas prefixos redundantes,
+    preservando a marca Record, SBT ou Band e a localidade.
     """
     text = unicodedata.normalize("NFKD", str(value or ""))
     text = "".join(c for c in text if not unicodedata.combining(c)).casefold()
-    text = re.sub(r"\b(globo|rede|recordtv|record|sbt|tv|canal)\b", " ", text)
+    text = re.sub(r"\brecord\s*tv\b|\brecordtv\b", "record", text)
+    text = re.sub(r"\binter\s*tv\b|\bintertv\b", "inter", text)
+    text = re.sub(r"\b(globo|regional|regionais|tv|canal)\b", " ", text)
+
+    geography = {
+        "sp": "sao paulo", "rj": "rio de janeiro",
+        "rs": "rio grande do sul", "mg": "minas gerais",
+        "pa": "para", "ba": "bahia", "sc": "santa catarina",
+        "pr": "parana", "go": "goias", "df": "brasilia",
+        "am": "amazonas", "es": "espirito santo",
+        "ce": "ceara", "pb": "paraiba", "pe": "pernambuco",
+        "ma": "maranhao", "pi": "piaui", "rn": "rio grande do norte"
+    }
+    text = " ".join(geography.get(word, word) for word in text.split())
     alias = re.sub(r"[^a-z0-9]+", "", text)
     original = normalize(value)
-    if len(alias) >= 7 and alias != original:
+    if len(alias) >= 4 and alias != original:
         return [alias]
     return []
-
 
 def channel_name_keys(value):
     keys = [normalize(value)]

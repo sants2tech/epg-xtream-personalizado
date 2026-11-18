@@ -1,6 +1,6 @@
 
-name: Atualizar EPG Xtream
-# A rotina consulta as fontes XMLTV nacionais e regionais configuradas em config.json.
+name: Atualizar EPG Stremio
+# A rotina lê somente o catálogo Stremio e associa a programação das fontes XMLTV públicas.
 
 "on":
   push:
@@ -39,11 +39,7 @@ jobs:
       - name: Instalar dependências
         run: pip install -r requirements.txt
 
-      - name: Gerar XMLTV personalizado
-        env:
-          XTREAM_BASE_URL: ${{ secrets.XTREAM_BASE_URL }}
-          XTREAM_USERNAME: ${{ secrets.XTREAM_USERNAME }}
-          XTREAM_PASSWORD: ${{ secrets.XTREAM_PASSWORD }}
+      - name: Gerar EPG somente dos canais Stremio
         run: python src/gerar_epg.py
 
       - name: Publicar EPG e relatórios

@@ -7,7 +7,7 @@ Este repositório gera e publica diariamente um XMLTV compatível com a **Kamufl
 1. O gerador autentica na mesma fonte Xtream usada pela área de canais ao vivo da KamuflaTV.
 2. Consulta novamente `get_live_streams` em cada execução. Canais adicionados ou removidos na fonte são refletidos automaticamente.
 3. Usa primeiro o XMLTV disponibilizado pelo próprio provedor, associando os IDs ao `stream_id` dos canais.
-4. Para canais ainda sem programação, consulta fontes brasileiras complementares: IPTV-EPG.org Brasil, Claro TV+, Vivo Play, Globoplay, Pluto TV, +SBT, uma seleção EPG Brasil e XSports.
+4. Para canais ainda sem programação, consulta fontes complementares: IPTV-EPG.org, IPTV-ORG/mi.tv, epg.pw, rootcoder, systemof, EPG Share Brasil, Claro TV+, Vivo Play, Globoplay, Pluto TV, +SBT, uma seleção EPG Brasil e XSports.
 5. A associação externa prioriza IDs e nomes exatos. Correspondências aproximadas usam um limite alto e exigem diferença suficiente para evitar atribuições duvidosas.
 6. Gera `public/epg.xml` com os IDs originais dos canais da KamuflaTV e publica os relatórios de cobertura.
 

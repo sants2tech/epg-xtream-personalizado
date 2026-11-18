@@ -8,10 +8,10 @@ Este repositório gera e publica diariamente um XMLTV compatível com a **Kamufl
 2. Consulta novamente `get_live_streams` em cada execução. Canais adicionados ou removidos na fonte são refletidos automaticamente.
 3. Usa primeiro o XMLTV disponibilizado pelo próprio provedor, associando os IDs ao `stream_id` dos canais.
 4. Para canais ainda sem programação, consulta fontes complementares: IPTV-EPG.org, IPTV-ORG/mi.tv, epg.pw, rootcoder, systemof, EPG Share Brasil, Claro TV+, Vivo Play, Globoplay, Pluto TV, +SBT, uma seleção EPG Brasil e XSports.
-5. A associação externa prioriza IDs e nomes exatos. Correspondências aproximadas usam um limite alto e exigem diferença suficiente para evitar atribuições duvidosas.
+5. A associação externa prioriza IDs e nomes exatos. Também normaliza prefixos genéricos de rede (Globo, RecordTV, SBT, TV) para reconhecer afiliadas regionais, preservando o nome da afiliada e a localidade para evitar misturar praças. Correspondências aproximadas usam um limite alto e exigem diferença suficiente para evitar atribuições duvidosas.
 6. Gera `public/epg.xml` com os IDs originais dos canais da KamuflaTV e publica os relatórios de cobertura.
 
-A programação do provedor tem prioridade. As fontes complementares só preenchem canais que ainda não receberam programação, evitando substituir a grade principal por outra fonte. Se uma fonte falhar temporariamente, o gerador também reaproveita programas da EPG anterior que ainda estejam dentro da janela de validade, preenchendo apenas os horários que não se sobreponham aos dados novos. Assim, os horários atualizados têm prioridade e a programação antiga não é descartada quando ainda pode completar lacunas.
+A programação do provedor tem prioridade. As fontes complementares só preenchem canais que ainda não receberam programação, evitando substituir a grade principal por outra fonte. Quando todas as fontes e a EPG anterior não oferecem dados para um canal, o gerador cria blocos horários identificados como **Programação contínua**. Esses blocos mantêm o canal na grade, mas não fingem ser uma programação real da emissora. Se uma fonte falhar temporariamente, o gerador também reaproveita programas da EPG anterior que ainda estejam dentro da janela de validade, preenchendo apenas os horários que não se sobreponham aos dados novos. Assim, os horários atualizados têm prioridade e a programação antiga não é descartada quando ainda pode completar lacunas.
 
 ## Proteção contra perda de cobertura
 
@@ -49,7 +49,7 @@ O link não muda quando o arquivo é atualizado. Basta o aplicativo carregar nov
 
 ## Cobertura e limitações
 
-Não é possível criar uma grade correta quando nenhuma fonte publica a programação daquele canal. Nesses casos o canal continua no XML e aparece no relatório `canais_sem_epg.csv`, sem horários ou programas inventados. A cobertura real será informada nos logs de cada execução.
+Quando uma fonte não publica a grade real de um canal, o aplicativo recebe blocos identificados como **Programação contínua**. A programação real e a continuidade ficam separadas nos relatórios; os blocos de continuidade não representam horários oficiais da emissora. Para canais regionais, o gerador tenta reconhecer a afiliada e a localidade antes de associar a grade, evitando usar automaticamente a programação de outra praça.
 
 As fontes complementares são projetos independentes e podem alterar disponibilidade, conteúdo ou frequência de atualização. Consulte os repositórios originais:
 - [BrazilTVEPG](https://github.com/limaalef/BrazilTVEPG)

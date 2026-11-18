@@ -95,7 +95,7 @@ def regional_aliases(value):
     """
     text = unicodedata.normalize("NFKD", str(value or ""))
     text = "".join(c for c in text if not unicodedata.combining(c)).casefold()
-    text = re.sub(r"\\b(globo|rede|recordtv|record|sbt|tv|canal)\\b", " ", text)
+    text = re.sub(r"\b(globo|rede|recordtv|record|sbt|tv|canal)\b", " ", text)
     alias = re.sub(r"[^a-z0-9]+", "", text)
     original = normalize(value)
     if len(alias) >= 7 and alias != original:

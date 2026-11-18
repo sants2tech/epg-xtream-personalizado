@@ -1009,7 +1009,7 @@ def main():
                     )
 
     # --------------------------------------------------
-    # CONTINUIDADE: REAPROVEITAR PROGRAMAÇÃO AINDA VÁLIDA
+    # CONTINUIDADE: COMPLETAR INTERVALOS COM A ÚLTIMA EPG AINDA VÁLIDA
     # --------------------------------------------------
 
     carried_forward_count = 0
@@ -1019,16 +1019,29 @@ def main():
             previous_root = parse_xmltv(OUT.read_bytes())
             now_utc = datetime.now(timezone.utc)
 
+            # Registra os intervalos já cobertos por dados novos.
+            new_intervals = defaultdict(list)
+            for current_programme in out.findall("programme"):
+                channel_id = str(
+                    current_programme.get("channel", "")
+                ).strip()
+                current_start = parse_xmltv_datetime(
+                    current_programme.get("start")
+                )
+                current_stop = parse_xmltv_datetime(
+                    current_programme.get("stop")
+                )
+                if channel_id and current_start and current_stop:
+                    new_intervals[channel_id].append(
+                        (current_start, current_stop)
+                    )
+
             for previous_programme in previous_root.findall("programme"):
                 target_id = str(
                     previous_programme.get("channel", "")
                 ).strip()
 
-                if (
-                    not target_id
-                    or target_id not in valid_streams
-                    or programmes_per_channel.get(target_id, 0) > 0
-                ):
+                if not target_id or target_id not in valid_streams:
                     continue
 
                 start_dt = parse_xmltv_datetime(
@@ -1041,10 +1054,20 @@ def main():
                 if not start_dt or not stop_dt:
                     continue
 
+                # Mantém apenas a janela que o aplicativo ainda exibe.
                 if (
                     stop_dt < now_utc - timedelta(hours=48)
                     or start_dt > now_utc + timedelta(days=7)
                 ):
+                    continue
+
+                # Dados novos têm prioridade; o histórico só preenche lacunas.
+                overlaps_new = any(
+                    start_dt < current_stop and stop_dt > current_start
+                    for current_start, current_stop
+                    in new_intervals.get(target_id, [])
+                )
+                if overlaps_new:
                     continue
 
                 copied = ET.fromstring(
@@ -1062,8 +1085,8 @@ def main():
                 programmes_per_channel[target_id] += 1
 
             print(
-                f"Programas válidos reaproveitados da última EPG: "
-                f"{carried_forward_count}",
+                f"Programas válidos reaproveitados da última EPG "
+                f"para preencher lacunas: {carried_forward_count}",
                 flush=True
             )
 

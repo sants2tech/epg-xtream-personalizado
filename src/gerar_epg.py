@@ -306,42 +306,63 @@ def load_manual_mapping(channels, source_root):
 
 
 def fetch_short_epg(base, username, password, sid, limit):
-    """Consulta individualmente o EPG curto de um canal."""
+    """Consulta mais de uma ação Xtream antes de concluir que não há EPG."""
 
-    try:
-        response = requests.get(
-            f"{base}/player_api.php",
-            params={
+    errors = []
+    headers = {
+        "User-Agent": "EPG-Xtream-Personalizado/2.1",
+        "Accept": "application/json"
+    }
+
+    # Alguns provedores preenchem get_simple_data_table mesmo quando
+    # get_short_epg retorna uma lista vazia. Tentamos ambos sem misturar
+    # respostas de canais diferentes.
+    actions = (
+        ("get_short_epg", {"limit": limit}),
+        ("get_simple_data_table", {})
+    )
+
+    for action, extra_params in actions:
+        try:
+            params = {
                 "username": username,
                 "password": password,
-                "action": "get_short_epg",
+                "action": action,
                 "stream_id": sid,
-                "limit": limit
-            },
-            timeout=(5, 12),
-            headers={
-                "User-Agent": "EPG-Xtream-Personalizado/2.0"
+                **extra_params
             }
-        )
+            response = requests.get(
+                f"{base}/player_api.php",
+                params=params,
+                timeout=(5, 15),
+                headers=headers
+            )
+            response.raise_for_status()
+            payload = response.json()
 
-        response.raise_for_status()
-        payload = response.json()
+            if isinstance(payload, list):
+                listings = payload
+            elif isinstance(payload, dict):
+                listings = payload.get("epg_listings", [])
+                if not listings and isinstance(payload.get("data"), list):
+                    listings = payload["data"]
+            else:
+                listings = []
 
-        listings = (
-            payload.get("epg_listings", [])
-            if isinstance(payload, dict)
-            else []
-        )
+            if isinstance(listings, list) and listings:
+                return sid, listings, None
 
-        return sid, listings, None
+        except (
+            requests.RequestException,
+            ValueError,
+            TypeError
+        ) as exc:
+            errors.append(f"{action}: {exc}")
 
-    except (
-        requests.RequestException,
-        ValueError,
-        TypeError
-    ) as exc:
-
-        return sid, [], str(exc)
+    detail = "; ".join(errors) if errors else (
+        "get_short_epg e get_simple_data_table não retornaram programas"
+    )
+    return sid, [], detail
 
 
 def main():

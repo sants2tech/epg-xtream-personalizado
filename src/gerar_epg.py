@@ -665,6 +665,10 @@ def main():
                             "method": method,
                             "status": "identificado"
                         })
+                        # Aprende os nomes reais publicados pela fonte EPG.
+                        channel_library[target_id]["aliases"] = sorted(set(
+                            channel_library[target_id]["aliases"] + display_names + [source_id]
+                        ))
                         source_id_map.setdefault(source_id, []).append(target_id)
 
             # Copia todos os programas da mesma fonte para cada canal associado.

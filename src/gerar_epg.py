@@ -414,8 +414,6 @@ def fetch_stremio_channels(session):
                             "epg_channel_id": "", "custom_sid": ""
                         }
                 skip += len(metas)
-                if len(metas) < 100:
-                    break
     channels = list(channels_by_id.values())
     if not channels:
         raise RuntimeError("O addon Stremio respondeu, mas não retornou canais no catálogo tv.")

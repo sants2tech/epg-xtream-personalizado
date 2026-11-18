@@ -55,6 +55,7 @@ jobs:
           git add public/canais_com_epg.csv
           git add public/canais_sem_epg.csv
           git add public/canais_xmltv_disponiveis.csv
+          git add public/canais_sem_grade_real.csv
 
           if git diff --cached --quiet; then
             echo "EPG e relatórios sem alterações."

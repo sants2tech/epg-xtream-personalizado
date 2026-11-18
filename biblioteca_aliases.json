@@ -1,0 +1,20 @@
+{
+  "_description": "Aliases conservadores de canais. A localidade é parte da identidade: Globo Minas nunca deve ser confundida com Globo SP ou Globo Brasília.",
+  "channels": {
+    "Globo Minas": {
+      "aliases": [
+        "TV Globo Minas",
+        "Globo MG",
+        "Globo Minas HD",
+        "Globo Minas FHD",
+        "TV Globo MG",
+        "Globo Belo Horizonte",
+        "Globo BH",
+        "TVGloboMinas.br"
+      ],
+      "preferred_epg_ids": [
+        "TVGloboMinas.br"
+      ]
+    }
+  }
+}

@@ -64,5 +64,22 @@
       "url": "https://epgshare01.online/epgshare01/epg_ripper_BR2.xml.gz"
     }
   ],
-  "external_fuzzy_threshold": 0.93
+  "external_fuzzy_threshold": 0.93,
+  "channel_alias_library": {
+    "Globo Minas": {
+      "aliases": [
+        "TV Globo Minas",
+        "Globo MG",
+        "Globo Minas HD",
+        "Globo Minas FHD",
+        "TV Globo MG",
+        "Globo Belo Horizonte",
+        "Globo BH",
+        "TVGloboMinas.br"
+      ],
+      "preferred_epg_ids": [
+        "TVGloboMinas.br"
+      ]
+    }
+  }
 }

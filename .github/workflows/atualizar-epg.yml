@@ -1,5 +1,6 @@
 
 name: Atualizar EPG Xtream
+# A rotina consulta as fontes XMLTV nacionais e regionais configuradas em config.json.
 
 "on":
   push:

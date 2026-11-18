@@ -19,6 +19,8 @@ from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 
 OUT = Path("public/epg.xml")
@@ -493,7 +495,31 @@ def main():
     print("Iniciando gerador EPG para KamuflaTV (Xtream + Stremio)...", flush=True)
 
     session = requests.Session()
-    session.headers.update({"User-Agent": "KamuflaTV-EPG/1.0"})
+    retry_policy = Retry(
+        total=6,
+        connect=6,
+        read=4,
+        status=4,
+        backoff_factor=2,
+        status_forcelist=(429, 500, 502, 503, 504),
+        allowed_methods=frozenset(["GET"]),
+        raise_on_status=False
+    )
+    adapter = HTTPAdapter(
+        max_retries=retry_policy,
+        pool_connections=20,
+        pool_maxsize=20
+    )
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
+    session.headers.update({
+        "User-Agent": "KamuflaTV-EPG/1.0",
+        "Accept": "application/json, application/xml, text/xml, */*"
+    })
+    print(
+        "Proteção de rede ativa: até 6 tentativas automáticas por conexão.",
+        flush=True
+    )
 
     # O player publicado consulta canais Xtream com stream_id numérico.
     # Mantemos também os IDs cs:channel do catálogo Stremio, para compatibilidade

@@ -51,6 +51,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add public/epg.xml
+          git add public/epg-stremio.json
           git add public/canais_com_epg.csv
           git add public/canais_sem_epg.csv
           git add public/canais_xmltv_disponiveis.csv

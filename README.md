@@ -11,7 +11,7 @@ Este repositório gera e publica diariamente um XMLTV compatível com a **Kamufl
 5. A associação externa prioriza IDs e nomes exatos. Correspondências aproximadas usam um limite alto e exigem diferença suficiente para evitar atribuições duvidosas.
 6. Gera `public/epg.xml` com os IDs originais dos canais da KamuflaTV e publica os relatórios de cobertura.
 
-A programação do provedor tem prioridade. As fontes complementares só preenchem canais que ainda não receberam programação, evitando substituir a grade principal por outra fonte.
+A programação do provedor tem prioridade. As fontes complementares só preenchem canais que ainda não receberam programação, evitando substituir a grade principal por outra fonte. Se uma fonte falhar temporariamente, o gerador também reaproveita programas da EPG anterior que ainda estejam dentro da janela de validade, somente para canais sem dados novos.
 
 ## Proteção contra perda de cobertura
 

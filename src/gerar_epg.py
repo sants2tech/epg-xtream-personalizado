@@ -14,7 +14,7 @@ import xml.etree.ElementTree as ET
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from difflib import SequenceMatcher
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
@@ -114,6 +114,28 @@ def parse_xmltv(data):
         )
 
     return root
+
+
+def parse_xmltv_datetime(value):
+    """Converte timestamp XMLTV para UTC."""
+    match = re.fullmatch(
+        r"(\\d{14})(?:\\s*([+-])(\\d{2}):?(\\d{2}))?",
+        str(value or "").strip()
+    )
+    if not match:
+        return None
+
+    dt = datetime.strptime(
+        match.group(1),
+        "%Y%m%d%H%M%S"
+    ).replace(tzinfo=timezone.utc)
+
+    sign, hours, minutes = match.group(2), match.group(3), match.group(4)
+    if sign:
+        offset = timedelta(hours=int(hours), minutes=int(minutes))
+        dt = dt - offset if sign == "+" else dt + offset
+
+    return dt
 
 
 def fetch_external_xmltv(session, source):
@@ -987,6 +1009,71 @@ def main():
                     )
 
     # --------------------------------------------------
+    # CONTINUIDADE: REAPROVEITAR PROGRAMAÇÃO AINDA VÁLIDA
+    # --------------------------------------------------
+
+    carried_forward_count = 0
+
+    if OUT.exists():
+        try:
+            previous_root = parse_xmltv(OUT.read_bytes())
+            now_utc = datetime.now(timezone.utc)
+
+            for previous_programme in previous_root.findall("programme"):
+                target_id = str(
+                    previous_programme.get("channel", "")
+                ).strip()
+
+                if (
+                    not target_id
+                    or target_id not in valid_streams
+                    or programmes_per_channel.get(target_id, 0) > 0
+                ):
+                    continue
+
+                start_dt = parse_xmltv_datetime(
+                    previous_programme.get("start")
+                )
+                stop_dt = parse_xmltv_datetime(
+                    previous_programme.get("stop")
+                )
+
+                if not start_dt or not stop_dt:
+                    continue
+
+                if (
+                    stop_dt < now_utc - timedelta(hours=48)
+                    or start_dt > now_utc + timedelta(days=7)
+                ):
+                    continue
+
+                copied = ET.fromstring(
+                    ET.tostring(previous_programme, encoding="utf-8")
+                )
+                key = programme_key(copied)
+
+                if key in seen:
+                    continue
+
+                seen.add(key)
+                out.append(copied)
+                count += 1
+                carried_forward_count += 1
+                programmes_per_channel[target_id] += 1
+
+            print(
+                f"Programas válidos reaproveitados da última EPG: "
+                f"{carried_forward_count}",
+                flush=True
+            )
+
+        except Exception as exc:
+            print(
+                f"Aviso: não foi possível reaproveitar a EPG anterior: {exc}",
+                flush=True
+            )
+
+    # --------------------------------------------------
     # PROTEÇÃO: NÃO SUBSTITUIR UM EPG COM MAIOR COBERTURA
     # --------------------------------------------------
 
@@ -1243,6 +1330,11 @@ def main():
     print(
         f"Programas obtidos por fontes externas: "
         f"{external_added}"
+    )
+
+    print(
+        f"Programas reaproveitados da última EPG: "
+        f"{carried_forward_count}"
     )
 
     for source_name, matched_channels, source_programmes in external_source_stats:

@@ -365,74 +365,72 @@ def fetch_short_epg(base, username, password, sid, limit):
     return sid, [], detail
 
 
+
+def fetch_stremio_channels(session):
+    """Extrai todos os canais do mesmo addon Stremio usado pelo KamuflaTV."""
+    addon = "https://froststream.cloutteam.com/usr_9cb7788d82cd6157e7c1"
+    headers = {"User-Agent": "KamuflaTV-EPG/1.0", "Accept": "application/json"}
+    response = session.get(f"{addon}/manifest.json", timeout=(10, 30), headers=headers)
+    response.raise_for_status()
+    manifest = response.json()
+    catalogs = [item for item in manifest.get("catalogs", []) if item.get("type") == "tv" and item.get("id")]
+    if not catalogs:
+        raise RuntimeError("O manifesto Stremio não publicou nenhum catálogo do tipo tv.")
+
+    channels_by_id = {}
+    for catalog in catalogs:
+        catalog_id = str(catalog["id"])
+        extras = catalog.get("extra", []) or []
+        genre_extra = next((item for item in extras if item.get("name") == "genre"), None)
+        genres = (genre_extra or {}).get("options") or [""]
+        for genre in genres:
+            skip = 0
+            previous_first = None
+            for page in range(100):
+                parts = []
+                if genre:
+                    parts.append("genre=" + requests.utils.quote(str(genre), safe=""))
+                if skip:
+                    parts.append("skip=" + str(skip))
+                suffix = "/" + "&".join(parts) if parts else ""
+                url = f"{addon}/catalog/tv/{requests.utils.quote(catalog_id, safe='')}{suffix}.json"
+                result = session.get(url, timeout=(10, 40), headers=headers)
+                result.raise_for_status()
+                payload = result.json()
+                metas = payload.get("metas", []) if isinstance(payload, dict) else []
+                if not metas:
+                    break
+                first_id = str(metas[0].get("id", ""))
+                if not first_id or first_id == previous_first:
+                    break
+                previous_first = first_id
+                for meta in metas:
+                    channel_id = str(meta.get("id", "")).strip()
+                    name = str(meta.get("name", "")).strip()
+                    if channel_id and name:
+                        channels_by_id[channel_id] = {
+                            "stream_id": channel_id, "name": name,
+                            "stream_icon": meta.get("logo") or meta.get("poster") or "",
+                            "epg_channel_id": "", "custom_sid": ""
+                        }
+                skip += len(metas)
+                if len(metas) < 100:
+                    break
+    channels = list(channels_by_id.values())
+    if not channels:
+        raise RuntimeError("O addon Stremio respondeu, mas não retornou canais no catálogo tv.")
+    return channels
+
+
 def main():
 
-    print("Iniciando gerador EPG atualizado...", flush=True)
-
-    base = clean_base_url(
-        required_env("XTREAM_BASE_URL")
-    )
-
-    username = required_env("XTREAM_USERNAME")
-    password = required_env("XTREAM_PASSWORD")
+    print("Iniciando gerador EPG para a lista Stremio do KamuflaTV...", flush=True)
 
     session = requests.Session()
+    session.headers.update({"User-Agent": "KamuflaTV-EPG/1.0"})
+    channels = fetch_stremio_channels(session)
+    print(f"Total de canais extraídos do Stremio: {len(channels)}", flush=True)
 
-    session.headers.update({
-        "User-Agent": "EPG-Xtream-Personalizado/2.0"
-    })
-
-    # --------------------------------------------------
-    # AUTENTICAÇÃO
-    # --------------------------------------------------
-
-    response = xtream_get(
-        session,
-        base,
-        username,
-        password
-    )
-
-    response.raise_for_status()
-    auth = response.json()
-
-    user_info = auth.get("user_info", {})
-
-    if (
-        user_info
-        and str(user_info.get("auth", "1")) == "0"
-    ):
-        raise RuntimeError(
-            "A autenticação Xtream foi recusada."
-        )
-
-    # --------------------------------------------------
-    # BUSCAR CANAIS XTREAM
-    # --------------------------------------------------
-
-    response = xtream_get(
-        session,
-        base,
-        username,
-        password,
-        action="get_live_streams"
-    )
-
-    response.raise_for_status()
-    channels = response.json()
-
-    if not isinstance(channels, list) or not channels:
-        raise RuntimeError(
-            "A API não retornou canais ao vivo. "
-            "O EPG anterior foi preservado."
-        )
-
-    print(
-        f"Total de canais Xtream: {len(channels)}",
-        flush=True
-    )
-
-    # --------------------------------------------------
     # ÍNDICES DE CANAIS
     # --------------------------------------------------
 
@@ -475,33 +473,16 @@ def main():
                 name_to_channels[norm].append(stream_id)
 
     # --------------------------------------------------
-    # BAIXAR XMLTV ORIGINAL
+    # --------------------------------------------------
+    # A EPG é obtida das fontes XMLTV públicas e associada
+    # aos canais Stremio por nome/alias, nunca pelo ID Xtream.
     # --------------------------------------------------
 
-    print("Baixando XMLTV do provedor...", flush=True)
+    source_root = ET.Element("tv")
+    source_channels = []
+    source_programmes = []
+    print("Canais Stremio prontos para associação com fontes XMLTV.", flush=True)
 
-    xml_data = request_bytes(
-        session,
-        f"{base}/xmltv.php",
-        {
-            "username": username,
-            "password": password,
-            "prev_days": CONFIG["prev_days"],
-            "next_days": CONFIG["next_days"]
-        }
-    )
-
-    source_root = parse_xmltv(xml_data)
-
-    source_channels = source_root.findall("channel")
-    source_programmes = source_root.findall("programme")
-
-    print(
-        f"IDs XMLTV encontrados: {len(source_channels)}",
-        flush=True
-    )
-
-    # --------------------------------------------------
     # MAPEAMENTO AUTOMÁTICO
     # --------------------------------------------------
 
@@ -854,181 +835,11 @@ def main():
     )
 
     # --------------------------------------------------
-    # FALLBACK: EPG CURTO XTREAM
     # --------------------------------------------------
-
+    # FALLBACK XTREAM DESATIVADO: os IDs agora são Stremio.
+    # --------------------------------------------------
     fallback_count = 0
 
-    if CONFIG.get("fallback_short_epg", True):
-
-        pending = [
-            ch
-            for ch in channels
-            if str(ch.get("stream_id", "")).strip()
-            and programmes_per_channel.get(
-                str(ch.get("stream_id", "")).strip(),
-                0
-            ) == 0
-        ]
-
-        max_channels = max(
-            1,
-            int(
-                CONFIG.get(
-                    "max_fallback_channels_per_run",
-                    120
-                )
-            )
-        )
-
-        workers = max(
-            1,
-            min(
-                int(CONFIG.get("fallback_workers", 6)),
-                10
-            )
-        )
-
-        # Alterna os canais consultados a cada dia.
-        if pending:
-
-            start_index = (
-                datetime.now(timezone.utc).timetuple().tm_yday
-                * max_channels
-            ) % len(pending)
-
-            ordered = (
-                pending[start_index:]
-                + pending[:start_index]
-            )
-
-            selected = ordered[:max_channels]
-
-        else:
-            selected = []
-
-        total = len(selected)
-
-        print(
-            f"Fallback: {total} canais selecionados; "
-            f"{workers} consultas simultâneas.",
-            flush=True
-        )
-
-        with ThreadPoolExecutor(
-            max_workers=workers
-        ) as executor:
-
-            futures = [
-                executor.submit(
-                    fetch_short_epg,
-                    base,
-                    username,
-                    password,
-                    str(ch.get("stream_id", "")).strip(),
-                    CONFIG["max_programmes_per_channel"]
-                )
-                for ch in selected
-            ]
-
-            for done, future in enumerate(
-                as_completed(futures),
-                1
-            ):
-
-                sid, listings, error = future.result()
-
-                if error:
-
-                    print(
-                        f"Aviso: EPG indisponível para "
-                        f"{sid}: {error}",
-                        flush=True
-                    )
-
-                for item in listings:
-
-                    try:
-
-                        start = item.get("start_timestamp")
-                        stop = item.get("stop_timestamp")
-
-                        if not start or not stop:
-                            continue
-
-                        start_dt = datetime.fromtimestamp(
-                            int(start),
-                            timezone.utc
-                        )
-
-                        stop_dt = datetime.fromtimestamp(
-                            int(stop),
-                            timezone.utc
-                        )
-
-                        programme = ET.Element(
-                            "programme",
-                            {
-                                "start": start_dt.strftime(
-                                    "%Y%m%d%H%M%S +0000"
-                                ),
-                                "stop": stop_dt.strftime(
-                                    "%Y%m%d%H%M%S +0000"
-                                ),
-                                "channel": sid
-                            }
-                        )
-
-                        add_text(
-                            programme,
-                            "title",
-                            item.get("title")
-                            or item.get("name")
-                            or "Programação"
-                        )
-
-                        description = (
-                            item.get("description")
-                            or item.get("plot")
-                            or ""
-                        )
-
-                        if description:
-
-                            add_text(
-                                programme,
-                                "desc",
-                                description
-                            )
-
-                        key = programme_key(programme)
-
-                        if key not in seen:
-
-                            seen.add(key)
-                            out.append(programme)
-
-                            count += 1
-                            fallback_count += 1
-
-                            programmes_per_channel[sid] += 1
-
-                    except (
-                        ValueError,
-                        TypeError,
-                        AttributeError
-                    ):
-                        continue
-
-                if done % 10 == 0 or done == total:
-
-                    print(
-                        f"Progresso fallback: "
-                        f"{done}/{total}",
-                        flush=True
-                    )
-
-    # --------------------------------------------------
     # CONTINUIDADE: COMPLETAR INTERVALOS COM A ÚLTIMA EPG AINDA VÁLIDA
     # --------------------------------------------------
 
@@ -1135,8 +946,11 @@ def main():
                 if item.get("channel")
             })
 
+            previous_ids = {item.get("channel") for item in previous_programmes if item.get("channel")}
+            same_channel_universe = bool(previous_ids.intersection(valid_streams))
             if (
-                previous_channel_coverage > 0
+                same_channel_universe
+                and previous_channel_coverage > 0
                 and new_channel_coverage < previous_channel_coverage
                 and count < len(previous_programmes)
             ):
@@ -1180,7 +994,7 @@ def main():
 
         writer.writerow([
             "stream_id",
-            "nome_xtream",
+            "nome_stremio",
             "epg_channel_id",
             "programas"
         ])
@@ -1347,7 +1161,7 @@ def main():
     print("       RESULTADO DA ATUALIZAÇÃO")
     print("===================================")
 
-    print(f"Total de canais: {len(valid_streams)}")
+    print(f"Total de canais Stremio: {len(valid_streams)}")
 
     print(
         f"Canais com programação: "

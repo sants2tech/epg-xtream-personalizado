@@ -100,7 +100,7 @@ def regional_aliases(value):
     text = re.sub(r"\b(globo|regional|regionais|tv|canal)\b", " ", text)
 
     geography = {
-        "sp": "sao paulo", "rj": "rio de janeiro",
+        "sp": "sao paulo", "rj": "rio de janeiro", "rio": "rio de janeiro",
         "rs": "rio grande do sul", "mg": "minas gerais",
         "pa": "para", "ba": "bahia", "sc": "santa catarina",
         "pr": "parana", "go": "goias", "df": "brasilia",

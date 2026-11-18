@@ -134,7 +134,7 @@ cs:channel:sbt-sp;SBT SP;96;EPG de fonte
 cs:channel:sbt-thathi-vale;SBT Thathi Vale;121;EPG de fonte
 cs:channel:sbt-tv-alterosa;SBT TV Alterosa;121;EPG de fonte
 cs:channel:sbt-vtv-santos-campinas;SBT VTV Santos Campinas;121;EPG de fonte
-cs:channel:tv-brasil;TV Brasil;401;EPG de fonte
+cs:channel:tv-brasil;TV Brasil;328;EPG de fonte
 cs:channel:tv-gazeta;TV Gazeta;74;EPG de fonte
 cs:channel:tv-gazeta-sp;TV Gazeta SP;121;EPG de fonte
 cs:channel:tv-uniao;TV Uniao;121;EPG de fonte
@@ -151,10 +151,10 @@ cs:channel:disney-plus-1;Disney Plus 1;121;EPG de fonte
 cs:channel:disney-plus-2;Disney Plus 2;121;EPG de fonte
 cs:channel:disney-plus-3;Disney Plus 3;121;EPG de fonte
 cs:channel:disney-plus-4;Disney Plus 4;121;EPG de fonte
-cs:channel:paramount-plus-1;Paramount Plus 1;121;EPG de fonte
-cs:channel:paramount-plus-2;Paramount Plus 2;121;EPG de fonte
-cs:channel:paramount-plus-3;Paramount Plus 3;121;EPG de fonte
-cs:channel:paramount-plus-4;Paramount Plus 4;121;EPG de fonte
+cs:channel:paramount-plus-1;Paramount Plus 1;79;EPG de fonte
+cs:channel:paramount-plus-2;Paramount Plus 2;80;EPG de fonte
+cs:channel:paramount-plus-3;Paramount Plus 3;80;EPG de fonte
+cs:channel:paramount-plus-4;Paramount Plus 4;80;EPG de fonte
 cs:channel:league-cup;League Cup;121;EPG de fonte
 cs:channel:max-1;Max 1;121;EPG de fonte
 cs:channel:max-2;Max 2;121;EPG de fonte
@@ -164,15 +164,15 @@ cs:channel:max-5;Max 5;121;EPG de fonte
 cs:channel:max-6;Max 6;121;EPG de fonte
 cs:channel:amc;AMC;126;EPG de fonte
 cs:channel:axn;AXN;190;EPG de fonte
-cs:channel:canal-brasil;Canal Brasil;356;EPG de fonte
-cs:channel:canal-sony;Canal Sony;194;EPG de fonte
+cs:channel:canal-brasil;Canal Brasil;231;EPG de fonte
+cs:channel:canal-sony;Canal Sony;166;EPG de fonte
 cs:channel:cinemax;Cinemax;99;EPG de fonte
 cs:channel:film-arts;Film&Arts;153;EPG de fonte
 cs:channel:megapix;Megapix;100;EPG de fonte
 cs:channel:paramount-channel;Paramount Channel;72;EPG de fonte
 cs:channel:space;Space;233;EPG de fonte
 cs:channel:studio-universal;Studio Universal;124;EPG de fonte
-cs:channel:syfy;SYFY;121;EPG de fonte
+cs:channel:syfy;SYFY;209;EPG de fonte
 cs:channel:tnt;TNT;214;EPG de fonte
 cs:channel:tnt-novelas;TNT Novelas;153;EPG de fonte
 cs:channel:tnt-series;TNT Series;216;EPG de fonte
@@ -264,21 +264,21 @@ cs:channel:off;OFF;405;EPG de fonte
 cs:channel:prime-box-brazil;Prime Box Brazil;348;EPG de fonte
 cs:channel:sabor-arte;Sabor & Arte;333;EPG de fonte
 cs:channel:tlc;TLC;339;EPG de fonte
-cs:channel:trace-brazuca;Trace Brazuca;121;EPG de fonte
+cs:channel:trace-brazuca;Trace Brazuca;123;EPG de fonte
 cs:channel:travel-box-brazil;Travel Box Brazil;570;EPG de fonte
 cs:channel:woohoo;Woohoo;553;EPG de fonte
 cs:channel:animal-planet;Animal Planet;239;EPG de fonte
 cs:channel:arte-1;Arte 1;223;EPG de fonte
 cs:channel:curta;Curta;171;EPG de fonte
-cs:channel:discovery-channel;Discovery Channel;75;EPG de fonte
+cs:channel:discovery-channel;Discovery Channel;254;EPG de fonte
 cs:channel:discovery-science;Discovery Science;204;EPG de fonte
 cs:channel:discovery-theater;Discovery Theater;208;EPG de fonte
 cs:channel:discovery-world;Discovery World;345;EPG de fonte
-cs:channel:h2;H2;121;EPG de fonte
+cs:channel:h2;H2;248;EPG de fonte
 cs:channel:hgtv;HGTV;277;EPG de fonte
 cs:channel:history;History;199;EPG de fonte
 cs:channel:id;ID;175;EPG de fonte
-cs:channel:pai-eterno;Pai Eterno;196;EPG de fonte
+cs:channel:pai-eterno;Pai Eterno;212;EPG de fonte
 cs:channel:rede-gospel;Rede Gospel;72;EPG de fonte
 cs:channel:rede-vida;Rede Vida;261;EPG de fonte
 cs:channel:tv-aparecida;TV Aparecida;153;EPG de fonte

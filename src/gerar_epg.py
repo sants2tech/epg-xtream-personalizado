@@ -783,6 +783,9 @@ def main():
                     external_map[source_id] = targets
                     external_matches += len(targets)
 
+            # Copia todos os programas da mesma fonte para cada canal associado.
+            # A prioridade entre fontes é definida ao montar external_map:
+            # só entram canais que ainda não receberam dados de fontes anteriores.
             source_added = 0
             for programme in external_programmes:
                 source_id = str(programme.get("channel", "")).strip()
@@ -792,10 +795,6 @@ def main():
                     continue
 
                 for target_id in target_ids:
-                    # A primeira fonte válida que preencher o canal tem prioridade.
-                    if programmes_per_channel.get(target_id, 0) > 0:
-                        continue
-
                     copied = ET.fromstring(
                         ET.tostring(programme, encoding="utf-8")
                     )

@@ -118,7 +118,7 @@ def channel_name_keys(value):
 
 
 def load_alias_library(channels):
-    """Aplica aliases curados pelo usuário, sem apagar a identidade regional."""
+    """Aplica aliases curados por nome normalizado, sem depender da grafia HD/TV."""
     path = Path("biblioteca_aliases.json")
     if not path.exists():
         return {}
@@ -127,11 +127,15 @@ def load_alias_library(channels):
     result = {}
     for channel in channels:
         name = str(channel.get("name", "")).strip()
-        entry = configured.get(name, {})
-        if isinstance(entry, dict):
+        channel_keys = set(channel_name_keys(name))
+        matches = []
+        for canonical, entry in configured.items():
+            if channel_keys.intersection(channel_name_keys(canonical)):
+                matches.append(entry)
+        if len(matches) == 1 and isinstance(matches[0], dict):
             result[str(channel.get("stream_id", ""))] = {
-                "aliases": list(entry.get("aliases", [])),
-                "preferred_epg_ids": list(entry.get("preferred_epg_ids", []))
+                "aliases": list(matches[0].get("aliases", [])),
+                "preferred_epg_ids": list(matches[0].get("preferred_epg_ids", []))
             }
     return result
 
@@ -629,6 +633,7 @@ def main():
             external_root = fetch_external_xmltv(session, source)
             external_channels = external_root.findall("channel")
             external_programmes = external_root.findall("programme")
+            source_channels.extend(external_channels)
 
             external_map = {}
             for external_channel in external_channels:
@@ -664,6 +669,7 @@ def main():
                             "method": method,
                             "status": "identificado"
                         })
+                        source_id_map.setdefault(source_id, []).append(target_id)
 
             # Copia todos os programas da mesma fonte para cada canal associado.
             # A prioridade entre fontes é definida ao montar external_map:

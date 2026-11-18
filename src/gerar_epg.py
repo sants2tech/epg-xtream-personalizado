@@ -87,6 +87,28 @@ def normalize(value):
     return re.sub(r"[^a-z0-9]+", "", value)
 
 
+def regional_aliases(value):
+    """
+    Cria uma chave alternativa para afiliadas regionais.
+    Remove somente prefixos genéricos de rede/TV; preserva o nome
+    específico da afiliada e a cidade/estado para não cruzar regiões.
+    """
+    text = unicodedata.normalize("NFKD", str(value or ""))
+    text = "".join(c for c in text if not unicodedata.combining(c)).casefold()
+    text = re.sub(r"\\b(globo|rede|recordtv|record|sbt|tv|canal)\\b", " ", text)
+    alias = re.sub(r"[^a-z0-9]+", "", text)
+    original = normalize(value)
+    if len(alias) >= 7 and alias != original:
+        return [alias]
+    return []
+
+
+def channel_name_keys(value):
+    keys = [normalize(value)]
+    keys.extend(regional_aliases(value))
+    return list(dict.fromkeys(key for key in keys if key))
+
+
 def xtream_get(session, base, username, password, **params):
     return session.get(
         f"{base}/player_api.php",
@@ -174,9 +196,9 @@ def match_external_channel(source_channel, id_to_channels,
 
     exact = []
     for display_name in display_names:
-        norm = normalize(display_name)
-        if norm and norm in name_to_channels:
-            exact.extend(name_to_channels[norm])
+        for norm in channel_name_keys(display_name):
+            if norm in name_to_channels:
+                exact.extend(name_to_channels[norm])
 
     if exact:
         return list(dict.fromkeys(exact)), "nome"
@@ -522,9 +544,7 @@ def main():
                 if stream_id not in id_to_channels[candidate]:
                     id_to_channels[candidate].append(stream_id)
 
-        norm = normalize(name)
-
-        if norm:
+        for norm in channel_name_keys(name):
             if stream_id not in name_to_channels[norm]:
                 name_to_channels[norm].append(stream_id)
 
@@ -605,13 +625,13 @@ def main():
         # Segundo: correspondência exata por nome.
         for display_name in display_names:
 
-            norm = normalize(display_name)
-
-            matches = name_to_channels.get(norm, [])
+            matches = []
+            for norm in channel_name_keys(display_name):
+                matches.extend(name_to_channels.get(norm, []))
 
             if matches:
 
-                target_ids = list(matches)
+                target_ids = list(dict.fromkeys(matches))
                 exact_matches += 1
                 break
 
@@ -1003,6 +1023,63 @@ def main():
             )
 
     # --------------------------------------------------
+    # GRADE CONTÍNUA PARA CANAIS SEM PROGRAMAÇÃO REAL
+    # --------------------------------------------------
+    # Não inventa nomes de programas ou horários de emissoras.
+    # Quando nenhuma fonte fornece EPG para um canal, publica blocos
+    # explícitos de "Programação contínua" para que o canal nunca fique
+    # sem faixa na grade do aplicativo.
+    # --------------------------------------------------
+
+    real_programmes_per_channel = dict(programmes_per_channel)
+    continuous_channels = set()
+    now_utc = datetime.now(timezone.utc)
+    window_start = (
+        now_utc - timedelta(days=int(CONFIG.get("prev_days", 1)))
+    ).replace(minute=0, second=0, microsecond=0)
+    window_end = now_utc + timedelta(days=int(CONFIG.get("next_days", 3)))
+    continuous_added = 0
+
+    for channel in channels:
+        sid = str(channel.get("stream_id", "")).strip()
+        if not sid or programmes_per_channel.get(sid, 0) > 0:
+            continue
+
+        cursor = window_start
+        while cursor < window_end:
+            stop = min(cursor + timedelta(hours=1), window_end)
+            programme = ET.Element(
+                "programme",
+                {
+                    "start": cursor.strftime("%Y%m%d%H%M%S +0000"),
+                    "stop": stop.strftime("%Y%m%d%H%M%S +0000"),
+                    "channel": sid
+                }
+            )
+            add_text(programme, "title", "Programação contínua")
+            add_text(
+                programme,
+                "desc",
+                "A emissora não disponibilizou a grade detalhada nas fontes consultadas. "
+                "Este bloco mantém a programação visível sem atribuir programas ou "
+                "horários fictícios."
+            )
+            add_text(programme, "category", "Programação contínua")
+            out.append(programme)
+            count += 1
+            continuous_added += 1
+            programmes_per_channel[sid] += 1
+            cursor = stop
+
+        continuous_channels.add(sid)
+
+    print(
+        f"Programação contínua criada para {len(continuous_channels)} canais "
+        f"({continuous_added} blocos horários).",
+        flush=True
+    )
+
+    # --------------------------------------------------
     # PROTEÇÃO: NÃO SUBSTITUIR UM EPG COM MAIOR COBERTURA
     # --------------------------------------------------
 
@@ -1093,6 +1170,20 @@ def main():
                 ])
 
     # --------------------------------------------------
+    # RELATÓRIO: CANAIS SEM GRADE REAL (RECEBEM CONTINUIDADE)
+    # --------------------------------------------------
+
+    with (OUT.parent / "canais_sem_grade_real.csv").open(
+        "w", newline="", encoding="utf-8-sig"
+    ) as file:
+        writer = csv.writer(file, delimiter=";")
+        writer.writerow(["stream_id", "nome_canal", "programacao_publicada"])
+        for ch in channels:
+            sid = str(ch.get("stream_id", "")).strip()
+            if sid and sid in continuous_channels:
+                writer.writerow([sid, ch.get("name", ""), "Programação contínua"])
+
+    # --------------------------------------------------
     # RELATÓRIO: IDS XMLTV DISPONÍVEIS
     # --------------------------------------------------
 
@@ -1156,8 +1247,9 @@ def main():
 
         writer.writerow([
             "stream_id",
-            "nome_xtream",
-            "programas"
+            "nome_canal",
+            "programas",
+            "tipo_programacao"
         ])
 
         for ch in channels:
@@ -1176,7 +1268,8 @@ def main():
                 writer.writerow([
                     sid,
                     ch.get("name", ""),
-                    quantidade
+                    quantidade,
+                    "Programação contínua" if sid in continuous_channels else "EPG de fonte"
                 ])
 
     # --------------------------------------------------
@@ -1345,8 +1438,11 @@ def main():
         )
 
     print(
-        f"Programas obtidos pelo fallback: "
+        f"Programas obtidos pelo fallback Xtream: "
         f"{fallback_count}"
+    )
+    print(
+        f"Canais com programação contínua: {len(continuous_channels)}"
     )
 
     print(f"Correspondências por ID: {id_matches}")

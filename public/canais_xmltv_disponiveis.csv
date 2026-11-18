@@ -1,1 +1,2277 @@
 ﻿xmltv_id;nome_fonte;stream_ids_associados
+MaisGlobosat.br;BR - + Globosat;
+AandE.br;BR - A&E;cs:channel:a-e
+AMC.br;BR - AMC Brasil;cs:channel:amc
+AnimalPlanet.br;BR - Animal Planet;cs:channel:animal-planet
+Arte1.br;BR - Arte 1;cs:channel:arte-1
+AXN.br;BR - AXN;cs:channel:axn
+BabyTV.br;BR - Baby TV;
+BandBrasil.br;BR - Band Brasil;
+BandCampinas.br;BR - Band Campinas;
+BandNews.br;BR - Band News;cs:channel:band-news
+BandRJ.br;BR - Band RJ;
+BandSP.br;BR - Band SP;cs:channel:band-sp
+BandSports.br;BR - BandSports;cs:channel:band-sports
+BBBMosaico.br;BR - BBB Mosaico;
+BIS.br;BR - BIS;cs:channel:bis
+CanalBrasil.br;BR - Canal Brasil;cs:channel:canal-brasil
+CanaldoBoi.br;BR - Canal do Boi;cs:channel:canal-do-boi
+CanalGov.br;BR - Canal Gov;
+CanalRural.br;BR - Canal Rural;cs:channel:canal-rural
+CartoonNetwork.br;BR - Cartoon Network;cs:channel:cartoon-network
+Cartoonito.br;BR - Cartoonito;cs:channel:cartoonito
+ChefTV.br;BR - Chef TV;
+Cinemax.br;BR - Cinemax;cs:channel:cinemax
+CNN.br;BR - CNN;cs:channel:cnn-brasil
+CNNBrasil.br;BR - CNN Brasil;cs:channel:cnn-brasil
+CNT.br;BR - CNT;
+Combate.br;BR - Combate;cs:channel:combate
+ComedyCentral.br;BR - Comedy Central;
+CONMEBOLTV1.br;BR - CONMEBOL TV 1;
+CONMEBOLTV2.br;BR - CONMEBOL TV 2;
+CONMEBOLTV3.br;BR - CONMEBOL TV 3;
+CONMEBOLTV4.br;BR - CONMEBOL TV 4;
+Cultura.br;BR - Cultura;cs:channel:cultura
+Curta.br;BR - Curta!;cs:channel:curta
+DiscoveryChannel.br;BR - Discovery;cs:channel:discovery-channel
+DiscoveryCivilization.br;BR - Discovery Civilization;
+DiscoveryHomeandHealth.br;BR - Discovery Home & Health;
+DiscoveryKids.br;BR - Discovery Kids;cs:channel:discovery-kids
+DiscoveryScience.br;BR - Discovery Science;cs:channel:discovery-science
+DiscoveryTheater.br;BR - Discovery Theater;cs:channel:discovery-theater
+DiscoveryTurbo.br;BR - Discovery Turbo;cs:channel:discovery-turbo
+DiscoveryWorld.br;BR - Discovery World;cs:channel:discovery-world
+DisneyChannel.br;BR - Disney Channel;
+DisneyJunior.br;BR - Disney Junior;
+DisneyXD.br;BR - Disney XD;
+DOGTV.br;BR - DOGTV;cs:channel:dog-tv
+E.br;BR - E!;cs:channel:e
+EPTVCampinas.br;BR - EPTV Campinas;
+ESPN.br;BR - ESPN;cs:channel:espn
+ESPN2.br;BR - ESPN 2;cs:channel:espn-2
+ESPN3.br;BR - ESPN 3;cs:channel:espn-3
+ESPN4.br;BR - ESPN 4;cs:channel:espn-4
+ESPN5.br;BR - ESPN 5;cs:channel:espn-5
+ESPN6.br;BR - ESPN 6;cs:channel:espn-6
+ESPNPlus.br;BR - ESPN Plus;
+FashionTV.br;BR - FashionTV;cs:channel:fashiontv
+FIFA+.br;BR - FIFA+;
+filmandarts.br;BR - film&arts;cs:channel:film-arts
+FishTV.br;BR - FishTV;cs:channel:fish-tv
+FoodNetwork.br;BR - Food Network;cs:channel:food-network
+FoxNewsChannel.br;BR - Fox News Channel;
+Futura.br;BR - Futura;cs:channel:futura
+FX.br;BR - FX;
+GETV.br;BR - GE TV;
+GloboAnhanguera.br;BR - Globo Anhanguera;cs:channel:globo-tv-anhanguera
+GloboBrasil.br;BR - Globo Brasil;
+GloboRJ.br;BR - Globo RJ;cs:channel:globo-rj
+GloboSP.br;BR - Globo SP;cs:channel:globo-sp
+GloboInternacional.br;BR - Globo TV Internacional;
+GloboNews.br;BR - GloboNews;cs:channel:globo-news
+Gloob.br;BR - Gloob;cs:channel:gloob
+Gloobinho.br;BR - Gloobinho;cs:channel:gloobinho
+GNT.br;BR - GNT HD;cs:channel:gnt
+HBO.br;BR - HBO;cs:channel:hbo
+HBO2.br;BR - HBO 2;cs:channel:hbo-2
+HBOFamily.br;BR - HBO Family;cs:channel:hbo-family
+HBOMundi.br;BR - HBO Mundi;cs:channel:hbo-mundi
+HBOPlus.br;BR - HBO Plus;cs:channel:hbo-plus
+HBOPop.br;BR - HBO Pop;cs:channel:hbo-pop
+HBOSignature.br;BR - HBO Signature;cs:channel:hbo-signature
+HBOXtreme.br;BR - HBO Xtreme;cs:channel:hbo-xtreme
+HGTV.br;BR - HGTV;cs:channel:hgtv
+History2.br;BR - History 2;cs:channel:history
+HistoryChannel.br;BR - History Channel;
+JovemPanNews.br;BR - Jovem Pan News;cs:channel:jovem-pan-news
+Lifetime.br;BR - Lifetime HD;cs:channel:lifetime
+Megapix.br;BR - Megapix;cs:channel:megapix
+MTV.br;BR - MTV;
+MTVLive.br;BR - MTV Live;
+Multishow.br;BR - Multishow;cs:channel:multishow
+MusicBoxBrasil.br;BR - Music Box Brasil;
+NatGeoKids.br;BR - Nat Geo Kids HD;
+NatGeoWild.br;BR - NatGeo Wild;
+NationalGeographic.br;BR - National Geographic;
+NHK.br;BR - NHK;
+Nick.br;BR - Nick;
+NickJr.br;BR - Nick Jr;
+Off.br;BR - Off HD;cs:channel:off
+ParamountChannel.br;BR - Paramount Channel;cs:channel:paramount-channel
+PolishopTV.br;BR - Polishop TV;
+Premiere2.br;BR - Premiere 2;cs:channel:premiere-2
+Premiere3.br;BR - Premiere 3;cs:channel:premiere-3
+Premiere4.br;BR - Premiere 4;cs:channel:premiere-4
+Premiere5.br;BR - Premiere 5;cs:channel:premiere-5
+Premiere6.br;BR - Premiere 6;cs:channel:premiere-6
+Premiere7.br;BR - Premiere 7;cs:channel:premiere-7
+Premiere8.br;BR - Premiere 8;cs:channel:premiere-8
+Premiere9.br;BR - Premiere 9;
+Premiere10.br;BR - Premiere 10;cs:channel:premiere-1
+PremiereClubes.br;BR - Premiere Clubes;
+PrimeBoxBrazil.br;BR - Prime Box Brazil;cs:channel:prime-box-brazil
+RecordNews.br;BR - Record News;cs:channel:record-news
+RecordTVRJ.br;BR - Record TV RJ;cs:channel:recordtv-rj
+RecordTVBrasil.br;BR - RecordTV Brasil;
+RecordTVInternational.br;BR - RecordTV International;
+RecordTVSP.br;BR - RecordTV SP;cs:channel:recordtv-sp
+RedeBrasil.br;BR - Rede Brasil;
+RedeGospel.br;BR - Rede Gospel;cs:channel:rede-gospel
+RedeVida.br;BR - Rede Vida;cs:channel:rede-vida
+RedeTV.br;BR - RedeTV!;cs:channel:redetv
+RedeTVRJ.br;BR - RedeTV! RJ;
+RedeTVSP.br;BR - RedeTV! SP;
+RITtv.br;BR - RIT TV;
+SaborandArte.br;BR - Sabor & Arte;cs:channel:sabor-arte
+SBTBrasil.br;BR - SBT Brasil;
+SBTRJ.br;BR - SBT RJ;cs:channel:sbt-rj
+SBTSP.br;BR - SBT SP;cs:channel:sbt-sp
+Shoptime.br;BR - Shoptime;
+Smithsonian.br;BR - Smithsonian;
+SonyChannel.br;BR - Sony;
+Space.br;BR - Space;cs:channel:space
+SporTV.br;BR - SporTV;cs:channel:sportv
+SporTV2.br;BR - SporTV2;cs:channel:sportv-2
+SporTV3.br;BR - SporTV3;
+FOXPremiumAction.br;BR - Star Action;
+StarChannel.br;BR - Star Channel;
+FOXPremium1.br;BR - Star Hitz;
+FOXPremium2.br;BR - Star Hitz 2;
+StarLife.br;BR - Star Life;
+StudioUniversal.br;BR - Studio Universal;cs:channel:studio-universal
+TBS.br;BR - TBS;
+TCM.br;BR - TCM;
+TelecineAction.br;BR - Telecine Action;cs:channel:telecine-action
+TelecineCult.br;BR - Telecine Cult;cs:channel:telecine-cult
+TelecineFun.br;BR - Telecine Fun;cs:channel:telecine-fun
+TelecinePipoca.br;BR - Telecine Pipoca;
+TelecinePremium.br;BR - Telecine Premium;cs:channel:telecine-premium
+TelecineTouch.br;BR - Telecine Touch;cs:channel:telecine-touch
+TLC.br;BR - TLC HD;cs:channel:tlc
+TNT.br;BR - TNT;cs:channel:tnt
+TNTSeries.br;BR - TNT Series;cs:channel:tnt-series
+Tooncast.br;BR - Tooncast;
+TravelBoxBrazil.br;BR - Travel Box Brazil;cs:channel:travel-box-brazil
+TruTV.br;BR - TruTV;
+TVAparecida.br;BR - TV Aparecida;cs:channel:tv-aparecida
+TVBrasil.br;BR - TV Brasil;cs:channel:tv-brasil
+TVCaboBranco.br;BR - TV Cabo Branco;
+TVCamara.br;BR - TV Camara;
+Climatempo.br;BR - TV Climatempo;
+TVGazeta.br;BR - TV Gazeta;cs:channel:tv-gazeta
+TVGazetaAlagoas.br;BR - TV Gazeta Alagoas;
+TVJustica.br;BR - TV Justica;
+TVNovoTempo.br;BR - TV Novo Tempo;cs:channel:tv-novo-tempo
+TVRaTimBum.br;BR - TV Ra Tim Bum;cs:channel:tv-ra-tim-bum
+TVSenado.br;BR - TV Senado;
+TVTEMSorocaba.br;BR - TV TEM Sorocaba;
+TVTribunaSantos.br;BR - TV Tribuna Santos;
+Universal.br;BR - Universal;
+UOL.br;BR - UOL;
+USA.br;BR - USA;
+VH1.br;BR - VH1;
+VH1Megahits.br;BR - VH 1 Megahits;
+Viva.br;BR - Viva;
+WarnerChannel.br;BR - Warner Channel;cs:channel:warner-channel
+WooHoo.br;BR - WooHoo;cs:channel:woohoo
+ZooMoo.br;BR - ZooMoo;cs:channel:zoomoo
+"RecordTVGoi&#xE1;s.br";BR - Record TV Goiás;cs:channel:recordtv-goias
+CancaoNova.br;BR - Canção Nova HD;cs:channel:tv-cancao-nova
+InvestigacaoDiscovery.br;BR - Investigação Discovery;
+EPTVRibeiraoPreto.br;BR - EPTV Ribeirão Preto;
+TVVanguardaSaoJosedosCampos.br;BR - TV Vanguarda São Jose dos Campos;
+TVACritica.br;BR - TV A Crítica;
+417184;São Paulo/SP Record News;
+417185;Adult Swim HD;cs:channel:adult-swim
+417186;São Paulo/SP  ESPN 3 HD;
+417187;Jovem Pan News;cs:channel:jovem-pan-news
+417188;São Paulo/SP  History 2 HD;
+417383;HBO;cs:channel:hbo
+417386;FRANCE 24 HD;
+417387;Sabor & Arte;cs:channel:sabor-arte
+417391;ESPN 6;cs:channel:espn-6
+417588;Sony Movies Brazil;
+417589;Rede Brasil HD;
+418722;ESPN 2;cs:channel:espn-2
+418723;HBO+;cs:channel:hbo
+418724;ESPN 5;cs:channel:espn-5
+418725;ESPN;cs:channel:espn
+425959;São Paulo/SP  Cinemax HD ³;
+425962;São Paulo/SP  Gloobinho HD;
+425968;São Paulo/SP  Space HD ³;
+425973;Belo Horizonte/MG  Hbo Mundi;
+425978;São Paulo/SP  ESPN 4 HD;
+425979;São Paulo/SP  Multishow;
+425980;São Paulo/SP  National Geographic HD ³;
+425988;São Paulo/SP  Sextreme;
+425989;São Paulo/SP  Animal Planet;
+425995;São Paulo/SP  HBO Signature;
+426005;São Paulo/SP  SporTV 3;
+426008;São Paulo/SP  Multishow HD ³;
+426009;São Paulo/SP  Space;
+426010;São Paulo/SP  Discovery Turbo;
+426011;São Paulo/SP  BIS HD ³;
+426012;São Paulo/SP  SporTV 2 HD ³;
+426014;São Paulo/SP  Espn 4;
+426015;São Paulo/SP  HBO Xtreme;
+426016;São Paulo/SP  Venus;
+426021;São Paulo/SP  Discovery HD ³;
+426025;São Paulo/SP  HBO Xtreme HD;
+426036;São Paulo/SP  TCM;
+426037;São Paulo/SP  BIS;
+426040;São Paulo/SP  AMC HD;
+426051;São Paulo/SP  HBO HD ³;
+426052;São Paulo/SP  Futura;
+426054;São Paulo/SP  Disney Channel;
+426059;São Paulo/SP  Cinemax;
+426061;São Paulo/SP  National Geographic;
+426062;São Paulo/SP  SporTV;
+426064;São Paulo/SP  Canal Brasil;
+426066;São Paulo/SP  Discovery Science;
+426069;São Paulo/SP  Band Sports;
+426070;São Paulo/SP  HBO 2;
+426075;São Paulo/SP  Play TV;
+426076;São Paulo/SP  HBO MUNDI HD;
+426081;São Paulo/SP  HBO Family HD ³;
+426082;São Paulo/SP  SporTV 2;
+426084;São Paulo/SP  TNT;
+426085;São Paulo/SP  The History Channel;
+426090;São Paulo/SP  HBO Family;
+426091;São Paulo/SP  SporTV HD ³;
+426094;São Paulo/SP  Cartoon Network;
+426095;São Paulo/SP  Megapix HD ³;
+426100;São Paulo/SP  Playboy TV;
+426102;São Paulo/SP  Playboy HD;
+426105;São Paulo/SP  Discovery Kids;
+426106;São Paulo/SP  Discovery Theater HD ³;
+426109;São Paulo/SP  ZooMoo;
+426113;São Paulo/SP  HBO HD 2 ³;
+426119;São Paulo/SP  Animal Planet HD;
+426128;São Paulo/SP  SporTV 3 HD ³;
+426130;São Paulo/SP  TV Rá Tim Bum;
+426132;São Paulo/SP  AMC;
+426133;São Paulo/SP  Discovery Turbo HD ³;
+426136;São Paulo/SP  Music Box Brazil;
+426138;São Paulo/SP  Band Sports HD ³;
+426139;São Paulo/SP  Baby Tv;
+426141;São Paulo/SP  Prime Box Brazil HD ³;
+426146;São Paulo/SP  HBO POP HD;
+426147;São Paulo/SP  Megapix;
+426148;São Paulo/SP  TNT HD ³;
+426149;São Paulo/SP  History Hd;
+426151;São Paulo/SP  Prime Box Brazil;
+426152;São Paulo/SP  Studio Universal HD;
+426157;São Paulo/SP  Discovery Channel;
+426158;São Paulo/SP  Sexy Hot;
+426160;São Paulo/SP  Studio Universal;
+426161;São Paulo/SP  Canal Brasil HD ³;
+426164;São Paulo/SP  Discovery world HD ³;
+426169;São Paulo/SP  Gloobinho;
+426170;São Paulo/SP  Hbo Pop;
+426173;São Paulo/SP  HBO Signature HD ³;
+426177;São Paulo/SP  Music Box Brazil HD ³;
+426179;São Paulo/SP  Discovery Science HD ³;
+426182;São Paulo/SP  Gloob;
+426184;São Paulo/SP  Futura HD;
+426194;São Paulo/SP  cartoonito;
+426202;São Paulo/SP  Discovery Kids HD ³;
+523267;Premiere Clubes;
+523268;Deutsche Welle;
+523269;SporTV 3;
+523270;Viva;
+523271;SporTV 2;cs:channel:sportv-2
+523272;Discovery World;cs:channel:discovery-world
+523273;Woohoo;cs:channel:woohoo
+523274;HBO Signature;cs:channel:hbo-signature
+523276;GNT;cs:channel:gnt
+523277;Cinemax;cs:channel:cinemax
+523278;CNN International;
+523279;TNT;cs:channel:tnt
+523281;Tooncast;
+523282;Record TV;
+523283;E! Entertainment Television;
+523284;Combate;cs:channel:combate
+523285;OFF HD;cs:channel:off
+523286;Telecine Cult;cs:channel:telecine-cult
+523287;Eurochannel;cs:channel:eurochannel
+523288;Telecine Fun;cs:channel:telecine-fun
+523289;Canal do Boi;cs:channel:canal-do-boi
+523290;HBO Family;cs:channel:hbo-family
+523291;Telecine Pipoca;
+523292;Discovery HD Theater;cs:channel:discovery-theater
+523293;Megapix;cs:channel:megapix
+523294;TNT Séries;cs:channel:tnt-series
+523295;TV Escola;
+523296;Bloomberg;
+523297;Animal Planet;cs:channel:animal-planet
+523298;SBT;
+523300;TV5 Monde;
+523301;Rede TV;cs:channel:redetv
+523302;TV Gazeta;cs:channel:tv-gazeta
+523303;BBC World News;
+523304;RAI International;
+523305;TV Cultura;cs:channel:cultura
+523306;Telecine Touch;cs:channel:telecine-touch
+523307;TLC;cs:channel:tlc
+523309;Discovery Channel;cs:channel:discovery-channel
+523310;Discovery Home & Health;
+523311;A&E;cs:channel:a-e
+523312;AMC;cs:channel:amc
+523313;AXN;cs:channel:axn
+523314;Band News;cs:channel:band-news
+523315;Band;
+523316;TCM - Turner Classic;
+523317;Baby TV;
+523318;Discovery Kids;cs:channel:discovery-kids
+523319;Canal Brasil;cs:channel:canal-brasil
+523320;Studio Universal;cs:channel:studio-universal
+523321;Multishow;cs:channel:multishow
+523323;Rede Boa Vontade;
+523324;Bis;cs:channel:bis
+523325;Cartoon Network;cs:channel:cartoon-network
+523326;Discovery Turbo;cs:channel:discovery-turbo
+523327;Canal 21;
+523328;HBO Plus;cs:channel:hbo-plus
+523329;ESPN 3;cs:channel:espn-3
+523330;Band Sports;cs:channel:band-sports
+523331;Travel Box Brazil;cs:channel:travel-box-brazil
+523332;TV Espanha;
+523333;Sony;
+523334;SIC International;
+523335;TV Senado;
+523336;Gloob;cs:channel:gloob
+523337;Rede Vida;cs:channel:rede-vida
+523338;Arte 1;cs:channel:arte-1
+523339;TV Brasil;cs:channel:tv-brasil
+523340;Canal Rural;cs:channel:canal-rural
+523341;Globo News;cs:channel:globo-news
+523342;History Channel;
+523343;Futura;cs:channel:futura
+523344;TBS;
+523345;TV Aparecida (aberta);cs:channel:tv-aparecida
+523346;Telecine Action;cs:channel:telecine-action
+523347;SPACE;cs:channel:space
+523348;HBO 2;cs:channel:hbo-2
+523349;Universal Channel;
+523350;Warner Channel;cs:channel:warner-channel
+523351;Telecine Premium;cs:channel:telecine-premium
+523352;Record News;cs:channel:record-news
+523353;Globo;
+523354;Film & Arts;cs:channel:film-arts
+523355;TV Justiça;
+523356;Lifetime;cs:channel:lifetime
+523357;ESPN 4;cs:channel:espn-4
+523358;SporTV;cs:channel:sportv
+523359;Discovery Science;cs:channel:discovery-science
+552130;São Paulo/SP  Gloob HD ³;
+565542;São Paulo/SP  Cartoon Network HD;
+565543;São Paulo/SP  Disney Channel HD ³;
+573879;São Paulo/SP  Cartoonito HD;
+581445;Belo Horizonte/MG  TV Pai Eterno;
+581446;São Paulo/SP  Off HD ³;
+581447;São Paulo/SP  Modo viagem;
+581448;São Paulo/SP  PREMIERE HD 5 ³;
+581450;São Paulo/SP  Food Network;
+581452;São Paulo/SP  Bloomberg TV;
+582307;São Paulo/SP  Off;
+582308;São Paulo/SP  Cultura HD;
+582309;São Paulo/SP  Mega TV;
+582310;São Paulo/SP  Warner Channel;
+582311;São Paulo/SP  Woohoo;
+582312;São Paulo/SP  TV Escola;
+582313;Belo Horizonte/MG  Polishop;
+582314;São Paulo/SP  Curta!;
+582316;São Paulo/SP  Band News HD;
+582317;São Paulo/SP  Telecine Pipoca;
+582318;São Paulo/SP  GNT HD ³;
+582320;São Paulo/SP  Telecine Touch;
+582321;São Paulo/SP  TV Korea;
+582322;São Paulo/SP  TV Câmara;
+582323;São Paulo/SP  Terra Viva;
+582324;São Paulo/SP  TNT SÉRIES HD;
+582325;Belo Horizonte/MG  Premiere 7;
+582326;São Paulo/SP  TLC HD ³;
+582327;São Paulo/SP  Premiere 3;
+582328;São Paulo/SP  Telecine Action HD ³;
+582330;São Paulo/SP  Agro Mais HD;
+582331;São Paulo/SP  Woohoo HD;
+582332;São Paulo/SP   TV Brasil 2;
+582333;São Paulo/SP  Tnt novelas;
+582334;São Paulo/SP  Warner Channel HD;
+582335;São Paulo/SP  Combate;
+582337;São Paulo/SP  HGTV HD;
+582338;São Paulo/SP  Canal Comunitário;
+582340;São Paulo/SP  Gazeta HD;
+582341;São Paulo/SP   TV Aparecida (espelho);
+582344;São Paulo/SP  FX HD ³;
+582345;São Paulo/SP  Rede 21;
+582346;São Paulo/SP  DW-TV;
+582347;São Paulo/SP  Boa Vontade TV;
+582348;São Paulo/SP  GloboNews HD ³;
+582349;São Paulo/SP  CONMEBOL TV 4 HD;
+582351;São Paulo/SP  DogTV HD;
+582352;São Paulo/SP  TV Brasil;
+582354;São Paulo/SP  PREMIERE HD 3 ³;
+582355;São Paulo/SP  Telecine Pipoca HD ³;
+582356;São Paulo/SP  Rede Gospel HD;
+582357;São Paulo/SP  Record HD;
+582358;São Paulo/SP  Mosaico Multijogos;
+582359;São Paulo/SP  Telecine Cult;
+582360;São Paulo/SP  TV Rá Tim Bum HD ³;
+582361;São Paulo/SP  Mega TV HD;
+582363;São Paulo/SP  ID HD ³;
+582364;São Paulo/SP  Premiere 2;
+582365;São Paulo/SP  Telecine Fun;
+582366;São Paulo/SP  TV Pai Eterno;
+582367;São Paulo/SP  Rede TV HD;
+582368;São Paulo/SP  GNT;
+582370;São Paulo/SP  Tnt novelas HD;
+582371;Campinas/SP  Canal do Boi;
+582372;São Paulo/SP  SBT HD;
+582373;São Paulo/SP  Discovery Home and Health;
+582374;São Paulo/SP  Rede Vida;
+582375;São Paulo/SP  CNN International;
+582376;São Paulo/SP  FOOD NETWORK HD;
+582377;São Paulo/SP  Telecine Premium;
+582378;São Paulo/SP  NHK World Premium;
+582379;São Paulo/SP  Record News;
+582380;São Paulo/SP  ZooMoo HD;
+582382;São Paulo/SP  SBT;
+582383;São Paulo/SP  Lifetime;
+582384;São Paulo/SP  RAI International;
+582385;São Paulo/SP  TLC;
+582386;São Paulo/SP  TVE International;
+582387;São Paulo/SP  TV5 Monde;
+582388;São Paulo/SP  Rede TV;
+582390;São Paulo/SP  Canal Universitário;
+582391;Discovery Home and Health HD;
+582392;São Paulo/SP  CNN Brasil HD;
+582393;Belo Horizonte/MG   TV Aparecida (espelho);
+582394;São Paulo/SP  Sony HD ³;
+582395;São Paulo/SP  Arte 1 HD;
+582396;São Paulo/SP  Gazeta;
+582397;São Paulo/SP  FISH TV HD;
+582398;São Paulo/SP  A and E;
+582399;São Paulo/SP  GloboNews;
+582402;São Paulo/SP  RIT TV;
+582403;São Paulo/SP  Sony;
+582404;São Paulo/SP  E!;
+582406;São Paulo/SP  Globo HD;
+582408;São Paulo/SP  Arte 1;
+582409;São Paulo/SP  Curta! HD;
+582410;São Paulo/SP  ID;
+582411;São Paulo/SP  Premiere HD 2;
+582412;São Paulo/SP  LIKE HD;
+582413;São Paulo/SP  AXN HD ³;
+582414;São Paulo/SP  Viva;
+582415;Belo Horizonte/MG  Shoptime;
+582416;São Paulo/SP  FX;
+582417;São Paulo/SP  Telecine Touch HD ³;
+583183;São Paulo/SP  Record;
+583184;São Paulo/SP  Canal 2;
+583185;São Paulo/SP  TV Justiça;
+583186;São Paulo/SP  Modo viagem HD;
+583187;São Paulo/SP  Premiere 7;
+583188;São Paulo/SP  Lifetime HD;
+583189;São Paulo/SP  Telecine Fun HD ³;
+583190;São Paulo/SP  Premiere Clubes;
+583191;São Paulo/SP  Agro Mais;
+583192;São Paulo/SP  Canal Legislativo;
+583193;São Paulo/SP  Canal Rural;
+583194;São Paulo/SP  TV Climatempo;
+583195;São Paulo/SP  Combate HD;
+583196;São Paulo/SP  Band News;
+583198;São Paulo/SP  CNN Brasil;
+583199;São Paulo/SP  Film&Arts HD;
+583200;São Paulo/SP  BBC World News;
+583201;São Paulo/SP  E! HD;
+583202;São Paulo/SP  Viva HD;
+583203;São Paulo/SP  Fashion TV HD;
+583204;São Paulo/SP  Telecine Cult HD ³;
+583205;São Paulo/SP  PREMIERE HD 4 ³;
+583206;São Paulo/SP  Travel Box Brasil HD;
+583207;São Paulo/SP  Canal do Boi;
+583208;São Paulo/SP  HGTV;
+581449;Belo Horizonte/MG  Premiere 6;
+581451;Campinas/SP  Film&Arts;
+582315;São Paulo/SP  TV Senado;
+582319;São Paulo/SP  CGTN;
+582329;São Paulo/SP  Band;
+582336;São Paulo/SP  Universal TV;
+582339;São Paulo/SP  Eurochannel HD;
+582342;São Paulo/SP  Globo;
+582343;São Paulo/SP  Cinecanal;
+582350;São Paulo/SP  AXN;
+582353;São Paulo/SP  FISH TV;
+582362;São Paulo/SP  Syfy HD;
+582369;São Paulo/SP  Premiere Clubes HD;
+582381;São Paulo/SP  Canal de Vendas NET;
+582389;São Paulo/SP  Rede Gospel;
+582400;São Paulo/SP  Premiere 6;
+582401;São Paulo/SP  Band HD;
+582405;São Paulo/SP  TV Brasil HD;
+582407;São Paulo/SP  Cultura;
+MaisGlobosat.br;BR - + Globosat;
+AandE.br;BR - A&E;cs:channel:a-e
+AMC.br;BR - AMC Brasil;cs:channel:amc
+AnimalPlanet.br;BR - Animal Planet;cs:channel:animal-planet
+Arte1.br;BR - Arte 1;cs:channel:arte-1
+AXN.br;BR - AXN;cs:channel:axn
+BabyTV.br;BR - Baby TV;
+BandBrasil.br;BR - Band Brasil;
+BandCampinas.br;BR - Band Campinas;
+BandNews.br;BR - Band News;cs:channel:band-news
+BandRJ.br;BR - Band RJ;
+BandSP.br;BR - Band SP;cs:channel:band-sp
+BandSports.br;BR - BandSports;cs:channel:band-sports
+BBBMosaico.br;BR - BBB Mosaico;
+BIS.br;BR - BIS;cs:channel:bis
+CanalBrasil.br;BR - Canal Brasil;cs:channel:canal-brasil
+CanaldoBoi.br;BR - Canal do Boi;cs:channel:canal-do-boi
+CanalGov.br;BR - Canal Gov;
+CanalRural.br;BR - Canal Rural;cs:channel:canal-rural
+CartoonNetwork.br;BR - Cartoon Network;cs:channel:cartoon-network
+Cartoonito.br;BR - Cartoonito;cs:channel:cartoonito
+ChefTV.br;BR - Chef TV;
+Cinemax.br;BR - Cinemax;cs:channel:cinemax
+CNN.br;BR - CNN;cs:channel:cnn-brasil
+CNNBrasil.br;BR - CNN Brasil;cs:channel:cnn-brasil
+CNT.br;BR - CNT;
+Combate.br;BR - Combate;cs:channel:combate
+ComedyCentral.br;BR - Comedy Central;
+CONMEBOLTV1.br;BR - CONMEBOL TV 1;
+CONMEBOLTV2.br;BR - CONMEBOL TV 2;
+CONMEBOLTV3.br;BR - CONMEBOL TV 3;
+CONMEBOLTV4.br;BR - CONMEBOL TV 4;
+Cultura.br;BR - Cultura;cs:channel:cultura
+Curta.br;BR - Curta!;cs:channel:curta
+DiscoveryChannel.br;BR - Discovery;cs:channel:discovery-channel
+DiscoveryCivilization.br;BR - Discovery Civilization;
+DiscoveryHomeandHealth.br;BR - Discovery Home & Health;
+DiscoveryKids.br;BR - Discovery Kids;cs:channel:discovery-kids
+DiscoveryScience.br;BR - Discovery Science;cs:channel:discovery-science
+DiscoveryTheater.br;BR - Discovery Theater;cs:channel:discovery-theater
+DiscoveryTurbo.br;BR - Discovery Turbo;cs:channel:discovery-turbo
+DiscoveryWorld.br;BR - Discovery World;cs:channel:discovery-world
+DisneyChannel.br;BR - Disney Channel;
+DisneyJunior.br;BR - Disney Junior;
+DisneyXD.br;BR - Disney XD;
+DOGTV.br;BR - DOGTV;cs:channel:dog-tv
+E.br;BR - E!;cs:channel:e
+EPTVCampinas.br;BR - EPTV Campinas;
+ESPN.br;BR - ESPN;cs:channel:espn
+ESPN2.br;BR - ESPN 2;cs:channel:espn-2
+ESPN3.br;BR - ESPN 3;cs:channel:espn-3
+ESPN4.br;BR - ESPN 4;cs:channel:espn-4
+ESPN5.br;BR - ESPN 5;cs:channel:espn-5
+ESPN6.br;BR - ESPN 6;cs:channel:espn-6
+ESPNPlus.br;BR - ESPN Plus;
+FashionTV.br;BR - FashionTV;cs:channel:fashiontv
+FIFA+.br;BR - FIFA+;
+filmandarts.br;BR - film&arts;cs:channel:film-arts
+FishTV.br;BR - FishTV;cs:channel:fish-tv
+FoodNetwork.br;BR - Food Network;cs:channel:food-network
+FoxNewsChannel.br;BR - Fox News Channel;
+Futura.br;BR - Futura;cs:channel:futura
+FX.br;BR - FX;
+GETV.br;BR - GE TV;
+GloboAnhanguera.br;BR - Globo Anhanguera;cs:channel:globo-tv-anhanguera
+GloboBrasil.br;BR - Globo Brasil;
+GloboRJ.br;BR - Globo RJ;cs:channel:globo-rj
+GloboSP.br;BR - Globo SP;cs:channel:globo-sp
+GloboInternacional.br;BR - Globo TV Internacional;
+GloboNews.br;BR - GloboNews;cs:channel:globo-news
+Gloob.br;BR - Gloob;cs:channel:gloob
+Gloobinho.br;BR - Gloobinho;cs:channel:gloobinho
+GNT.br;BR - GNT HD;cs:channel:gnt
+HBO.br;BR - HBO;cs:channel:hbo
+HBO2.br;BR - HBO 2;cs:channel:hbo-2
+HBOFamily.br;BR - HBO Family;cs:channel:hbo-family
+HBOMundi.br;BR - HBO Mundi;cs:channel:hbo-mundi
+HBOPlus.br;BR - HBO Plus;cs:channel:hbo-plus
+HBOPop.br;BR - HBO Pop;cs:channel:hbo-pop
+HBOSignature.br;BR - HBO Signature;cs:channel:hbo-signature
+HBOXtreme.br;BR - HBO Xtreme;cs:channel:hbo-xtreme
+HGTV.br;BR - HGTV;cs:channel:hgtv
+History2.br;BR - History 2;cs:channel:history
+HistoryChannel.br;BR - History Channel;
+JovemPanNews.br;BR - Jovem Pan News;cs:channel:jovem-pan-news
+Lifetime.br;BR - Lifetime HD;cs:channel:lifetime
+Megapix.br;BR - Megapix;cs:channel:megapix
+MTV.br;BR - MTV;
+MTVLive.br;BR - MTV Live;
+Multishow.br;BR - Multishow;cs:channel:multishow
+MusicBoxBrasil.br;BR - Music Box Brasil;
+NatGeoKids.br;BR - Nat Geo Kids HD;
+NatGeoWild.br;BR - NatGeo Wild;
+NationalGeographic.br;BR - National Geographic;
+NHK.br;BR - NHK;
+Nick.br;BR - Nick;
+NickJr.br;BR - Nick Jr;
+Off.br;BR - Off HD;cs:channel:off
+ParamountChannel.br;BR - Paramount Channel;cs:channel:paramount-channel
+PolishopTV.br;BR - Polishop TV;
+Premiere2.br;BR - Premiere 2;cs:channel:premiere-2
+Premiere3.br;BR - Premiere 3;cs:channel:premiere-3
+Premiere4.br;BR - Premiere 4;cs:channel:premiere-4
+Premiere5.br;BR - Premiere 5;cs:channel:premiere-5
+Premiere6.br;BR - Premiere 6;cs:channel:premiere-6
+Premiere7.br;BR - Premiere 7;cs:channel:premiere-7
+Premiere8.br;BR - Premiere 8;cs:channel:premiere-8
+Premiere9.br;BR - Premiere 9;
+Premiere10.br;BR - Premiere 10;cs:channel:premiere-1
+PremiereClubes.br;BR - Premiere Clubes;
+PrimeBoxBrazil.br;BR - Prime Box Brazil;cs:channel:prime-box-brazil
+RecordNews.br;BR - Record News;cs:channel:record-news
+RecordTVRJ.br;BR - Record TV RJ;cs:channel:recordtv-rj
+RecordTVBrasil.br;BR - RecordTV Brasil;
+RecordTVInternational.br;BR - RecordTV International;
+RecordTVSP.br;BR - RecordTV SP;cs:channel:recordtv-sp
+RedeBrasil.br;BR - Rede Brasil;
+RedeGospel.br;BR - Rede Gospel;cs:channel:rede-gospel
+RedeVida.br;BR - Rede Vida;cs:channel:rede-vida
+RedeTV.br;BR - RedeTV!;cs:channel:redetv
+RedeTVRJ.br;BR - RedeTV! RJ;
+RedeTVSP.br;BR - RedeTV! SP;
+RITtv.br;BR - RIT TV;
+SaborandArte.br;BR - Sabor & Arte;cs:channel:sabor-arte
+SBTBrasil.br;BR - SBT Brasil;
+SBTRJ.br;BR - SBT RJ;cs:channel:sbt-rj
+SBTSP.br;BR - SBT SP;cs:channel:sbt-sp
+Shoptime.br;BR - Shoptime;
+Smithsonian.br;BR - Smithsonian;
+SonyChannel.br;BR - Sony;
+Space.br;BR - Space;cs:channel:space
+SporTV.br;BR - SporTV;cs:channel:sportv
+SporTV2.br;BR - SporTV2;cs:channel:sportv-2
+SporTV3.br;BR - SporTV3;
+FOXPremiumAction.br;BR - Star Action;
+StarChannel.br;BR - Star Channel;
+FOXPremium1.br;BR - Star Hitz;
+FOXPremium2.br;BR - Star Hitz 2;
+StarLife.br;BR - Star Life;
+StudioUniversal.br;BR - Studio Universal;cs:channel:studio-universal
+TBS.br;BR - TBS;
+TCM.br;BR - TCM;
+TelecineAction.br;BR - Telecine Action;cs:channel:telecine-action
+TelecineCult.br;BR - Telecine Cult;cs:channel:telecine-cult
+TelecineFun.br;BR - Telecine Fun;cs:channel:telecine-fun
+TelecinePipoca.br;BR - Telecine Pipoca;
+TelecinePremium.br;BR - Telecine Premium;cs:channel:telecine-premium
+TelecineTouch.br;BR - Telecine Touch;cs:channel:telecine-touch
+TLC.br;BR - TLC HD;cs:channel:tlc
+TNT.br;BR - TNT;cs:channel:tnt
+TNTSeries.br;BR - TNT Series;cs:channel:tnt-series
+Tooncast.br;BR - Tooncast;
+TravelBoxBrazil.br;BR - Travel Box Brazil;cs:channel:travel-box-brazil
+TruTV.br;BR - TruTV;
+TVAparecida.br;BR - TV Aparecida;cs:channel:tv-aparecida
+TVBrasil.br;BR - TV Brasil;cs:channel:tv-brasil
+TVCaboBranco.br;BR - TV Cabo Branco;
+TVCamara.br;BR - TV Camara;
+Climatempo.br;BR - TV Climatempo;
+TVGazeta.br;BR - TV Gazeta;cs:channel:tv-gazeta
+TVGazetaAlagoas.br;BR - TV Gazeta Alagoas;
+TVJustica.br;BR - TV Justica;
+TVNovoTempo.br;BR - TV Novo Tempo;cs:channel:tv-novo-tempo
+TVRaTimBum.br;BR - TV Ra Tim Bum;cs:channel:tv-ra-tim-bum
+TVSenado.br;BR - TV Senado;
+TVTEMSorocaba.br;BR - TV TEM Sorocaba;
+TVTribunaSantos.br;BR - TV Tribuna Santos;
+Universal.br;BR - Universal;
+UOL.br;BR - UOL;
+USA.br;BR - USA;
+VH1.br;BR - VH1;
+VH1Megahits.br;BR - VH 1 Megahits;
+Viva.br;BR - Viva;
+WarnerChannel.br;BR - Warner Channel;cs:channel:warner-channel
+WooHoo.br;BR - WooHoo;cs:channel:woohoo
+ZooMoo.br;BR - ZooMoo;cs:channel:zoomoo
+RecordTVGoiás.br;BR - Record TV Goiás;
+CancaoNova.br;BR - Canção Nova HD;cs:channel:tv-cancao-nova
+InvestigacaoDiscovery.br;BR - Investigação Discovery;
+EPTVRibeiraoPreto.br;BR - EPTV Ribeirão Preto;
+TVVanguardaSaoJosedosCampos.br;BR - TV Vanguarda São Jose dos Campos;
+TVACritica.br;BR - TV A Crítica;
+A&E;A&E;
+AGROMAIS;AGROMAIS;cs:channel:agromais
+AMC HD;AMC HD;
+ANIMAL PLANET HD;ANIMAL PLANET HD;
+ARTE 1 HD;ARTE 1 HD;
+AXN;AXN;
+Adult Swim HD;Adult Swim HD;
+BAND HD;BAND HD;
+BAND NEWS;BAND NEWS;
+BAND SPORTS HD;BAND SPORTS HD;
+BBC WORLD NEWS;BBC WORLD NEWS;
+BIS HD;BIS HD;
+BLOOMBERG TV;BLOOMBERG TV;
+BM&C HD;BM&C HD;
+C3-TV;C3-TV;
+CANAL BRASIL HD;CANAL BRASIL HD;
+CANAL DO BOI;CANAL DO BOI;
+CANAL RURAL;CANAL RURAL;
+CANAL UOL;CANAL UOL;
+CANÇÃO NOVA HD;CANÇÃO NOVA HD;
+CARTOON HD;CARTOON HD;
+CARTOONITO;CARTOONITO;
+CBI;CBI;
+CGTN;CGTN;
+CINEMAX HD;CINEMAX HD;
+CNN BRASIL;CNN BRASIL;
+CNN Brasil Money HD;CNN Brasil Money HD;cs:channel:cnn-brasil-money
+CNN INTERNATIONAL;CNN INTERNATIONAL;
+CNT HD;CNT HD;
+COMBATE HD;COMBATE HD;
+CULTURA HD;CULTURA HD;
+CURTA;CURTA;
+Canal Educacao;Canal Educacao;
+Canal GOV HD;Canal GOV HD;
+Claro TV+ 4K;Claro TV+ 4K;
+Claro TV+ Transmissão Acessível;Claro TV+ Transmissão Acessível;
+Combate HD;Combate HD;
+DISCOVERY HD;DISCOVERY HD;
+DISCOVERY HOME&HEALTH HD;DISCOVERY HOME&HEALTH HD;
+DISCOVERY KIDS HD;DISCOVERY KIDS HD;
+DISCOVERY SCIENCE HD;DISCOVERY SCIENCE HD;
+DISCOVERY THEATER HD;DISCOVERY THEATER HD;
+DISCOVERY TURBO HD;DISCOVERY TURBO HD;
+DISCOVERY WORLD HD;DISCOVERY WORLD HD;
+DOG TV HD;DOG TV HD;
+DW-TV;DW-TV;
+DumDum;DumDum;
+E!;E!;
+ESPN;ESPN;
+ESPN 2;ESPN 2;
+ESPN 3;ESPN 3;
+ESPN 4;ESPN 4;
+ESPN 5;ESPN 5;
+ESPN 6;ESPN 6;
+EUROCHANNEL HD;EUROCHANNEL HD;
+FASHION TV;FASHION TV;
+FILM & ARTS;FILM & ARTS;
+FISH TV;FISH TV;
+FONTE TV;FONTE TV;
+FOOD NETWORK HD;FOOD NETWORK HD;
+FRANCE 24 HD;FRANCE 24 HD;
+FUEL TV HD;FUEL TV HD;
+FUTURA HD;FUTURA HD;
+GAZETA;GAZETA;
+GE TV HD;GE TV HD;
+GLOBO SP;GLOBO SP;
+GLOBONEWS;GLOBONEWS;
+GLOOB HD;GLOOB HD;
+GLOOBINHO HD;GLOOBINHO HD;
+GNT HD;GNT HD;
+Globoplay Novelas;Globoplay Novelas;cs:channel:globoplay-novelas
+HBO;HBO;
+HBO Family;HBO Family;
+HBO Mundi;HBO Mundi;
+HBO Pop;HBO Pop;
+HBO Signature;HBO Signature;
+HBO Xtreme;HBO Xtreme;
+HBO+;HBO+;
+HBO2;HBO2;
+HGTV HD;HGTV HD;
+HISTORY;HISTORY;
+HISTORY 2;HISTORY 2;
+ID HD;ID HD;cs:channel:id
+JOVEM PAN NEWS;JOVEM PAN NEWS;
+LBV;LBV;
+LIFETIME;LIFETIME;
+LIKE;LIKE;
+LMC+HD;LMC+HD;
+Like + | Claro tv+ (CANAL DO CLIENTE HD);Like + | Claro tv+ (CANAL DO CLIENTE HD);
+MARKKET HD;MARKKET HD;cs:channel:markket
+MEGAPIX HD;MEGAPIX HD;
+MEZZO HD;MEZZO HD;
+MULTISHOW HD;MULTISHOW HD;
+MUSIC BOX BRAZIL;MUSIC BOX BRAZIL;cs:channel:music-box-brazil
+Modo Viagem;Modo Viagem;cs:channel:modo-viagem
+NSPORTS HD;NSPORTS HD;
+OFF HD;OFF HD;
+PLAY TV;PLAY TV;
+PREMIERE 2 HD;PREMIERE 2 HD;
+PREMIERE 3 HD;PREMIERE 3 HD;
+PREMIERE 4 HD;PREMIERE 4 HD;
+PREMIERE 5 HD;PREMIERE 5 HD;
+PREMIERE 6 HD;PREMIERE 6 HD;
+PREMIERE 7 HD;PREMIERE 7 HD;
+PREMIERE CLUBES HD;PREMIERE CLUBES HD;
+PRIME BOX BRAZIL;PRIME BOX BRAZIL;
+Paramount+ 1;Paramount+ 1;
+Paramount+ 2;Paramount+ 2;
+Paramount+ 3;Paramount+ 3;
+Paramount+ 4;Paramount+ 4;
+Polishop;Polishop;
+RAI INTERNATIONAL;RAI INTERNATIONAL;
+RECORD - Sao Paulo;RECORD - Sao Paulo;
+RECORD NEWS;RECORD NEWS;
+REDE GOSPEL;REDE GOSPEL;
+REDE TV! São Paulo;REDE TV! São Paulo;
+REDE VIDA;REDE VIDA;
+SBT NEWS HD;SBT NEWS HD;
+SBT São Paulo;SBT São Paulo;
+SIC INTERNACIONAL;SIC INTERNACIONAL;
+SONY CHANNEL;SONY CHANNEL;
+SPACE HD;SPACE HD;
+SPORTV;SPORTV;
+SPORTV 2;SPORTV 2;
+SPORTV 3;SPORTV 3;
+STUDIO UNIVERSAL HD;STUDIO UNIVERSAL HD;
+Sabor & Arte;Sabor & Arte;
+SportyNet + 1;SportyNet + 1;cs:channel:sportynet-1
+SportyNet + 2;SportyNet + 2;cs:channel:sportynet-2
+SportyNet + 3;SportyNet + 3;cs:channel:sportynet-3
+SportyNet HD;SportyNet HD;cs:channel:sportynet
+TCM BR;TCM BR;
+TELECINE ACTION;TELECINE ACTION;
+TELECINE CULT;TELECINE CULT;
+TELECINE FUN;TELECINE FUN;
+TELECINE PIPOCA;TELECINE PIPOCA;
+TELECINE PREMIUM;TELECINE PREMIUM;
+TELECINE TOUCH;TELECINE TOUCH;
+TIMES | Exclusivo CNBC;TIMES | Exclusivo CNBC;
+TLC HD;TLC HD;
+TNT HD;TNT HD;
+TNT NOVELAS;TNT NOVELAS;cs:channel:tnt-novelas
+TNT SERIES HD;TNT SERIES HD;
+TRACE BRASIL HD;TRACE BRASIL HD;
+TRAVEL BOX;TRAVEL BOX;
+TRIP BRASIL CHANNEL;TRIP BRASIL CHANNEL;
+TV APARECIDA HD;TV APARECIDA HD;
+TV BRASIL;TV BRASIL;
+TV Camara;TV Camara;
+TV Justica;TV Justica;
+TV Novo Tempo;TV Novo Tempo;
+TV Pai Eterno HD;TV Pai Eterno HD;cs:channel:pai-eterno
+TV RA TIM BUM;TV RA TIM BUM;
+TV Senado;TV Senado;
+TV5 MONDE;TV5 MONDE;
+TVE INTERNATIONAL;TVE INTERNATIONAL;
+Travel & Food and Drinks HD;Travel & Food and Drinks HD;
+UNIVERSAL PREMIERE HD;UNIVERSAL PREMIERE HD;
+UNIVERSAL REALITY;UNIVERSAL REALITY;
+UNIVERSAL TV HD;UNIVERSAL TV HD;cs:channel:universal-tv
+USA HD;USA HD;
+WARNER CHANNEL;WARNER CHANNEL;
+WOOHOO HD;WOOHOO HD;
+Xsports HD;Xsports HD;cs:channel:x-sports
+A&E HD;A&E HD;
+AMC;AMC;
+AXN HD;AXN HD;
+Adult Swim;Adult Swim;
+Agro+;Agro+;
+Animal Planet;Animal Planet;
+Arte 1 HD;Arte 1 HD;
+BBC World;BBC World;
+BIS HD;BIS HD;
+BM&C;BM&C;
+Bandnews;Bandnews;
+Bandsports HD;Bandsports HD;
+Bloomberg HD;Bloomberg HD;
+Box Kids;Box Kids;
+C3 TV;C3 TV;
+CNN Money;CNN Money;
+CNNi;CNNi;
+Canal Brasil HD;Canal Brasil HD;
+Canal Rural;Canal Rural;
+Canal Teste 2;Canal Teste 2;
+Canal de Testes;Canal de Testes;
+Canal do Criador;Canal do Criador;
+Canção Nova;Canção Nova;
+Cartoon HD;Cartoon HD;
+Cartoonito;Cartoonito;
+Chef TV;Chef TV;
+Cinemax HD;Cinemax HD;
+Combate;Combate;
+Curta!;Curta!;
+Curta! HD;Curta! HD;
+DW;DW;
+Discovery HD;Discovery HD;
+Discovery Home&Health HD;Discovery Home&Health HD;
+Discovery Kids HD;Discovery Kids HD;
+Discovery Science HD;Discovery Science HD;
+Discovery Theater;Discovery Theater;
+Discovery Turbo HD;Discovery Turbo HD;
+Discovery World;Discovery World;
+Dog TV;Dog TV;
+Dreamworks;Dreamworks;
+E! HD;E! HD;
+ESPN;ESPN;
+ESPN 2;ESPN 2;
+ESPN 3;ESPN 3;
+ESPN 4;ESPN 4;
+ESPN 5;ESPN 5;
+ESPN 6;ESPN 6;
+Eurochannel;Eurochannel;
+FashionTV HD;FashionTV HD;
+Film & Arts;Film & Arts;
+Fish TV;Fish TV;
+Food Network HD;Food Network HD;
+Fox News;Fox News;
+Futura HD;Futura HD;
+GE;GE;
+GNT HD;GNT HD;
+Globo News HD;Globo News HD;
+Globoplay Novelas;Globoplay Novelas;cs:channel:globoplay-novelas
+Gloob HD;Gloob HD;
+Gloobinho HD;Gloobinho HD;
+HBO Family HD;HBO Family HD;
+HBO HD;HBO HD;
+HBO Mundi HD;HBO Mundi HD;
+HBO Plus HD;HBO Plus HD;
+HBO Pop HD;HBO Pop HD;
+HBO Signature HD;HBO Signature HD;
+HBO Xtreme HD;HBO Xtreme HD;
+HBO2;HBO2;
+HGTV HD;HGTV HD;
+History 2;History 2;
+History HD;History HD;
+ID;ID;
+Jovem Pan News;Jovem Pan News;
+LMC+;LMC+;
+Lifetime HD;Lifetime HD;
+Markket;Markket;
+Megapix HD;Megapix HD;
+Modo Viagem;Modo Viagem;cs:channel:modo-viagem
+Multishow;Multishow;
+Music Box Brazil;Music Box Brazil;
+NHK HD;NHK HD;
+NSports;NSports;
+OFF HD;OFF HD;
+Play TV;Play TV;
+Polishop;Polishop;
+Premiere ;Premiere ;
+Premiere 2;Premiere 2;
+Premiere 3;Premiere 3;
+Premiere 4;Premiere 4;
+Premiere 5;Premiere 5;
+Premiere 6;Premiere 6;
+Premiere 7;Premiere 7;
+Premiere 8;Premiere 8;
+Premiere 9;Premiere 9;
+Prime Box Brazil HD;Prime Box Brazil HD;
+RAI;RAI;
+RB News;RB News;
+RBI;RBI;
+RBTV;RBTV;
+RIT;RIT;
+Record News;Record News;
+Rede Brasil HD;Rede Brasil HD;
+Rede Século 21;Rede Século 21;
+Rede Vida HD;Rede Vida HD;
+RedeTV! HD;RedeTV! HD;
+SIC Internacional;SIC Internacional;
+SONY Movies;SONY Movies;
+Sabor & Arte;Sabor & Arte;
+Sony HD;Sony HD;
+Space HD;Space HD;
+SportyNet;SportyNet;
+SportyNet +;SportyNet +;
+Studio Universal;Studio Universal;
+TBC;TBC;
+TCM;TCM;
+TESTE 10;TESTE 10;
+TESTE 9;TESTE 9;
+TIMES EXCLUSIVO CNBC;TIMES EXCLUSIVO CNBC;
+TLC HD;TLC HD;
+TNT;TNT;
+TNT Novelas;TNT Novelas;
+TNT Séries;TNT Séries;
+TV Aparecida HD;TV Aparecida HD;
+TV Brasil HD;TV Brasil HD;
+TV Evangelizar;TV Evangelizar;
+TV Novo Tempo;TV Novo Tempo;
+TV RÁ Tim Bum;TV RÁ Tim Bum;
+TV5Monde;TV5Monde;
+TVE;TVE;
+Telecine Action HD;Telecine Action HD;
+Telecine Cult HD;Telecine Cult HD;
+Telecine Fun HD;Telecine Fun HD;
+Telecine HD;Telecine HD;
+Telecine Pipoca HD;Telecine Pipoca HD;
+Telecine Touch HD;Telecine Touch HD;
+Terra Viva;Terra Viva;
+Tooncast;Tooncast;
+Trace Brasil;Trace Brasil;
+Travel Box Brazil HD;Travel Box Brazil HD;
+UOL;UOL;
+USA;USA;
+Universal Premiere;Universal Premiere;
+Universal Reality;Universal Reality;
+Universal TV HD;Universal TV HD;
+Warner HD;Warner HD;
+Woohoo;Woohoo;
+Xsports;Xsports;
+dumdum;dumdum;
+sportv;sportv;
+sportv 2;sportv 2;
+sportv 3;sportv 3;
+bis;bis;
+canal-brasil;canal-brasil;
+canal-off;canal-off;
+combate;combate;
+dpa-fast;dpa-fast;
+futura;futura;
+ge-tv;ge-tv;
+globonews;globonews;
+globoplay-novelas;globoplay-novelas;
+gloob;gloob;
+gloobinho;gloobinho;
+gnt;gnt;
+malhacao-fast;malhacao-fast;
+megapix;megapix;
+modo-viagem;modo-viagem;
+multishow;multishow;
+premiere;premiere;
+receitas-fast;receitas-fast;
+sportv;sportv;
+sportv-2;sportv-2;
+sportv-3;sportv-3;
+studio-universal;studio-universal;
+telecine-action;telecine-action;
+telecine-cult;telecine-cult;
+telecine-fun;telecine-fun;
+telecine-pipoca;telecine-pipoca;
+telecine-premium;telecine-premium;
+telecine-touch;telecine-touch;
+tv-globo;tv-globo;
+universal;universal;
+usa;usa;
+a-feiticeira;a-feiticeira;
+acumuladores-obsessivos;acumuladores-obsessivos;
+as-tartarugas-ninja;as-tartarugas-ninja;cs:channel:as-tartarugas-ninja
+assombracoes;assombracoes;
+avatar-a-lenda-de-aang;avatar-a-lenda-de-aang;
+baby-shark-tv-ptv2;baby-shark-tv-ptv2;
+babyfirst-ptv1;babyfirst-ptv1;
+bet-pluto-tv-ptv1;bet-pluto-tv-ptv1;
+beyblade-ptv1;beyblade-ptv1;
+billiard-tv;billiard-tv;
+bmandc-news;bmandc-news;
+bob-esponja-calca-quadrada;bob-esponja-calca-quadrada;cs:channel:bob-esponja-calca-quadrada
+boruto-naruto-next-generations-ptv1;boruto-naruto-next-generations-ptv1;
+cacadores-de-ovnis;cacadores-de-ovnis;
+cbs-news-ptv2;cbs-news-ptv2;
+charmed-jovens-bruxas;charmed-jovens-bruxas;
+clube-do-terror;clube-do-terror;
+cocorico;cocorico;cs:channel:cocorico
+comedy-central-pluto-tv-ptv1;comedy-central-pluto-tv-ptv1;
+csi-miami-ptv4;csi-miami-ptv4;
+dazn-combat-ptv2;dazn-combat-ptv2;
+death-note;death-note;
+detetives-medicos;detetives-medicos;
+diffrent-strokes-ptv1;diffrent-strokes-ptv1;
+dog-whisperer-ptv1;dog-whisperer-ptv1;
+estado-paranormal;estado-paranormal;
+euronews-portugues;euronews-portugues;
+failarmy-ptv1;failarmy-ptv1;
+ficcao-cientifica;ficcao-cientifica;
+fifa-ptv1;fifa-ptv1;
+hardcore-pawn;hardcore-pawn;
+homeful-ptv2;homeful-ptv2;
+homem-que-veio-do-ceu;homem-que-veio-do-ceu;
+hunter-x-hunter;hunter-x-hunter;
+inuyasha-ptv1;inuyasha-ptv1;
+jojos-bizarre-adventure-ptv1;jojos-bizarre-adventure-ptv1;
+jovem-pan-news;jovem-pan-news;
+kenan-and-kel;kenan-and-kel;
+macgyver-ptv3;macgyver-ptv3;
+mais-masterchef-brasil;mais-masterchef-brasil;
+masterchef-brasil-profissionais;masterchef-brasil-profissionais;
+masterchef-ptv1;masterchef-ptv1;
+mavtv-brasil;mavtv-brasil;
+misterios-sem-solucao;misterios-sem-solucao;
+moranguinho;moranguinho;
+mtv-are-you-the-one-ptv1;mtv-are-you-the-one-ptv1;
+mtv-biggest-pop-ptv2;mtv-biggest-pop-ptv2;
+mtv-catfish-ptv2;mtv-catfish-ptv2;
+mtv-classic-ptv2;mtv-classic-ptv2;
+mtv-com-o-ex;mtv-com-o-ex;
+mtv-dating-gf-ptv1;mtv-dating-gf-ptv1;
+mtv-drag-ptv1;mtv-drag-ptv1;
+mtv-halloween-ptv1;mtv-halloween-ptv1;
+mtv-jovens-maes;mtv-jovens-maes;
+mtv-just-tattoo-of-us;mtv-just-tattoo-of-us;
+mtv-pluto-tv1;mtv-pluto-tv1;
+mtv-reality;mtv-reality;
+mtv-ridiculousness-ptv2;mtv-ridiculousness-ptv2;
+mtv-rocks-ptv1;mtv-rocks-ptv1;
+mtv-shore-ptv1;mtv-shore-ptv1;
+naruto-ptv1;naruto-ptv1;
+naruto-shippuden-ptv1;naruto-shippuden-ptv1;
+nature-time-ptv1;nature-time-ptv1;
+ncis-ptv1;ncis-ptv1;
+ncis-tony-and-ziva-ptv1;ncis-tony-and-ziva-ptv1;
+nick-jr-club-ptv1;nick-jr-club-ptv1;
+nick-pluto-tv-ptv1;nick-pluto-tv-ptv1;
+nick-teen-ptv1;nick-teen-ptv1;
+nickelodeon-classico;nickelodeon-classico;
+nickelodeon-icarly-ptv1;nickelodeon-icarly-ptv1;
+numbers;numbers;
+o-reino-infantil-ptv1;o-reino-infantil-ptv1;
+oggy-e-as-baratas-tontas;oggy-e-as-baratas-tontas;
+one-piece-ptv2;one-piece-ptv2;
+os-arquivos-do-fbi;os-arquivos-do-fbi;
+os-padrinhos-magicos;os-padrinhos-magicos;cs:channel:os-padrinhos-magicos
+paw-patrol-patrulha-canina;paw-patrol-patrulha-canina;
+pegadinhas-just-for-laughs;pegadinhas-just-for-laughs;
+pfl-mma-ptv1;pfl-mma-ptv1;
+pluto-tv-adrenalina-freezone;pluto-tv-adrenalina-freezone;
+pluto-tv-aliens;pluto-tv-aliens;
+pluto-tv-animais;pluto-tv-animais;
+pluto-tv-anime-1;pluto-tv-anime-1;
+pluto-tv-anime-acao;pluto-tv-anime-acao;
+pluto-tv-bang-bang;pluto-tv-bang-bang;
+pluto-tv-canal-uol;pluto-tv-canal-uol;
+pluto-tv-cine-classicos;pluto-tv-cine-classicos;
+pluto-tv-cine-comedia-1;pluto-tv-cine-comedia-1;
+pluto-tv-cine-comedia-romantica;pluto-tv-cine-comedia-romantica;
+pluto-tv-cine-crime;pluto-tv-cine-crime;
+pluto-tv-cine-drama-1;pluto-tv-cine-drama-1;
+pluto-tv-cine-familia-ptv1;pluto-tv-cine-familia-ptv1;
+pluto-tv-cine-inspiracao;pluto-tv-cine-inspiracao;
+pluto-tv-cine-romance-ptv1;pluto-tv-cine-romance-ptv1;
+pluto-tv-cine-sucessos;pluto-tv-cine-sucessos;
+pluto-tv-cine-terror-1;pluto-tv-cine-terror-1;
+pluto-tv-cineminha;pluto-tv-cineminha;
+pluto-tv-cozinha;pluto-tv-cozinha;
+pluto-tv-curiosidade;pluto-tv-curiosidade;
+pluto-tv-desenhos-classicos;pluto-tv-desenhos-classicos;
+pluto-tv-documentarios;pluto-tv-documentarios;
+pluto-tv-esportes;pluto-tv-esportes;
+pluto-tv-filmes-acao;pluto-tv-filmes-acao;
+pluto-tv-filmes-aventura;pluto-tv-filmes-aventura;
+pluto-tv-filmes-de-luta;pluto-tv-filmes-de-luta;
+pluto-tv-filmes-nacionais;pluto-tv-filmes-nacionais;
+pluto-tv-filmes-suspense;pluto-tv-filmes-suspense;
+pluto-tv-gaming-por-ubisoft-ptv1;pluto-tv-gaming-por-ubisoft-ptv1;
+pluto-tv-geek-tech;pluto-tv-geek-tech;
+pluto-tv-investigacao-ptv1;pluto-tv-investigacao-ptv1;
+pluto-tv-junior-1;pluto-tv-junior-1;
+pluto-tv-karaoke-por-stingray;pluto-tv-karaoke-por-stingray;
+pluto-tv-kfood;pluto-tv-kfood;
+pluto-tv-kids-1;pluto-tv-kids-1;
+pluto-tv-kids-club;pluto-tv-kids-club;
+pluto-tv-minha-obsessao-favorita;pluto-tv-minha-obsessao-favorita;
+pluto-tv-misterios-ptv1;pluto-tv-misterios-ptv1;
+pluto-tv-natureza;pluto-tv-natureza;
+pluto-tv-netmovies;pluto-tv-netmovies;
+pluto-tv-novelas-ptv1;pluto-tv-novelas-ptv1;
+pluto-tv-paisagens-por-stingray;pluto-tv-paisagens-por-stingray;
+pluto-tv-policial;pluto-tv-policial;
+pluto-tv-record-news;pluto-tv-record-news;
+pluto-tv-retro-2;pluto-tv-retro-2;
+pluto-tv-series-acao;pluto-tv-series-acao;
+pluto-tv-series-comedia;pluto-tv-series-comedia;
+pluto-tv-series-criminais;pluto-tv-series-criminais;
+pluto-tv-series-drama-ptv1;pluto-tv-series-drama-ptv1;
+pluto-tv-series-sci-fi;pluto-tv-series-sci-fi;
+pluto-tv-shows-por-stingray;pluto-tv-shows-por-stingray;
+pluto-tv-star-trek-ptv1;pluto-tv-star-trek-ptv1;
+pluto-tv-terror-trash;pluto-tv-terror-trash;
+pluto-tv-turbo;pluto-tv-turbo;
+pluto-tv-viagens;pluto-tv-viagens;
+pluto-tv-vida-real-ptv1;pluto-tv-vida-real-ptv1;
+pluto-tv-zumbis;pluto-tv-zumbis;
+plutotv-filmelier;plutotv-filmelier;
+pokemon-ptv2;pokemon-ptv2;
+popeye-ptv1;popeye-ptv1;
+pronto-socorro-historias-de-emergencia;pronto-socorro-historias-de-emergencia;
+real-madrid;real-madrid;
+relic-hunter-ptv1;relic-hunter-ptv1;
+rookie-blue-ptv1;rookie-blue-ptv1;
+runtime;runtime;
+salon-line;salon-line;
+sft-combat;sft-combat;
+smithsonian-channel;smithsonian-channel;
+sony-one-shark-tank-brasil;sony-one-shark-tank-brasil;
+south-park-colecao-cartman;south-park-colecao-cartman;
+south-park-colecao-kenny;south-park-colecao-kenny;
+south-park-colecao-kyle;south-park-colecao-kyle;
+south-park-colecao-stan;south-park-colecao-stan;
+south-park-ptv1;south-park-ptv1;
+super-onze;super-onze;
+tastemade-ptv2;tastemade-ptv2;
+teletubbies;teletubbies;
+the-pet-collective-ptv1;the-pet-collective-ptv1;
+the-walking-dead-ptv1;the-walking-dead-ptv1;
+tiktok-radio-brasil;tiktok-radio-brasil;
+times-brasil-cnbc;times-brasil-cnbc;
+tokusato-ptv1;tokusato-ptv1;
+turma-da-monica;turma-da-monica;cs:channel:turma-da-monica
+tv-cultura;tv-cultura;
+world-poker-tour-ptv1;world-poker-tour-ptv1;
+yu-gi-oh-ptv2;yu-gi-oh-ptv2;
+z-nation-ptv1;z-nation-ptv1;
++SBT Kids;+SBT Kids;
++SBT Novelas;+SBT Novelas;
++SBT Show do Milhão;+SBT Show do Milhão;
+SBT;SBT;
+SBT News;SBT News;
++SBT Kids;+SBT Kids;
++SBT Novelas;+SBT Novelas;
++SBT Show do Milhão;+SBT Show do Milhão;
+BAND HD;BAND HD;
+BAND NEWS;BAND NEWS;
+BAND SPORTS HD;BAND SPORTS HD;
+Band SP_local;Band SP_local;
+CBI;CBI;
+Canal UOL;Canal UOL;
+Canção Nova;Canção Nova;
+Claro TV+ 4K;Claro TV+ 4K;
+ESPN;ESPN;
+ESPN 2;ESPN 2;
+ESPN 3;ESPN 3;
+ESPN 4;ESPN 4;
+ESPN 5;ESPN 5;
+ESPN 6;ESPN 6;
+Globo SP_local;Globo SP_local;
+PREMIERE 2 HD;PREMIERE 2 HD;
+PREMIERE 3 HD;PREMIERE 3 HD;
+PREMIERE 4 HD;PREMIERE 4 HD;
+PREMIERE 5 HD;PREMIERE 5 HD;
+PREMIERE 6 HD;PREMIERE 6 HD;
+PREMIERE 7 HD;PREMIERE 7 HD;
+PREMIERE CLUBES HD;PREMIERE CLUBES HD;
+Paramount+ 1;Paramount+ 1;
+Paramount+ 2;Paramount+ 2;
+Paramount+ 3;Paramount+ 3;
+Paramount+ 4;Paramount+ 4;
+Premiere 5;Premiere 5;
+RBI;RBI;
+REDE GOSPEL;REDE GOSPEL;
+Record SP_local;Record SP_local;
+Rede Brasil HD;Rede Brasil HD;
+Rede Século 21;Rede Século 21;
+Rede TV! SP_local;Rede TV! SP_local;
+Rede Vida HD;Rede Vida HD;
+SBT;SBT;
+SBT News;SBT News;
+SPACE HD;SPACE HD;
+TIMES EXCLUSIVO CNBC;TIMES EXCLUSIVO CNBC;
+TNT HD;TNT HD;
+TNT NOVELAS;TNT NOVELAS;cs:channel:tnt-novelas
+TNT SERIES HD;TNT SERIES HD;
+TV BRASIL;TV BRASIL;
+TV Cultura SP_local;TV Cultura SP_local;
+TV Novo Tempo;TV Novo Tempo;
+UNIVERSAL PREMIERE HD;UNIVERSAL PREMIERE HD;
+X Sports_local;X Sports_local;
+Xsports;Xsports;
+bis;bis;
+canal-brasil;canal-brasil;
+canal-off;canal-off;
+combate;combate;
+dpa-fast;dpa-fast;
+futura;futura;
+ge-tv;ge-tv;
+globo-internacional;globo-internacional;
+globonews;globonews;
+globoplay-novelas;globoplay-novelas;
+gloob;gloob;
+gloobinho;gloobinho;
+gnt;gnt;
+malhacao-fast;malhacao-fast;
+megapix;megapix;
+modo-viagem;modo-viagem;
+multishow;multishow;
+premiere;premiere;
+receitas-fast;receitas-fast;
+sportv;sportv;
+sportv-2;sportv-2;
+sportv-3;sportv-3;
+studio-universal;studio-universal;
+telecine-action;telecine-action;
+telecine-cult;telecine-cult;
+telecine-fun;telecine-fun;
+telecine-pipoca;telecine-pipoca;
+telecine-premium;telecine-premium;
+telecine-touch;telecine-touch;
+tv-globo;tv-globo;
+universal;universal;
+usa;usa;
+X Sports;X Sports;
+417184;São Paulo/SP Record News;
+417185;Adult Swim HD;cs:channel:adult-swim
+417186;São Paulo/SP  ESPN 3 HD;
+417187;Jovem Pan News;cs:channel:jovem-pan-news
+417188;São Paulo/SP  History 2 HD;
+417383;HBO;cs:channel:hbo
+417386;FRANCE 24 HD;
+417387;Sabor & Arte;cs:channel:sabor-arte
+417391;ESPN 6;cs:channel:espn-6
+417588;Sony Movies Brazil;
+417589;Rede Brasil HD;
+418722;ESPN 2;cs:channel:espn-2
+418723;HBO+;cs:channel:hbo
+418724;ESPN 5;cs:channel:espn-5
+418725;ESPN;cs:channel:espn
+425959;São Paulo/SP  Cinemax HD ³;
+425962;São Paulo/SP  Gloobinho HD;
+425968;São Paulo/SP  Space HD ³;
+425973;Belo Horizonte/MG  Hbo Mundi;
+425978;São Paulo/SP  ESPN 4 HD;
+425979;São Paulo/SP  Multishow;
+425980;São Paulo/SP  National Geographic HD ³;
+425988;São Paulo/SP  Sextreme;
+425989;São Paulo/SP  Animal Planet;
+425995;São Paulo/SP  HBO Signature;
+426005;São Paulo/SP  SporTV 3 ;
+426008;São Paulo/SP  Multishow HD ³;
+426009;São Paulo/SP  Space;
+426010;São Paulo/SP  Discovery Turbo;
+426011;São Paulo/SP  BIS HD ³;
+426012;São Paulo/SP  SporTV 2 HD ³;
+426014;São Paulo/SP  Espn 4;
+426015;São Paulo/SP  HBO Xtreme;
+426016;São Paulo/SP  Venus;
+426021;São Paulo/SP  Discovery HD ³;
+426025;São Paulo/SP  HBO Xtreme HD;
+426036;São Paulo/SP  TCM;
+426037;São Paulo/SP  BIS;
+426040;São Paulo/SP  AMC HD;
+426051;São Paulo/SP  HBO HD ³;
+426052;São Paulo/SP  Futura;
+426054;São Paulo/SP  Disney Channel;
+426059;São Paulo/SP  Cinemax;
+426061;São Paulo/SP  National Geographic;
+426062;São Paulo/SP  SporTV;
+426064;São Paulo/SP  Canal Brasil;
+426066;São Paulo/SP  Discovery Science;
+426069;São Paulo/SP  Band Sports;
+426070;São Paulo/SP  HBO 2;
+426075;São Paulo/SP  Play TV;
+426076;São Paulo/SP  HBO MUNDI HD;
+426081;São Paulo/SP  HBO Family HD ³;
+426082;São Paulo/SP  SporTV 2;
+426084;São Paulo/SP  TNT;
+426085;São Paulo/SP  The History Channel;
+426090;São Paulo/SP  HBO Family;
+426091;São Paulo/SP  SporTV HD ³;
+426094;São Paulo/SP  Cartoon Network;
+426095;São Paulo/SP  Megapix HD ³;
+426100;São Paulo/SP  Playboy TV ;
+426102;São Paulo/SP  Playboy HD;
+426105;São Paulo/SP  Discovery Kids;
+426106;São Paulo/SP  Discovery Theater HD ³;
+426109;São Paulo/SP  ZooMoo;
+426113;São Paulo/SP  HBO HD 2 ³;
+426119;São Paulo/SP  Animal Planet HD;
+426128;São Paulo/SP  SporTV 3 HD ³;
+426130;São Paulo/SP  TV Rá Tim Bum;
+426132;São Paulo/SP  AMC;
+426133;São Paulo/SP  Discovery Turbo HD ³;
+426136;São Paulo/SP  Music Box Brazil;
+426138;São Paulo/SP  Band Sports HD ³;
+426139;São Paulo/SP  Baby Tv;
+426141;São Paulo/SP  Prime Box Brazil HD ³;
+426146;São Paulo/SP  HBO POP HD;
+426147;São Paulo/SP  Megapix;
+426148;São Paulo/SP  TNT HD ³;
+426149;São Paulo/SP  History Hd;
+426151;São Paulo/SP  Prime Box Brazil;
+426152;São Paulo/SP  Studio Universal HD;
+426157;São Paulo/SP  Discovery Channel;
+426158;São Paulo/SP  Sexy Hot;
+426160;São Paulo/SP  Studio Universal;
+426161;São Paulo/SP  Canal Brasil HD ³;
+426164;São Paulo/SP  Discovery world HD ³;
+426169;São Paulo/SP  Gloobinho;
+426170;São Paulo/SP  Hbo Pop;
+426173;São Paulo/SP  HBO Signature HD ³;
+426177;São Paulo/SP  Music Box Brazil HD ³;
+426179;São Paulo/SP  Discovery Science HD ³;
+426182;São Paulo/SP  Gloob;
+426184;São Paulo/SP  Futura HD;
+426194;São Paulo/SP  cartoonito;
+426202;São Paulo/SP  Discovery Kids HD ³;
+523267;Premiere Clubes;
+523268;Deutsche Welle;
+523269;SporTV 3;
+523270;Viva;
+523271;SporTV 2;cs:channel:sportv-2
+523272;Discovery World;cs:channel:discovery-world
+523273;Woohoo;cs:channel:woohoo
+523274;HBO Signature;cs:channel:hbo-signature
+523276;GNT;cs:channel:gnt
+523277;Cinemax;cs:channel:cinemax
+523278;CNN International;
+523279;TNT;cs:channel:tnt
+523281;Tooncast;
+523282;Record TV;
+523283;E! Entertainment Television;
+523284;Combate;cs:channel:combate
+523285;OFF HD;cs:channel:off
+523286;Telecine Cult;cs:channel:telecine-cult
+523287;Eurochannel;cs:channel:eurochannel
+523288;Telecine Fun;cs:channel:telecine-fun
+523289;Canal do Boi;cs:channel:canal-do-boi
+523290;HBO Family;cs:channel:hbo-family
+523291;Telecine Pipoca;
+523292;Discovery HD Theater;cs:channel:discovery-theater
+523293;Megapix;cs:channel:megapix
+523294;TNT Séries;cs:channel:tnt-series
+523295;TV Escola;
+523296;Bloomberg;
+523297;Animal Planet;cs:channel:animal-planet
+523298;SBT;
+523300;TV5 Monde;
+523301;Rede TV;cs:channel:redetv
+523302;TV Gazeta;cs:channel:tv-gazeta
+523303;BBC World News;
+523304;RAI International;
+523305;TV Cultura;cs:channel:cultura
+523306;Telecine Touch;cs:channel:telecine-touch
+523307;TLC;cs:channel:tlc
+523309;Discovery Channel;cs:channel:discovery-channel
+523310;Discovery Home & Health;
+523311;A&E;cs:channel:a-e
+523312;AMC;cs:channel:amc
+523313;AXN;cs:channel:axn
+523314;Band News;cs:channel:band-news
+523315;Band;
+523316;TCM - Turner Classic;
+523317;Baby TV;
+523318;Discovery Kids;cs:channel:discovery-kids
+523319;Canal Brasil;cs:channel:canal-brasil
+523320;Studio Universal;cs:channel:studio-universal
+523321;Multishow;cs:channel:multishow
+523323;Rede Boa Vontade;
+523324;Bis;cs:channel:bis
+523325;Cartoon Network;cs:channel:cartoon-network
+523326;Discovery Turbo;cs:channel:discovery-turbo
+523327;Canal 21;
+523328;HBO Plus;cs:channel:hbo-plus
+523329;ESPN 3;cs:channel:espn-3
+523330;Band Sports;cs:channel:band-sports
+523331;Travel Box Brazil;cs:channel:travel-box-brazil
+523332;TV Espanha;
+523333;Sony;
+523334;SIC International;
+523335;TV Senado;
+523336;Gloob;cs:channel:gloob
+523337;Rede Vida;cs:channel:rede-vida
+523338;Arte 1;cs:channel:arte-1
+523339;TV Brasil;cs:channel:tv-brasil
+523340;Canal Rural;cs:channel:canal-rural
+523341;Globo News;cs:channel:globo-news
+523342;History Channel;
+523343;Futura;cs:channel:futura
+523344;TBS;
+523345;TV Aparecida (aberta);cs:channel:tv-aparecida
+523346;Telecine Action;cs:channel:telecine-action
+523347;SPACE;cs:channel:space
+523348;HBO 2;cs:channel:hbo-2
+523349;Universal Channel;
+523350;Warner Channel;cs:channel:warner-channel
+523351;Telecine Premium;cs:channel:telecine-premium
+523352;Record News;cs:channel:record-news
+523353;Globo;
+523354;Film & Arts;cs:channel:film-arts
+523355;TV Justiça;
+523356;Lifetime;cs:channel:lifetime
+523357;ESPN 4;cs:channel:espn-4
+523358;SporTV;cs:channel:sportv
+523359;Discovery Science;cs:channel:discovery-science
+552130;São Paulo/SP  Gloob HD ³;
+565542;São Paulo/SP  Cartoon Network HD;
+565543;São Paulo/SP  Disney Channel HD ³;
+573879;São Paulo/SP  Cartoonito HD;
+581445;Belo Horizonte/MG  TV Pai Eterno;
+581446;São Paulo/SP  Off HD ³;
+581447;São Paulo/SP  Modo viagem;
+581448;São Paulo/SP  PREMIERE HD 5 ³;
+581450;São Paulo/SP  Food Network;
+581452;São Paulo/SP  Bloomberg TV;
+582307;São Paulo/SP  Off;
+582308;São Paulo/SP  Cultura HD;
+582309;São Paulo/SP  Mega TV;
+582310;São Paulo/SP  Warner Channel;
+582311;São Paulo/SP  Woohoo;
+582312;São Paulo/SP  TV Escola;
+582313;Belo Horizonte/MG  Polishop;
+582314;São Paulo/SP  Curta!;
+582316;São Paulo/SP  Band News HD;
+582317;São Paulo/SP  Telecine Pipoca;
+582318;São Paulo/SP  GNT HD ³;
+582320;São Paulo/SP  Telecine Touch;
+582321;São Paulo/SP  TV Korea;
+582322;São Paulo/SP  TV Câmara;
+582323;São Paulo/SP  Terra Viva;
+582324;São Paulo/SP  TNT SÉRIES HD;
+582325;Belo Horizonte/MG  Premiere 7;
+582326;São Paulo/SP  TLC HD ³;
+582327;São Paulo/SP  Premiere 3;
+582328;São Paulo/SP  Telecine Action HD ³;
+582330;São Paulo/SP  Agro Mais HD ;
+582331;São Paulo/SP  Woohoo HD;
+582332;São Paulo/SP   TV Brasil 2;
+582333;São Paulo/SP  Tnt novelas;
+582334;São Paulo/SP  Warner Channel HD;
+582335;São Paulo/SP  Combate;
+582337;São Paulo/SP  HGTV HD;
+582338;São Paulo/SP  Canal Comunitário;
+582340;São Paulo/SP  Gazeta HD;
+582341;São Paulo/SP   TV Aparecida (espelho);
+582344;São Paulo/SP  FX HD ³;
+582345;São Paulo/SP  Rede 21;
+582346;São Paulo/SP  DW-TV;
+582347;São Paulo/SP  Boa Vontade TV;
+582348;São Paulo/SP  GloboNews HD ³;
+582349;São Paulo/SP  CONMEBOL TV 4 HD;
+582351;São Paulo/SP  DogTV HD;
+582352;São Paulo/SP  TV Brasil;
+582354;São Paulo/SP  PREMIERE HD 3 ³;
+582355;São Paulo/SP  Telecine Pipoca HD ³;
+582356;São Paulo/SP  Rede Gospel HD;
+582357;São Paulo/SP  Record HD;
+582358;São Paulo/SP  Mosaico Multijogos;
+582359;São Paulo/SP  Telecine Cult;
+582360;São Paulo/SP  TV Rá Tim Bum HD ³;
+582361;São Paulo/SP  Mega TV HD;
+582363;São Paulo/SP  ID HD ³;
+582364;São Paulo/SP  Premiere 2;
+582365;São Paulo/SP  Telecine Fun;
+582366;São Paulo/SP  TV Pai Eterno;
+582367;São Paulo/SP  Rede TV HD;
+582368;São Paulo/SP  GNT;
+582370;São Paulo/SP  Tnt novelas HD;
+582371;Campinas/SP  Canal do Boi;
+582372;São Paulo/SP  SBT HD;
+582373;São Paulo/SP  Discovery Home and Health;
+582374;São Paulo/SP  Rede Vida;
+582375;São Paulo/SP  CNN International;
+582376;São Paulo/SP  FOOD NETWORK HD;
+582377;São Paulo/SP  Telecine Premium;
+582378;São Paulo/SP  NHK World Premium;
+582379;São Paulo/SP  Record News ;
+582380;São Paulo/SP  ZooMoo HD;
+582382;São Paulo/SP  SBT;
+582383;São Paulo/SP  Lifetime;
+582384;São Paulo/SP  RAI International;
+582385;São Paulo/SP  TLC;
+582386;São Paulo/SP  TVE International;
+582387;São Paulo/SP  TV5 Monde;
+582388;São Paulo/SP  Rede TV;
+582390;São Paulo/SP  Canal Universitário;
+582391;Discovery Home and Health HD;
+582392;São Paulo/SP  CNN Brasil HD;
+582393;Belo Horizonte/MG   TV Aparecida (espelho);
+582394;São Paulo/SP  Sony HD ³;
+582395;São Paulo/SP  Arte 1 HD;
+582396;São Paulo/SP  Gazeta;
+582397;São Paulo/SP  FISH TV HD;
+582398;São Paulo/SP  A and E;
+582399;São Paulo/SP  GloboNews;
+582402;São Paulo/SP  RIT TV;
+582403;São Paulo/SP  Sony;
+582404;São Paulo/SP  E! ;
+582406;São Paulo/SP  Globo HD;
+582408;São Paulo/SP  Arte 1;
+582409;São Paulo/SP  Curta! HD;
+582410;São Paulo/SP  ID;
+582411;São Paulo/SP  Premiere HD 2;
+582412;São Paulo/SP  LIKE HD;
+582413;São Paulo/SP  AXN HD ³;
+582414;São Paulo/SP  Viva;
+582415;Belo Horizonte/MG  Shoptime;
+582416;São Paulo/SP  FX;
+582417;São Paulo/SP  Telecine Touch HD ³;
+583183;São Paulo/SP  Record;
+583184;São Paulo/SP  Canal 2;
+583185;São Paulo/SP  TV Justiça;
+583186;São Paulo/SP  Modo viagem HD;
+583187;São Paulo/SP  Premiere 7;
+583188;São Paulo/SP  Lifetime HD;
+583189;São Paulo/SP  Telecine Fun HD ³;
+583190;São Paulo/SP  Premiere Clubes;
+583191;São Paulo/SP  Agro Mais;
+583192;São Paulo/SP  Canal Legislativo;
+583193;São Paulo/SP  Canal Rural;
+583194;São Paulo/SP  TV Climatempo;
+583195;São Paulo/SP  Combate HD;
+583196;São Paulo/SP  Band News;
+583198;São Paulo/SP  CNN Brasil;
+583199;São Paulo/SP  Film&Arts HD;
+583200;São Paulo/SP  BBC World News;
+583201;São Paulo/SP  E! HD;
+583202;São Paulo/SP  Viva HD;
+583203;São Paulo/SP  Fashion TV HD;
+583204;São Paulo/SP  Telecine Cult HD ³;
+583205;São Paulo/SP  PREMIERE HD 4 ³;
+583206;São Paulo/SP  Travel Box Brasil HD ;
+583207;São Paulo/SP  Canal do Boi;
+583208;São Paulo/SP  HGTV;
+581449;Belo Horizonte/MG  Premiere 6;
+581451;Campinas/SP  Film&Arts;
+582315;São Paulo/SP  TV Senado;
+582319;São Paulo/SP  CGTN;
+582329;São Paulo/SP  Band;
+582336;São Paulo/SP  Universal TV;
+582339;São Paulo/SP  Eurochannel HD;
+582342;São Paulo/SP  Globo;
+582343;São Paulo/SP  Cinecanal;
+582350;São Paulo/SP  AXN;
+582353;São Paulo/SP  FISH TV;
+582362;São Paulo/SP  Syfy HD;
+582369;São Paulo/SP  Premiere Clubes HD;
+582381;São Paulo/SP  Canal de Vendas NET;
+582389;São Paulo/SP  Rede Gospel;
+582400;São Paulo/SP  Premiere 6;
+582401;São Paulo/SP  Band HD;
+582405;São Paulo/SP  TV Brasil HD;
+582407;São Paulo/SP  Cultura;
+REDETVRJ;RedeTV!_RJ_ / RedeTV! _RJ_HD;
+REDETVSP;RedeTV!_SP_ / RedeTV! _SP_HD;
+CGTN;CGTN / CGTN HD;
+DOGTVHD;DOG TV;
+CULTURA;Cultura HD / Cultura;
+TV5;TV5;
+REDEVIDA;Rede Vida / Rede Vida HD;
+SPORTYNETPLUS1;SPORTYNET + 1;
+SPORTYNETPLUS2;SPORTYNET + 2;
+SPORTYNETPLUS3;SPORTYNET + 3;
+SPORTYNET;SPORTYNET;
+RAI;RAI;
+BBC;BBC;
+PARAMOUNTPLUS1;Paramount+;cs:channel:paramount-plus-1
+PARAMOUNTPLUS2;Paramount+ 2;cs:channel:paramount-plus-2
+PARAMOUNTPLUS3;Paramount+ 3;cs:channel:paramount-plus-3
+PARAMOUNTPLUS4;Paramount+ 4;cs:channel:paramount-plus-4
+LIKE;Like HD;
+FRANCE24;France 24 / France 24 HD;
+COMBATEHD;Combate HD / Combate;
+DWDEUTSCHPLUS;DW Español;
+SICINTERNACIONAL;SIC Internacional;
+CANALDOBOI;Canal do Boi;
+CANALRURAL;Canal Rural / Canal Rural HD;
+TVCANONOVA;Canção Nova HD / TV Canção Nova;
+C3TV;C3-TV HD;
+PAIETERNO;Pai Eterno HD / Pai Eterno;
+CNNINTERNATIONAL;CNN International HD / CNN International;
+TVAPARECIDA;TV Aparecida HD / TV Aparecida;
+TVBRASIL;TV Brasil HD / TV Brasil;
+POLISHOPTV;Polishop TV;
+PRIMEBOXBRAZIL;Prime Box Brazil / Prime Box Brazil HD;
+AGROMAIS;AgroMais HD / AgroMais;cs:channel:agromais
+BLOOMBERGTV;Bloomberg;
+CNNBRASIL;CNN Brasil / CNN Brasil HD;
+PREMIERE2;PREMIERE 2 HD / PREMIERE 2;
+PREMIERE3;PREMIERE 3 HD / PREMIERE 3;
+PREMIERE4;PREMIERE 4 HD / PREMIERE 4;
+PREMIERE5;PREMIERE 5 HD / PREMIERE 5;
+PREMIERE6;PREMIERE 6 HD / PREMIERE 6;
+PREMIERE7;PREMIERE 7 HD / PREMIERE 7;
+PREMIERECLUBES;Premiere Clubes / Premiere Clubes HD;
+GLOBORJ;Globo_RJ_ HD / Globo_RJ_;
+GLOBOSP;Globo _SP_HD / Globo_SP_;
+SBTSP;SBT_SP_ / SBT_SP_ HD;
+SBTRJ;SBT_RJ_ HD / SBT_RJ_;
+RECORSP;RECORDTV_SP_ HD / RECORDTV_SP_ / Record _SP_HD / Record_SP_;
+BANDRJ;Band_RJ_ HD / Band_RJ_;
+BANDSP;Band_SP_ / Band_SP_ HD;
+RECORDRJ;RECORDTV_RJ_ HD / RECORDTV_RJ_ / Record _RJ_HD / Record_RJ_;
+SBTNEWS;SBT News HD;
+LIFETIME;Lifetime / Lifetime HD;
+TVRTIMBUM;TV Rá Tim Bum / TV Rá Tim Bum HD;
+GAZETA;TV Gazeta HD / TV Gazeta;
+TVE;TVE;
+TRACEBRAZUCA;Trace Brasil HD / Trace Brasil HD;cs:channel:trace-brazuca
+MUSICBOXBRAZIL;Music Box Brazil / Music Box Brazil HD;
+FUTURA;Futura / Futura HD;
+OFF;OFF / OFF HD;
+GETV;GE TV HD;
+SPORTV3;sportv3 / sportv3 HD;
+SPORTV;sportv / sportv HD;
+SPORTV2;sportv2 / sportv2 HD;
+GLOBONEWS;GloboNews / GloboNews HD;
+MULTISHOW;Multishow / Multishow HD;
+GNT;GNT HD / GNT;
+GLOBOPLAYNOVELAS;Globoplay Novelas / Globoplay Novelas HD;
+MODOVIAGEM;Modo Viagem / Modo Viagem HD;
+TRAVELFOODDRINKS;Travel Food & Drinks HD;
+BMCHD;BM&C HD;
+LMC;LMC+ HD;
+UOLTV;Canal UOL HD;
+FASHIONTV;Fashion TV HD;
+E;E! / E! HD;
+TLC;TLC / TLC HD;
+ARTE1;Arte 1 / Arte 1 HD;
+BIS;BIS / BIS HD;
+CURTA;Curta! / Curta! HD;
+TRAVELBOXBRAZILHD;Travel Box Brazil / Travel Box Brazil HD;
+FISHTV;Fish TV / Fish TV HD;
+HGTV;HGTV / HGTV HD;
+SABORARTE;Sabor & Arte HD / Sabor & Arte;
+TIMESCNBC;TIMES  /  EXCLUSIVO CNBC;
+CNNBRASILMONEY;CNN Brasil Money HD;
+TRIPBRASIL;TBC - Trip Brasil Channel HD;
+WOOHOO;Woohoo / Woohoo HD;
+NSPORTSHD;NSPORTS HD;
+XSPORTS;Xsports / Xsports HD;
+ESPN;ESPN / ESPN HD;
+ESPN2;ESPN 2 / ESPN 2 HD;
+ESPN3;ESPN 3 / ESPN 3 HD;
+ESPN4;ESPN 4 / ESPN 4 HD;
+ESPN5;ESPN 5 / ESPN 5 HD;
+ESPN6;ESPN 6 / ESPN 6 HD;
+BANDSPORTS;Band Sports HD / Band Sports;
+JPNEWS;JP News HD;
+RECORDNEWS;Record News / Record News HD;
+BANDNEWS;Band News / Band News HD;
+DISCOVERYCHANNEL;Discovery Channel / Discovery Channel HD;
+DISCHOMEHEALTH;Disc. Home & Health HD / Disc. Home & Health;
+DISCOVERYKIDS;Discovery Kids / Discovery Kids HD;
+DISCOVERYSCIENCE;Discovery Science / Discovery Science HD;
+DISCOVERYTHEATER;Discovery Theater / Discovery Theater HD;
+DISCOVERYTURBO;Discovery Turbo / Discovery Turbo HD;
+DISCOVERYWORLD;Discovery World / Discovery World HD;
+HISTORY;History / History HD;
+HISTORY2;History 2 / History 2 HD;
+ID;ID / ID HD;
+ANIMALPLANET;Animal Planet / Animal Planet HD;
+GLOOB;Gloob / Gloob HD;
+GLOOBINHO;Gloobinho / Gloobinho HD;
+HBO;HBO / HBO HD;
+HBOFAMILY;HBO Family / HBO Family HD;
+HBOMUNDI;HBO MUNDI HD / HBO MUNDI;
+HBOPLUS;HBO+ HD / HBO+;
+HBOPOP;HBO POP HD / HBO POP;
+HBOSIGNATURE;HBO Signature / HBO Signature HD;
+HBOXTREME;HBO XTREME / HBO XTREME HD;
+HBO2;HBO2 / HBO2 HD;
+CARTOONNETWORK;Cartoon Network / Cartoon Network HD;
+CARTOONITO;Cartoonito / Cartoonito HD;
+AE;A&E / A&E HD;
+AMC;AMC / AMC HD;
+AXN;AXN / AXN HD;
+PLAYTV;Play TV / Play TV HD;
+ADULTSWIM;Adult Swim / Adult Swim HD;
+TELECINEACTION;Telecine Action / Telecine Action HD;
+TELECINECULT;Telecine Cult / Telecine Cult HD;
+TELECINEFUN;Telecine Fun / Telecine Fun HD;
+UNIVERSALTV;Universal TV / Universal TV HD;
+TELECINEPIPOCA;Telecine Pipoca / Telecine Pipoca HD;
+TELECINEPREMIUM;Telecine Premium / Telecine Premium HD;
+TELECINETOUCH;Telecine Touch / Telecine Touch HD;
+CINEMAX;Cinemax HD / Cinemax;
+USA;USA / USA HD;
+UNIVERSALPREMIERE;Universal Premiere HD;
+UNIVERSALREALITY;Universal Reality HD;
+DUMDUM;DUMDUM HD / DUMDUM;
+TNT;TNT / TNT HD;
+TNTNOVELAS;TNT Novelas HD / TNT Novelas;
+TNTSERIES;TNT Séries HD / TNT Séries;
+CANALSONY;Canal Sony / Canal Sony HD;cs:channel:canal-sony
+SPACE;Space / Space HD;
+STUDIOUNIVERSAL;Studio Universal HD / Studio Universal;
+TCM;TCM;
+EUROCHANNELHD;Eurochannel / Eurochannel HD;
+FILMARTS;Film&Arts / Film&Arts HD;
+FOODNETWORK;Food Network / Food Network HD;
+MARKKET;Markket HD;
+MEGAPIX;Megapix / Megapix HD;
+WARNERCHANNEL;Warner Channel / Warner Channel HD;
+NHK;NHK;
+TVSENADO;TV Senado;
+TVCMARA;TV Câmara;
+TVJUSTIA;TV Justiça;
+TVNOVOTEMPO;TV Novo Tempo / TV Novo Tempo HD;
+CNT;CNT / CNT HD;
+CANALBRASIL;Canal Brasil / Canal Brasil HD;
+REDEBRASIL;Rede Brasil;
+BOAVONTADE;Boa Vontade TV;
+PLAYBOYTV;Playboy TV / Playboy TV HD;
+SEXYHOT;Sexy Hot / Sexy Hot HD;
+SEXTREME;Sextreme;
+VENUS;Venus;
+5f120e94a5714d00074576a1;Pluto TV Cine Sucessos;
+5f120f41b7d403000783a6d6;Pluto TV Filmes Ação;
+5f12111c9e6c2c00078ef3bb;Pluto TV Cine Terror;
+5f171d3442a0500007362f22;Filmes Suspense;
+5fa15ad6367e170007cdd098;Pluto TV Ficção Científica;
+6479ff764f5ba5000878dfe2;Pluto TV Cine Crime;
+6806d62369aec5b19cd628c0;Pluto TV Filmes de Luta;
+5f12101f0b12f00007844c7c;Pluto TV Cine Comédia;
+62545ed3dab4380007582f7c;Pluto TV Cine Comédia Romântica;
+5f171f988ab9780007fa95ea;Pluto TV Cine Romance;
+5f1210d14ae1f80007bafb1d;Pluto TV Cine Drama;
+663b9dc7cb3ea10008f1a0ce;Pluto TV Bang Bang;
+5fa1612a669ba0000702017b;Pluto TV Cine Clássicos;
+6a5520365badf45d3088b8d8;Pluto TV Cine Trapalhões;
+66aa67493a4ad2000806d91b;Pluto TV Terror Trash;
+61b790b985706b00072cb797;Adrenalina Pura TV;
+66c79a4262e5510008ff68a5;Pluto TV Filmes Aventura;
+5f171f032cd22e0007f17f3d;Pluto TV Cine Família;
+5fa991b1f09e020007e78626;Pluto TV Cine Inspiração;
+5f5a545d0dbf7f0007c09408;Pluto TV Filmes Nacionais;
+663b9de4f999220008230fa8;Pluto TV Netmovies;
+62c5d32e2c48f9000715b6e9;Runtime;
+633dcebd80386500074a2461;Filmelier TV;
+6a281c0302b6c1c00a1fe570;MovieSphere by Lionsgate;
+6a7cb5b545b3c0d1f72dcca8;Pluto TV Romance de Natal;
+6a7cb5950c9f5239c2168f10;Pluto TV Natal em Família;
+6a7cb568611342bebf046a90;Pluto TV Espírito de Natal;
+68d193184251718916945fb7;Tempero de Fim de Ano;
+6474ab5cdc7a760008745008;Pluto TV Séries Criminais;
+63eb9c5351f5d000085e8d7e;CSI: Miami;
+69fcc8cfb83300b380051794;Blue Bloods;
+63eb9fdda995710008991c54;NCIS;
+67f960c5441853fe50e7afc1;Numbers;
+6474ab1da51cb80008bfb5f4;Pluto TV Séries Ação;
+64ff2d8c6625510008c5a512;Rookie Blue;
+678aa104680721c77c506746;The Walking Dead by AMC;
+63d2ba2f60bc8f0008981a0e;Pluto TV Séries Sci-Fi;
+66b3af48d2d50d00083d6936;Z Nation;
+67e59a6557487a8b7fe73e23;A Caçadora de Relíquias;
+65f060d84e01740008d7421f;Pluto TV Séries Drama;
+691627e4a29a6123e400b3e0;Pluto TV Séries Novelescas;
+67f9602ee173fa5664fafae8;Charmed: Jovens Bruxas;
+655e5bc94261ca000810cb17;Pluto TV Séries Comédia;
+6a5520691a435d3dfcda8340;O Rei do Bairro;
+69c71615a8ef5d7f33e7322e;Pluto TV Séries Família;
+5ff768b6a4c8b80008498610;BET Pluto TV;
+64e501eec630a900088ed0f8;Clube do Terror;
+5f99ac4fded33000078f29ab;Pluto TV Star Trek;
+69162ad79505d0f3b1ebf07d;Jornada nas Estrelas - A Nova Geração;
+69162af591700f4c4c135c95;Jornada nas Estrelas - Deep Space Nine;
+69162b1ef189e235142b17ab;Jornada nas Estrelas - Voyager;
+5f1212ad1728050007a523b8;Pluto TV Retrô;
+6aa9606aaf45eb18db1928c4;The Nanny;
+631fa8dd7f25240007099a40;A Feiticeira;
+61f1d27a189ed10007b7393e;Diff’rent Strokes Arnold;
+63eb9dc84e83e70008abea92;MacGyver;
+62052d3b4eeb740007fbe125;O Homem que veio do Céu;
+5ff609de50ab210008025c1b;Tokusato;
+655e5c4d2c46f3000877a54b;Pluto TV Desenhos Clássicos;
+68b88ae1943f6fb1fb2ad749;Os Smurfs;cs:channel:os-smurfs
+69162648d03565d6c8c8df97;Inspetor Bugiganga;cs:channel:inspetor-bugiganga
+677d93f37bffa600080795e7;Popeye;
+5f512365abe1f50007d3ff56;Pluto TV Novelas;
+6a281d2bd1e6d3ba6b553c7c;Novelíssima;
+6a565d9022790c74de2e98f6;Amor de Aluguel by Noverama TV;
+69c716efeac9a2720ebcaaff;Grachi;
+6077045b6031bd00078de127;MasterChef;cs:channel:masterchef-brasil
+681110afc188aa63faa147e0;MasterChef Brasil Profissionais;
+681111be5e0764e297fb200e;Mais MasterChef Brasil;
+6647c0b91050b60008390de4;Sony One Shark Tank Brasil;
+69fca82395df3283d2b60ef9;Topa ou Não Topa EUA;
+5f1212fb81e85c00077ae9ef;MTV Pluto TV;
+6851bdfc9ac48fde5e07f5ae;MTV Reality;
+6851bb3426beced4f2f67ee6;MTV Ink Master;
+645111f1d8436e00081bb2bd;MTV Drag;
+625463563b8ddc0007134aeb;MTV Shore;
+61a528267e1b8b0007357920;MTV Com o Ex;
+620fdc7d8a36fc000710e3ba;MTV Jovens e Mães;
+626c2a3502d84a0007cec817;MTV Catfish;
+5f6108d8cc331900075e98e4;MTV Are you the One?;
+66a01e07d2d50d0008100d6a;MTV Rocks;
+66a01dcb8561260008b0a41d;MTV Classic;
+6047fbdbbb776a0007e7f2ff;MTV Biggest Pop;
+63dac32bda711800088a2ba3;TikTok Radio Brasil;
+604b91e0692f770007d9f33f;Pluto TV Shows por Stingray;
+6a74c036a311e7c50e8c1ba6;Stingray Hits Brasileiros;
+5f1213ba0ecebc00070e170f;Pluto TV Natureza;
+681ba2ad93d3d19bcab47433;NatureTime;
+604a8dedbca75b0007b1c753;Pluto TV Paisagens por Stingray;
+6474aa984cfc2c0008883a92;Pluto TV Animais;
+6a74c028c1842722eafad356;Stingray Cityscapes;
+5f32d4d9ec194100070c7449;Pluto TV Vida Real;
+656e2a4b4261ca00083aa99e;Acumuladores Obsessivos;
+69fca7fadf0b6d462c0a0ac3;Sobrevivi;
+61bb72a7bf8c520007a8fd27;Pronto-socorro: Histórias De Emergência;
+64ad7394798def00087b2bfe;Pluto TV Negócio Fechado;
+6014761dfb91870008ea6463;Pluto TV Turbo;
+6298bd10d88ef000073f16b7;Smithsonian Channel Pluto TV;
+5f1ef1a8cec6be00072a7ac9;Pluto TV História;
+5fac52f142044f00078e2a51;Pluto TV Mistérios;
+6806d65e84f24b70109485fa;Pluto TV Aliens;
+620d1512c7986a0007220213;Assombrações;
+656e2a81954b020008ed17a4;Estado Paranormal;
+656e2a10954b020008ed167c;Caçadores de Óvnis;
+5f32cf37c9ff2b00082adbc8;Pluto TV Investigação;
+678fdf9e3de7c8cf948e8824;Pluto TV Policial;
+620d12a82e8ac50007c269c3;Os Arquivos do FBI;
+638df93ae2f2a3000737c168;Detetives Médicos;
+62b5c5a064163d0007b2efe6;Mistérios sem Solução;
+679a973a97782f0008ff4bb6;Times Brasil | CNBC;
+62310f66d5888f0007534342;CBS News 24/7;
+666c9c60a7efd40008f552f0;BM&C News;
+619e6614c9d9650007a2b171;Euronews Português;
+6102e04e9ab1db0007a980a1;Pluto TV Record News;
+6317ba014d4d040007227f72;Jovem Pan NEWS;
+62e010e6cd663f0007e57dc8;TV Cultura;
+64b9370b409629000802d32b;Pluto TV Canal UOL;
+698392af0cca0cc3458666ab;AdoroCinema;
+5f32d2db0af67400077f29c4;Pluto TV Esportes;
+68ee7a1c177d2e7dd453b5fa;SportyNet;
+6888ee858f4a4aa11feb9430;Barça 24H;
+66997e8d3a4ad20008e50be9;FIFA+;
+67813f3162bf016db944c9ab;Red Bull TV;
+65a6818c7bdc8d0008457b21;RACER Brasil;
+69a20556814d27f4ae630a92;UFC;
+6660b636cb3ea10008429c6a;SFT Combat;
+64f6180130ab3300083d896b;PFL MMA;
+6a68dc0a75fd5e3828f10b10;NFL Channel;
+63eba66da8b2270008436b10;World Poker Tour;
+65df71008b24c80008f04281;South Park: Coleção Cartman;
+65df704366eec8000898e32f;South Park: Coleção Kenny;
+65df713dec9fda0008b7a81d;South Park: Coleção Kyle;
+65df70b0f7f0af0008c3b316;South Park: Coleção Stan;
+609ae66b359b270007869ff1;Comedy Central South Park;
+69fca7dd2387729708faa32c;Mr. Bean;cs:channel:mr-bean
+5f357e91b18f0b00073583d2;Comedy Central Pluto TV;
+69440d0611f6c6384ab78306;PORTATV;
+67802a22a5d8215f99dcee30;Pegadinhas - Just for Laughs;
+5f5141c1605ddf000748eb1b;FailArmy;
+5f515ebac01c0f00080e8439;The Pet Collective;
+6932decb96b4427d18426909;Caras TV;
+66a7d0e0cd0d310008448610;Salon Line;
+5f32d432d612e50007e56133;Pluto TV Viagens;
+67603668f433320008760af1;Homeful;
+5f1ef23020a5ac0007e5e8ea;Pluto TV Cozinha;
+633ee9ba83c08f00076b60a6;Pluto TV KFOOD;
+5fd1419a3b4f4b000773ba85;Tastemade Food;
+68b88821e542386ab0bf5bef;Tastemade Casa;
+68b8875777201ec428d9eaa5;Tastemade Viagem;
+61099df8cee03b00074b2ecf;O Encantador de Cães;
+5f12136385bccc00070142ed;Pluto TV Anime;
+604b79c558393100078faeef;Pluto TV Anime Ação;
+687007a8ee4155e89a8f6d67;Pokémon;cs:channel:pokemon
+5f6df5a173d7340007c559f7;Naruto;
+64c92f965580090008084968;Naruto Shippuden;
+656f389c3944b60008e5bdab;Boruto: Naruto Next Generations;
+65d9167818036500080e8780;Hunter x Hunter;
+625464a945b6a200079257d1;Death Note;
+66c7982f6838ee00085f0d24;JoJo’s Bizarre Adventure;
+63988c2750108d00072e2686;Super Onze;
+63988a50be012600070f5db3;Yu-Gi-Oh;
+633dc392e0282400071b0d39;Beyblade;cs:channel:beyblade
+66b26681d2d50d00083abe8b;Inuyasha;
+624b1c8d4321e200073ee421;One Piece;cs:channel:one-piece
+5f12141b146d760007934ea7;Pluto TV Junior;
+5f1214a637c6fd00079c652f;Pluto TV Kids;
+66c8cae7fed35b0008580ec0;Pluto TV Kids Club;
+5f997e44949bc70007a6941e;Turma da Mônica;
+5f5c216df68f920007888315;O Reino Infantil;
+63221bafdc6e110007b50270;Oggy e as Baratas Tontas;
+63eba189c111bc0008ff59c5;Moranguinho;
+62d969fd8451a30007f0fd94;Cocoricó;
+63da6bcd60bc8f0008a5d364;Baby Shark TV;
+645951c0e94c38000802d2cb;Nickelodeon Toons;
+6824ce10c5d53e1351ceb8d1;Nickelodeon Clássico;
+62545c0b002f4b0007688b61;Bob Esponja Calça Quadrada;
+63221e41af69b500076f84e7;Os Padrinhos Mágicos;
+63dd5c904e83e700088fb68a;As Tartarugas Ninja;
+6759eeb1bd523200083b4f29;Avatar: A lenda de Aang;
+66b4e477d512590008ca6849;Hey Arnold!;
+6824ce95f09106f4b18f4114;Nick Jr. Club;
+656e28dd57fe4a0008819c3d;Dora, A Aventureira;cs:channel:dora-aventureira
+60f5fabf0721880007cd50e3;Nickelodeon Teen;
+620ff46e0a576e0007dc2f89;Nickelodeon iCarly;
+5ffcc5130fd98c0007f2e216;Kenan & Kel;cs:channel:kenan-e-kel
+TVJUSTIA;São Paulo/SP  TV Justiça;
+TVSENADO;São Paulo/SP  TV Senado;
+NHK;São Paulo/SP  NHK World Premium;
+TVKOREA;São Paulo/SP  TV Korea;
+TERRAVIVA;São Paulo/SP  Terra Viva;
+RITTV;São Paulo/SP  RIT TV;
+BOAVONTADETV;Belo Horizonte/MG  Boa Vontade TV;
+PLAYBOYTV;Belo Horizonte/MG  Playboy HD;
+PAIETERNO;Belo Horizonte/MG   TV Pai Eterno HD;
+POLISHOPTV;Belo Horizonte/MG  Polishop TV;
+SEXYHOT;Belo Horizonte/MG  Sexy Hot;
+SHOPTIME;Belo Horizonte/MG  Shoptime;
+CNT;Curitiba/PR  CNT;
+ITV;Salvador das Missões/RS  TV Século 21;
+BBB1;BBB 1 HD;
+BBB2;BBB 2 HD;
+BBBMOSAICO;BBB Mosaico HD;
+Claro TV+ 4K;Claro TV+ 4K;
+NOSSOFUTEBOLPLUS1;Nosso Futebol 1;
+NOSSOFUTEBOLPLUS2;Nosso Futebol 2;
+NOSSOFUTEBOLPLUS3;Nosso Futebol 2;
+GETV;Warner HD;
+DISCOVERYKIDS;São Paulo/SP  Discovery Kids;
+SPACE;São Paulo/SP  Space;
+MODOVIAGEM;Modo Viagem;
+BIS;BIS HD;
+SBTNEWS;Universal TV HD;
+UNIVERSAL;Universal TV HD;
+UNIVERSALTV;Universal TV HD;
+SYFY;USA;cs:channel:syfy
+USA;USA;
+CANALBRASIL;São Paulo/SP  Canal Brasil;
+MEGAPIX;São Paulo/SP  Megapix;
+STUDIOUNIVERSAL;São Paulo/SP  Studio Universal;
+PREMIERECLUBES;São Paulo/SP  Premiere Clubes;
+PREMIERE2;Premiere 2;
+PREMIERE3;Premiere 3;
+PREMIERE3HD;Premiere 3;
+CARTOONITO;Cartoonito;
+PREMIERE4;Premiere 4;
+PREMIERE5;Premiere 5;
+PREMIERE6;Premiere 6;
+PREMIERE7;Premiere 7;
+COMBATE;Combate;
+HGTV;São Paulo/SP  HGTV;
+DISCOVERYSCIENCE;São Paulo/SP  Discovery Science;
+DISCOVERYTHEATER;DISCOVERY THEATER HD;
+DISCOVERYWORLD;DISCOVERY WORLD HD;
+EUROCHANNEL;São Paulo/SP  Eurochannel HD;
+TLC;São Paulo/SP  TLC;
+GLOBO;GLOBO;
+GLOBOSP;Globo SP HD;
+FRANCE24;Belo Horizonte/MG  France 24 HD;
+ID;ID;
+LIV;ID;
+ANIMALPLANET;São Paulo/SP  Animal Planet;
+BAND;São Paulo/SP  Band;
+CULTURA;Cultura HD;
+TVE;TVE;
+TVESCOLA;TVE;
+TVESPANHA;TVE;
+CNNINTERNATIONAL;São Paulo/SP  CNN International;
+CINEMAX;São Paulo/SP  Cinemax;
+DISCOVERYTURBO;São Paulo/SP  Discovery Turbo;
+RECORDNEWS;São Paulo/SP  Record News;
+LIKE;Belo Horizonte/MG  LIKE HD;
+LIKEPLUS|CLAROTVPLUS;Belo Horizonte/MG  LIKE HD;
+SBT;São Paulo/SP  SBT;
+REDETV;São Paulo/SP  Rede TV;
+JPNEWS;Jovem Pan News;
+MEZZOHD;Warner HD;
+CURTA;São Paulo/SP  Curta!;
+CARTOONNETWORK;São Paulo/SP  Cartoon Network;
+TNTSRIES;São Paulo/SP  TNT SÉRIES HD;
+STARCHANNEL;STAR Channel;
+ESPN4;ESPN 4;
+HBO;São Paulo/SP  HBO;
+HBOHD;HBO HD;
+HBO2;HBO2;
+HBOPLUS;São Paulo/SP  HBO +;
+HBOFAMILY;São Paulo/SP  HBO Family;
+HBOSIGNATURE;São Paulo/SP  HBO Signature;
+HBOPOP;São Paulo/SP  HBO POP HD;
+HBOMUNDI;São Paulo/SP  HBO MUNDI HD;
+HBOXTREME;São Paulo/SP  HBO Xtreme;
+DOGTV;Dog TV;
+ESPN5;ESPN 5;
+ESPN2;São Paulo/SP  ESPN 2;
+GLOBOPLAYNOVELAS;Sabor & Arte;
+SABORARTE;Sabor & Arte;
+SPORTYNET;Sabor & Arte;
+SPORTYNETPLUS1;Sabor & Arte;
+SPORTYNETPLUS2;Sabor & Arte;
+SPORTYNETPLUS3;Sabor & Arte;
+TRAVELFOODDRINKS;Sabor & Arte;
+XSPORTS;Sabor & Arte;
+ESPN;ESPN;
+ESPN+;ESPN;
+TNTNOVELAS;São Paulo/SP  Tnt novelas;
+SPORTV;São Paulo/SP  SporTV;
+CANONOVA;CANÇÃO NOVA HD;
+SPORTV2;São Paulo/SP  SporTV 2;
+C3-TV;C3 TV;
+C3TV;C3 TV;
+NOSSOFUTEBOL;NOSSO FUTEBOL HD;
+CGTN;São Paulo/SP  CGTN;
+RECORD;Record HD;
+RECORDTV;Record HD;
+LMCPLUS;LMC+;
+SPORTV3;São Paulo/SP  SporTV 3;
+TVAPARECIDA;TV Aparecida HD;
+BMC;BM&C;
+ADULTSWIM;Adult Swim;
+UNIVERSALPREMIERE;Universal Premiere;
+UNIVERSALREALITY;Universal Reality;
+CANALDOBOI;São Paulo/SP  Canal do Boi;
+NSPORTS;NSports;
+AMC;São Paulo/SP  AMC;
+TBCTRIPBRASILCHANNEL;TRIP BRASIL CHANNEL;
+CANALRURAL;São Paulo/SP  Canal Rural;
+TIMES|EXCLUSIVOCNBC;TIMES EXCLUSIVO CNBC;
+ARTE1;São Paulo/SP  Arte 1;
+SICINTERNACIONAL;SIC INTERNACIONAL;
+CNNBRASILMONEY;BR - CNN;
+BLOOMBERG;São Paulo/SP  Bloomberg TV;
+PREMIERE8;Premiere 8;
+CANALUOL;UOL;
+ESPN3;ESPN 3;
+FISHTV;São Paulo/SP  FISH TV;
+TCM;São Paulo/SP  TCM;
+WOOHOO;São Paulo/SP  Woohoo;
+DUMDUM;Zoomoo;
+ZOOMOOKIDS;Zoomoo;
+BANDSPORTS;São Paulo/SP  Band Sports;
+ESPN6;ESPN 6;
+ESPNEXTRA;São Paulo/SP  ESPN 6 HD;
+ESPNEXTRAHD;São Paulo/SP  ESPN 6 HD;
+FILMARTS;Film & Arts;
+FOODNETWORK;Food Network HD;
+GAZETA;Gazeta HD;
+CBI;CBI;
+MUSICBOXBRAZIL;São Paulo/SP  Music Box Brazil;
+PLAYTV;São Paulo/SP  Play TV;
+PRIMEBOXBRAZIL;São Paulo/SP  Prime Box Brazil;
+RAI;RAI;
+REDEGOSPEL;São Paulo/SP  Rede Gospel;
+BANDNEWS;São Paulo/SP  Band News;
+REDEVIDA;São Paulo/SP  Rede Vida;
+TVBRASIL;São Paulo/SP  TV Brasil;
+TVRTIMBUM;São Paulo/SP  TV Rá Tim Bum;
+TV5;TV5Monde;
+TV5MONDE;TV5Monde;
+BBC;Belo Horizonte/MG  BBC World News;
+TELECINEPREMIUM;São Paulo/SP  Telecine Premium;
+TELECINEACTION;São Paulo/SP  Telecine Action;
+DISCOVERYCHANNEL;DISCOVERY HD;
+DISCOVERYCHANNELHD;Discovery HD;
+TELECINETOUCH;São Paulo/SP  Telecine Touch;
+TELECINEFUN;São Paulo/SP  Telecine Fun;
+TELECINEPIPOCA;São Paulo/SP  Telecine Pipoca;
+TELECINECULT;São Paulo/SP  Telecine Cult;
+TRAVELBOXBRAZIL;Travel Box Brazil HD;
+FASHIONTV;FashionTV HD;
+CNNBRASIL;CNN Brasil HD;
+GLOBONEWS;GLOBO NEWS;
+AXN;São Paulo/SP  AXN;
+DISCHOMEHEALTH;Discovery Home&Health HD;
+AGROMAIS;Belo Horizonte/MG  Agro Mais;cs:channel:agromais
+TRACEBRASIL;Trace Brasil;
+CANALSONY;SONY CHANNEL;cs:channel:canal-sony
+SONY;Sony HD;
+WARNERCHANNEL;São Paulo/SP  Warner Channel;
+HISTORY;History HD;
+THEHISTORYCHANNEL;History HD;
+THEHISTORYCHANNELHD;History HD;
+H2;History 2;cs:channel:h2
+HISTORY2;History 2;
+AE;A&E HD;
+E;E! HD;
+LIFETIME;Lifetime HD;
+PARAMOUNTPLUS;Paramount+ 1;
+TNT;São Paulo/SP  TNT;
+TNTHD;TNT;
+PARAMOUNTPLUS2;Paramount+ 2;cs:channel:paramount-plus-2
+PARAMOUNTPLUS3;Paramount+ 3;cs:channel:paramount-plus-3
+PARAMOUNTPLUS4;Paramount+ 4;cs:channel:paramount-plus-4
+GLOOB;São Paulo/SP  Gloob;
+GLOOBINHO;Gloobinho HD;
+FUTURA;São Paulo/SP  Futura;
+OFF;OFF HD;
+OFFHD;OFF HD;
+GNT;São Paulo/SP  GNT;
+MULTISHOW;São Paulo/SP  Multishow;
+VIVA;Viva HD;
+VIVAHD;Viva HD;
+CANALGOV;BR - NBR;
+NBR;BR - NBR;
+TVNOVOTEMPO;BR - TV Novo Tempo HD;
+TOONCAST;BR - Tooncast;
+PREMIEREFC;Premiere;
+CNNI;CNNi;
+TVCMARA;TV CÂMARA;
+GLOBORJ;Globo Rio;
+EMPREENDER;Empreender;
+MARKKET;Markket;
+CANALDOCRIADOR;Canal do Criador;
+AMC.br;AMC;cs:channel:amc
+Canal.Brasil.br;Canal Brasil;
+Cinemax.br;Cinemax;cs:channel:cinemax
+HBO.br;HBO;cs:channel:hbo
+HBO.2.br;HBO 2;
+HBO.Family.br;HBO Family;
+HBO.Plus.br;HBO Plus;
+HBO.Signature.br;HBO Signature;
+Megapix.br;Megapix;cs:channel:megapix
+Paramount.Channel.br;Paramount Channel;
+SPACE.br;SPACE;
+TCM.-.Turner.Classic.br;TCM - Turner Classic;
+TNT.br;TNT;cs:channel:tnt
+Telecine.Action.br;Telecine Action;
+Telecine.Cult.br;Telecine Cult;
+Telecine.Fun.br;Telecine Fun;
+Telecine.Pipoca.br;Telecine Pipoca;
+Telecine.Premium.br;Telecine Premium;
+Telecine.Touch.br;Telecine Touch;
+A&E.br;A&E;
+AXN.br;AXN;cs:channel:axn
+Animal.Planet.br;Animal Planet;
+Discovery.HD.Theater.br;Discovery HD Theater;
+Eurochannel.br;Eurochannel;
+Film.&.Arts.br;Film & Arts;
+Lifetime.br;Lifetime;cs:channel:lifetime
+Sony.br;Sony;
+Studio.Universal.br;Studio Universal;
+TBS.br;TBS;
+TNT.Séries.br;TNT Séries;
+Universal.Channel.br;Universal Channel;
+Warner.Channel.br;Warner Channel;
+Band.Sports.br;Band Sports;
+Combate.br;Combate;cs:channel:combate
+ESPN.br;ESPN;cs:channel:espn
+ESPN.2.br;ESPN 2;
+ESPN.3.br;ESPN 3;
+ESPN.4.br;ESPN 4;
+ESPN.5.br;ESPN 5;
+OFF.HD.br;OFF HD;
+Premiere.Clubes.br;Premiere Clubes;
+SporTV.br;SporTV;cs:channel:sportv
+SporTV.2.br;SporTV 2;
+SporTV.3.br;SporTV 3;
+Baby.TV.br;Baby TV;
+Cartoon.Network.br;Cartoon Network;
+Discovery.Kids.br;Discovery Kids;
+Gloob.br;Gloob;cs:channel:gloob
+Nick.Jr..br;Nick Jr.;
+Nickelodeon.br;Nickelodeon;
+Tooncast.br;Tooncast;
+Arte.1.br;Arte 1;
+Bis.br;Bis;
+Canal.Rural.br;Canal Rural;
+Canal.do.Boi.br;Canal do Boi;
+Comedy.Central.br;Comedy Central;
+E!.Entertainment.Television.br;E! Entertainment Television;
+Futura.br;Futura;cs:channel:futura
+GNT.br;GNT;cs:channel:gnt
+Multishow.br;Multishow;cs:channel:multishow
+RAI.International.br;RAI International;
+Rede.Boa.Vontade.br;Rede Boa Vontade;
+SIC.International.br;SIC International;
+TV.Escola.br;TV Escola;
+TV.Espanha.br;TV Espanha;
+TV.Justiça.br;TV Justiça;
+TV.Senado.br;TV Senado;
+TV5.Monde.br;TV5 Monde;
+Travel.Box.Brazil.br;Travel Box Brazil;
+Viva.br;Viva;
+Woohoo.br;Woohoo;
+Discovery.Channel.br;Discovery Channel;
+Discovery.Home.&.Health.br;Discovery Home & Health;
+Discovery.Science.br;Discovery Science;
+Discovery.Turbo.br;Discovery Turbo;
+Discovery.World.br;Discovery World;
+History.Channel.br;History Channel;
+TLC.br;TLC;cs:channel:tlc
+BBC.World.News.br;BBC World News;
+Band.News.br;Band News;
+Bloomberg.br;Bloomberg;
+CNN.International.br;CNN International;
+Deutsche.Welle.br;Deutsche Welle;
+Globo.News.br;Globo News;
+Band.br;Band;
+Canal.21.br;Canal 21;
+Globo.br;Globo;
+MTV.br;MTV;
+Record.News.br;Record News;
+Record.TV.br;Record TV;
+Rede.TV.br;Rede TV;
+Rede.Vida.br;Rede Vida;
+SBT.br;SBT;
+TV.Aparecida.(aberta).br;TV Aparecida (aberta);
+TV.Brasil.br;TV Brasil;
+TV.Cultura.br;TV Cultura;
+TV.Gazeta.br;TV Gazeta;

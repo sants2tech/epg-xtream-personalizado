@@ -119,7 +119,7 @@ def parse_xmltv(data):
 def parse_xmltv_datetime(value):
     """Converte timestamp XMLTV para UTC."""
     match = re.fullmatch(
-        r"(\\d{14})(?:\\s*([+-])(\\d{2}):?(\\d{2}))?",
+        r"(\d{14})(?:\s*([+-])(\d{2}):?(\d{2}))?",
         str(value or "").strip()
     )
     if not match:

@@ -204,7 +204,7 @@
 131138;ESPN 6 FHD;4;EPG de fonte
 8794;ESPN 6  HD;4;EPG de fonte
 30077;ESPN 6 HD ¹;4;EPG de fonte
-20532;EVANGELIZAR HD;121;Programação contínua
+20532;EVANGELIZAR HD;155;EPG de fonte
 8782;E! FHD;171;EPG de fonte
 8783;E! HD;171;EPG de fonte
 8807;FISH TV FHD;234;EPG de fonte
@@ -509,7 +509,7 @@
 13540;MULTISHOW;255;EPG de fonte
 8974;MULTISHOW HD;255;EPG de fonte
 8975;MULTISHOW FHD;255;EPG de fonte
-21019;NOVO TEMPO;121;Programação contínua
+21019;NOVO TEMPO;185;EPG de fonte
 107981;WARNER FHD H.265;6;EPG de fonte
 21684;WARNER;6;EPG de fonte
 9219;WARNER FHD;6;EPG de fonte
@@ -1074,7 +1074,7 @@
 1169251;TURMA DA MÔNICA;34;EPG de fonte
 1169252;UM MALUCO NO PEDAÇO;121;Programação contínua
 1169253;VAI QUE COLA;121;Programação contínua
-9446;PLAY BOY FHD;121;Programação contínua
+9446;PLAY BOY FHD;208;EPG de fonte
 1169310;PREMIUM 01;121;Programação contínua
 1169311;PREMIUM 02;121;Programação contínua
 1169312;PREMIUM 03;121;Programação contínua
@@ -1155,8 +1155,8 @@ cs:channel:globo-tv-anhanguera-palmas;Globo TV Anhanguera Palmas;121;Programaç�
 cs:channel:globo-tv-liberal-belem;Globo TV Liberal Belem;3;EPG de fonte
 cs:channel:globo-tv-liberal-castanhal;Globo TV Liberal Castanhal;3;EPG de fonte
 cs:channel:globo-tv-liberal-maraba;Globo TV Liberal Maraba;121;Programação contínua
-cs:channel:globo-eptv-campinas;Globo EPTV Campinas;121;Programação contínua
-cs:channel:globo-eptv-ribeirao-preto;Globo EPTV Ribeirao Preto;121;Programação contínua
+cs:channel:globo-eptv-campinas;Globo EPTV Campinas;75;EPG de fonte
+cs:channel:globo-eptv-ribeirao-preto;Globo EPTV Ribeirao Preto;101;EPG de fonte
 cs:channel:globo-eptv-sao-carlos;Globo EPTV Sao Carlos;121;Programação contínua
 cs:channel:globo-eptv-sul-de-minas;Globo EPTV Sul de Minas;121;Programação contínua
 cs:channel:globo-inter-tv-alto-litoral;Globo Inter TV Alto Litoral;3;EPG de fonte
@@ -1289,7 +1289,7 @@ cs:channel:syfy;SYFY;121;Programação contínua
 cs:channel:tnt;TNT;159;EPG de fonte
 cs:channel:tnt-novelas;TNT Novelas;153;EPG de fonte
 cs:channel:tnt-series;TNT Series;196;EPG de fonte
-cs:channel:universal-tv;Universal TV;139;EPG de fonte
+cs:channel:universal-tv;Universal TV;177;EPG de fonte
 cs:channel:warner-channel;Warner Channel;259;EPG de fonte
 cs:channel:hbo;HBO;88;EPG de fonte
 cs:channel:hbo-2;HBO 2;88;EPG de fonte
@@ -1395,7 +1395,7 @@ cs:channel:pai-eterno;Pai Eterno;196;EPG de fonte
 cs:channel:rede-gospel;Rede Gospel;72;EPG de fonte
 cs:channel:rede-vida;Rede Vida;215;EPG de fonte
 cs:channel:tv-aparecida;TV Aparecida;72;EPG de fonte
-cs:channel:tv-cancao-nova;TV Cancao Nova;186;EPG de fonte
+cs:channel:tv-cancao-nova;TV Cancao Nova;228;EPG de fonte
 cs:channel:tv-novo-tempo;TV Novo Tempo;72;EPG de fonte
 cs:channel:a-fazenda-cam-1;A Fazenda Cam 1;121;Programação contínua
 cs:channel:a-fazenda-cam-2;A Fazenda Cam 2;121;Programação contínua

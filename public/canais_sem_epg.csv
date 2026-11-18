@@ -4,32 +4,25 @@ cs:channel:globo-tv-anhanguera-anapolis;Globo TV Anhanguera Anapolis;;0
 cs:channel:globo-tv-anhanguera-itumbiara;Globo TV Anhanguera Itumbiara;;0
 cs:channel:globo-tv-anhanguera-luziania;Globo TV Anhanguera Luziania;;0
 cs:channel:globo-tv-anhanguera-rio-verde;Globo TV Anhanguera Rio Verde;;0
-cs:channel:globo-tv-centro-america;Globo TV Centro America;;0
 cs:channel:globo-tv-centro-america-rondonopolis;Globo TV Centro America Rondonopolis;;0
 cs:channel:globo-tv-centro-america-sinop;Globo TV Centro America Sinop;;0
 cs:channel:globo-tv-morena;Globo TV Morena;;0
-cs:channel:globo-tv-morena-ponta-pora;Globo TV Morena Ponta Pora;;0
-cs:channel:globo-inter-tv-cabugi;Globo Inter TV Cabugi;;0
 cs:channel:globo-inter-tv-costa-branca;Globo Inter TV Costa Branca;;0
 cs:channel:globo-nordeste;Globo Nordeste;;0
 cs:channel:globo-rede-bahia;Globo Rede Bahia;;0
 cs:channel:globo-rede-bahia-tv-oeste;Globo Rede Bahia TV Oeste;;0
 cs:channel:globo-rede-bahia-tv-santa-cruz;Globo Rede Bahia TV Santa Cruz;;0
-cs:channel:globo-tv-asa-branca;Globo TV Asa Branca;;0
 cs:channel:globo-tv-cabo-branco;Globo TV Cabo Branco;;0
 cs:channel:globo-tv-clube-teresina;Globo TV Clube Teresina;;0
 cs:channel:globo-tv-gazeta-alagoas;Globo TV Gazeta Alagoas;;0
 cs:channel:globo-tv-grande-rio;Globo TV Grande Rio;;0
 cs:channel:globo-tv-mirante-cocais;Globo TV Mirante Cocais;;0
-cs:channel:globo-tv-mirante-imperatriz;Globo TV Mirante Imperatriz;;0
 cs:channel:globo-tv-mirante-sao-luis;Globo TV Mirante Sao Luis;;0
 cs:channel:globo-tv-paraiba;Globo TV Paraiba;;0
 cs:channel:globo-tv-sao-francisco;Globo TV Sao Francisco;;0
 cs:channel:globo-tv-sergipe;Globo TV Sergipe;;0
 cs:channel:globo-tv-subae;Globo TV Subae;;0
-cs:channel:globo-tv-sudoeste;Globo TV Sudoeste;;0
 cs:channel:globo-tv-verdes-mares;Globo TV Verdes Mares;;0
-cs:channel:globo-tv-verdes-mares-cariri;Globo TV Verdes Mares Cariri;;0
 cs:channel:globo-rede-amazonas-arquemes;Globo Rede Amazonas Arquemes;;0
 cs:channel:globo-rede-amazonas-macapa;Globo Rede Amazonas Macapa;;0
 cs:channel:globo-rede-amazonica-amapa;Globo Rede Amazonica Amapa;;0
@@ -38,19 +31,14 @@ cs:channel:globo-rede-amazonica-manaus;Globo Rede Amazonica Manaus;;0
 cs:channel:globo-rede-amazonica-porto-velho;Globo Rede Amazonica Porto Velho;;0
 cs:channel:globo-rede-amazonica-rio-branco;Globo Rede Amazonica Rio Branco;;0
 cs:channel:globo-tv-anhanguera-palmas;Globo TV Anhanguera Palmas;;0
-cs:channel:globo-tv-liberal-belem;Globo TV Liberal Belem;;0
-cs:channel:globo-tv-liberal-castanhal;Globo TV Liberal Castanhal;;0
 cs:channel:globo-tv-liberal-maraba;Globo TV Liberal Maraba;;0
 cs:channel:globo-eptv-campinas;Globo EPTV Campinas;;0
 cs:channel:globo-eptv-ribeirao-preto;Globo EPTV Ribeirao Preto;;0
 cs:channel:globo-eptv-sao-carlos;Globo EPTV Sao Carlos;;0
 cs:channel:globo-eptv-sul-de-minas;Globo EPTV Sul de Minas;;0
-cs:channel:globo-inter-tv-alto-litoral;Globo Inter TV Alto Litoral;;0
-cs:channel:globo-inter-tv-dos-vales;Globo Inter TV dos Vales;;0
 cs:channel:globo-inter-tv-grande-minas;Globo Inter TV Grande Minas;;0
 cs:channel:globo-inter-tv-serra-mar;Globo Inter TV Serra Mar;;0
 cs:channel:globo-minas;Globo Minas;;0
-cs:channel:globo-tv-diario-mogi-das-cruzes;Globo TV Diario Mogi das Cruzes;;0
 cs:channel:globo-tv-fronteira-presidente-prudente;Globo TV Fronteira Presidente Prudente;;0
 cs:channel:globo-tv-gazeta-sul;Globo TV Gazeta Sul;;0
 cs:channel:globo-tv-gazeta-vitoria;Globo TV Gazeta Vitoria;;0
@@ -61,35 +49,18 @@ cs:channel:globo-tv-integracao-uberaba;Globo TV Integracao Uberaba;;0
 cs:channel:globo-tv-integracao-uberlandia;Globo TV Integracao Uberlandia;;0
 cs:channel:globo-tv-rio-sul;Globo TV Rio Sul;;0
 cs:channel:globo-tv-tem-bauru;Globo TV TEM Bauru;;0
-cs:channel:globo-tv-tem-itapetininga;Globo TV TEM Itapetininga;;0
 cs:channel:globo-tv-tem-sao-jose-do-rio-preto;Globo TV TEM Sao Jose do Rio Preto;;0
-cs:channel:globo-tv-tem-sorocaba;Globo TV TEM Sorocaba;;0
-cs:channel:globo-tv-tribuna-santos;Globo TV Tribuna Santos;;0
 cs:channel:globo-tv-vanguarda-s-j-dos-campos;Globo TV Vanguarda S.J dos Campos;;0
 cs:channel:globo-tv-vanguarda-taubate;Globo TV Vanguarda Taubate;;0
-cs:channel:globo-nsc-tv-blumenau;Globo NSC TV Blumenau;;0
-cs:channel:globo-nsc-tv-centro-oeste;Globo NSC TV Centro Oeste;;0
-cs:channel:globo-nsc-tv-chapeco;Globo NSC TV Chapeco;;0
-cs:channel:globo-nsc-tv-criciuma;Globo NSC TV Criciuma;;0
-cs:channel:globo-nsc-tv-florianopolis;Globo NSC TV Florianopolis;;0
-cs:channel:globo-nsc-tv-joinville;Globo NSC TV Joinville;;0
 cs:channel:globo-rbs-tv-bage;Globo RBS TV Bage;;0
 cs:channel:globo-rbs-tv-caxias-do-sul;Globo RBS TV Caxias do Sul;;0
 cs:channel:globo-rbs-tv-cruz-alta;Globo RBS TV Cruz Alta;;0
-cs:channel:globo-rbs-tv-erechim;Globo RBS TV Erechim;;0
 cs:channel:globo-rbs-tv-passo-fundo;Globo RBS TV Passo Fundo;;0
-cs:channel:globo-rbs-tv-pelotas;Globo RBS TV Pelotas;;0
 cs:channel:globo-rbs-tv-porto-alegre;Globo RBS TV Porto Alegre;;0
 cs:channel:globo-rbs-tv-santa-cruz-do-sul;Globo RBS TV Santa Cruz do Sul;;0
 cs:channel:globo-rbs-tv-santa-maria;Globo RBS TV Santa Maria;;0
-cs:channel:globo-rbs-tv-santa-rosa;Globo RBS TV Santa Rosa;;0
-cs:channel:globo-rbs-tv-uruguaiana;Globo RBS TV Uruguaiana;;0
-cs:channel:globo-rpc-cascavel;Globo RPC Cascavel;;0
 cs:channel:globo-rpc-londrina;Globo RPC Londrina;;0
 cs:channel:globo-rpc-paranavai;Globo RPC Paranavai;;0
-cs:channel:globo-rpc-tv-curitiba;Globo RPC TV Curitiba;;0
-cs:channel:globo-rpc-tv-foz-do-iguacu;Globo RPC TV Foz do Iguacu;;0
-cs:channel:globo-rpc-tv-guarapuava;Globo RPC TV Guarapuava;;0
 cs:channel:globo-rpc-tv-maringa;Globo RPC TV Maringa;;0
 cs:channel:globo-rpc-tv-ponta-grossa;Globo RPC TV Ponta Grossa;;0
 cs:channel:globo-tv-alvorada-do-sul;Globo TV Alvorada do Sul;;0
@@ -278,7 +249,6 @@ cs:channel:blaze-e-os-monster-machines;Blaze e os Monster Machines;;0
 cs:channel:bojack-horseman;Bojack Horseman;;0
 cs:channel:cacadores-de-bugs;Cacadores de Bugs;;0
 cs:channel:cavalo-de-fogo;Cavalo de Fogo;;0
-cs:channel:caverna-do-dragao;Caverna do Dragao;;0
 cs:channel:chaves-em-desenho-animado;Chaves Em Desenho Animado;;0
 cs:channel:corrida-maluca;Corrida Maluca;;0
 cs:channel:dennis-o-pimentinha;Dennis o Pimentinha;;0

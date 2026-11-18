@@ -1,1 +1,739 @@
 ﻿xmltv_id;nome_fonte;stream_ids_associados
+a.and.e.br;A&E;cs:channel:a-e
+a.and.e.br;A&E FHD;cs:channel:a-e
+a.and.e.br;A&E HD;cs:channel:a-e
+a.and.e.br;A&E HD ¹;cs:channel:a-e
+a.and.e.br;A&E FHD H.265;cs:channel:a-e
+amc.br;AMC;cs:channel:amc
+amc.br;AMC FHD;cs:channel:amc
+amc.br;AMC HD;cs:channel:amc
+amc.br;AMC HD ¹;cs:channel:amc
+amc.br;AMC HD ²;cs:channel:amc
+amc.br;AMC FHD H.265;cs:channel:amc
+animal.planet.br;ANIMAL PLANET FHD H.265;cs:channel:animal-planet
+animal.planet.br;ANIMAL PLANET FHD;cs:channel:animal-planet
+animal.planet.br;ANIMAL PLANET HD;cs:channel:animal-planet
+animal.planet.br;ANIMAL PLANET;cs:channel:animal-planet
+arte.1.br;ARTE 1 HD;cs:channel:arte-1
+arte.1.br;ARTE 1 FHD;cs:channel:arte-1
+axn.br;AXN;cs:channel:axn
+axn.br;AXN FHD;cs:channel:axn
+axn.br;AXN HD;cs:channel:axn
+axn.br;AXN HD ¹;cs:channel:axn
+axn.br;AXN HD ²;cs:channel:axn
+axn.br;AXN FHD H.265;cs:channel:axn
+axn.br;AXN 4K;cs:channel:axn
+band.bahia.br;Band FM Bahia;
+band.bahia.br;BAND BAHIA FHD;
+band.bahia.br;BAND BAHIA;
+band.br;BAND SP HD;cs:channel:band-sp
+band.br;BAND SP FHD;cs:channel:band-sp
+band.br;BAND SP HD ¹;cs:channel:band-sp
+band.br;BAND SP FHD ¹;cs:channel:band-sp
+band.br;BAND SP FHD  H.265;cs:channel:band-sp
+band.campinas.br;BAND CAMPINAS HD;
+band.news.br;BAND NEWS HD;cs:channel:band-news
+band.news.br;BAND NEWS HD ²;cs:channel:band-news
+band.news.br;BAND NEWS FHD H.265;cs:channel:band-news
+band.news.br;BAND NEWS FHD;cs:channel:band-news
+band.news.br;RADIO Band News FM;cs:channel:band-news
+band.news.br;Band News  Goiânia;cs:channel:band-news
+band.news.br;Band News RJ;cs:channel:band-news
+band.rj.br;BAND RJ;
+band.rs.br;BAND RS HD;
+band.rs.br;Rádio Guaíba RS;
+band.rs.br;Rádio Atlântida RS;
+bandsports.br;BAND SPORTS FHD;cs:channel:band-sports
+bandsports.br;BAND SPORTS HD;cs:channel:band-sports
+bandsports.br;BAND SPORTS HD ³;cs:channel:band-sports
+bandsports.br;BAND SPORTS HD ¹;cs:channel:band-sports
+bandsports.br;BAND SPORTS FHD H.265;cs:channel:band-sports
+bis.br;BIS FHD;cs:channel:bis
+bis.br;BIS HD;cs:channel:bis
+bis.br;BIS;cs:channel:bis
+bis.br;BIS FHD H.265;cs:channel:bis
+Boomerang.br;EVANGELIZAR HD;
+Boomerang.br;TV EVANGELIZAR HD ¹;
+canal.brasil.br;CANAL BRASIL FHD;cs:channel:canal-brasil
+canal.brasil.br;CANAL BRASIL HD;cs:channel:canal-brasil
+canal.brasil.br;CANAL BRASIL HD ¹;cs:channel:canal-brasil
+canal.brasil.br;CANAL BRASIL HD ²;cs:channel:canal-brasil
+canal.brasil.br;CANAL BRASIL FHD H.265;cs:channel:canal-brasil
+canal.do.boi.br;CANAL DO BOI;cs:channel:canal-do-boi
+canal.do.criador.br;CAVERNA DO DRAGÃO;cs:channel:caverna-do-dragao
+canal.do.criador.br;CAVERNA DO DRAGÃAO;cs:channel:caverna-do-dragao
+cancao.nova.br;CANÇÃO NOVA FHD;
+cancao.nova.br;CANÇÃO NOVA HD;
+cancao.nova.br;Rádio canção Nova SP;
+cartoon.network.br;CARTOON NETWORK FHD;cs:channel:cartoon-network
+cartoon.network.br;CARTOON NETWORK HD;cs:channel:cartoon-network
+cartoon.network.br;CARTOON NETWORK;cs:channel:cartoon-network
+cartoon.network.br;CARTOON NETWOORK HD ¹;cs:channel:cartoon-network
+cartoon.network.br;CARTOON NETWOORK HD ²;cs:channel:cartoon-network
+cartoon.network.br;CARTOON NETWOORK FHD H.265;cs:channel:cartoon-network
+cartoonito.br;CARTOONITO FHD;cs:channel:cartoonito
+cartoonito.br;CARTOONITO HD;cs:channel:cartoonito
+cartoonito.br;CARTOONITO;cs:channel:cartoonito
+cartoonito.br;CARTOONITO HD ¹;cs:channel:cartoonito
+cartoonito.br;CARTOONITO HD ²;cs:channel:cartoonito
+cinemax.br;CINEMAX FHD;cs:channel:cinemax
+cinemax.br;CINEMAX HD;cs:channel:cinemax
+cinemax.br;CINEMAX;cs:channel:cinemax
+cinemax.br;CINEMAX HD ¹;cs:channel:cinemax
+cinemax.br;CINEMAX HD ²;cs:channel:cinemax
+cinemax.br;CINEMAX FHD H.265;cs:channel:cinemax
+cnn.brasil.br;CNN BRASIL FHD;cs:channel:cnn-brasil
+cnn.brasil.br;CNN BRASIL HD;cs:channel:cnn-brasil
+cnn.brasil.br;CNN BRASIL HD ¹;cs:channel:cnn-brasil
+cnn.brasil.br;CNN BRASIL HD ²;cs:channel:cnn-brasil
+cnn.brasil.br;CNN BRASIL FHD H.265;cs:channel:cnn-brasil
+cnn.brasil.br;CNN BRASIL 4K;cs:channel:cnn-brasil
+combate.br;COMBATE FHD;cs:channel:combate
+combate.br;COMBATE HD;cs:channel:combate
+combate.br;COMBATE;cs:channel:combate
+combate.br;COMBATE HD ¹;cs:channel:combate
+combate.br;COMBATE HD ²;cs:channel:combate
+combate.br;COMBATE  FHD H.265;cs:channel:combate
+curta.br;CURTA;cs:channel:curta
+DAZN.br;DAZN 2;cs:channel:dazn-2
+DAZN.br;DAZN FHD;cs:channel:dazn-2
+discovery.br;DISCOVERY CHANNEL FHD;cs:channel:discovery-channel
+discovery.br;DISCOVERY CHANNEL HD;cs:channel:discovery-channel
+discovery.br;DISCOVERY CHANNEL;cs:channel:discovery-channel
+discovery.br;DISCOVERY CHANNEL HD ²;cs:channel:discovery-channel
+discovery.br;DISCOVERY CHANNEL ²;cs:channel:discovery-channel
+discovery.br;DISCOVERY CHANNEL FHD H.265;cs:channel:discovery-channel
+discovery.br;DISCOVERY CHANNEL FHD*;cs:channel:discovery-channel
+discovery.home.and.health.br;DISCOVERY HOME & HEALTH FHD;
+discovery.home.and.health.br;DISCOVERY HOME & HEALTH HD;
+discovery.home.and.health.br;DISCOVERY HOME & HEALTH;
+discovery.home.and.health.br;DISCOVERY  HOME & HEALTH HD ²;
+discovery.home.and.health.br;DISCOVERY HOME & HEALTH FHD H.265;
+discovery.home.and.health.br;DISCOVERY HOME & HEALT HD ¹;
+discovery.kids.br;DISCOVERY KIDS FHD;cs:channel:discovery-kids
+discovery.kids.br;DISCOVERY KIDS HD;cs:channel:discovery-kids
+discovery.kids.br;DISCOVERY KIDS HD ¹;cs:channel:discovery-kids
+discovery.kids.br;DISCOVERY KIDS HD ²;cs:channel:discovery-kids
+discovery.kids.br;DISCOVERY KIDS FHD H.265;cs:channel:discovery-kids
+discovery.science.br;DISCOVERY SCIENCE FHD;cs:channel:discovery-science
+discovery.science.br;DISCOVERY SCIENCE HD;cs:channel:discovery-science
+discovery.science.br;DISCOVERY SCIENCE;cs:channel:discovery-science
+discovery.science.br;DISCOVERY SCIENCE HD ²;cs:channel:discovery-science
+discovery.science.br;DISCOVERY SCIENCE FHD H.265;cs:channel:discovery-science
+discovery.science.br;DISCOVERY SCIENCE HD ¹;cs:channel:discovery-science
+discovery.theater.br;DISCOVERY THEATER FHD;cs:channel:discovery-theater
+discovery.theater.br;DISCOVERY THEATER HD;cs:channel:discovery-theater
+discovery.theater.br;DISCOVERY THEATER;cs:channel:discovery-theater
+discovery.theater.br;DISCOVERY THEATER HD ²;cs:channel:discovery-theater
+discovery.theater.br;DISCOVERY THEATER FHD H.265;cs:channel:discovery-theater
+discovery.theater.br;DISCOVERY THEATER HD ¹;cs:channel:discovery-theater
+discovery.turbo.br;DISCOVERY TURBO FHD;cs:channel:discovery-turbo
+discovery.turbo.br;DISCOVERY TURBO HD;cs:channel:discovery-turbo
+discovery.turbo.br;DISCOVERY TURBO;cs:channel:discovery-turbo
+discovery.turbo.br;DISCOVERY TURBO HD ²;cs:channel:discovery-turbo
+discovery.turbo.br;DISCOVERY TURBO HD ¹;cs:channel:discovery-turbo
+discovery.turbo.br;DISCOVERY TURBO FHD H.265;cs:channel:discovery-turbo
+discovery.world.br;DISCOVERY WORLD FHD;cs:channel:discovery-world
+discovery.world.br;DISCOVERY WORLD HD;cs:channel:discovery-world
+discovery.world.br;DISCOVERY WORLD;cs:channel:discovery-world
+discovery.world.br;DISCOVERY WORLD HD ²;cs:channel:discovery-world
+discovery.world.br;DISCOVERY WORLD FHD H.265;cs:channel:discovery-world
+discovery.world.br;DISCOVERY WORLD HD ¹;cs:channel:discovery-world
+e.br;E! FHD;cs:channel:e
+e.br;E! HD;cs:channel:e
+eptv.campinas.e.regiao.br;GLOBO EPTV CAMPINAS FHD;cs:channel:globo-eptv-campinas
+eptv.campinas.e.regiao.br;GLOBO EPTV CAMPINAS HD;cs:channel:globo-eptv-campinas
+eptv.campinas.e.regiao.br;GLOBO EPTV CAMPINAS HD;cs:channel:globo-eptv-campinas
+eptv.central.sao.carlos.br;GLOBO EPTV CENTRAL SÃO CARLOS SP HD;
+eptv.ribeirao.preto.br;GLOBO EPTV RIBEIRÃO PRETO HD;cs:channel:globo-eptv-ribeirao-preto
+eptv.sul.de.minas.br;GLOBO EPTV SUL DE MINAS FHD;cs:channel:globo-eptv-sul-de-minas
+eptv.sul.de.minas.br;GLOBO EPTV SUL DE MINAS HD;cs:channel:globo-eptv-sul-de-minas
+espn.2.br;ESPN 2 HD;cs:channel:espn-2
+espn.2.br;ESPN 2;cs:channel:espn-2
+espn.2.br;ESPN 2 HD ²;cs:channel:espn-2
+espn.2.br;ESPN 2 HD ¹;cs:channel:espn-2
+espn.2.br;ESPN 2 FHD H.265;cs:channel:espn-2
+espn.2.br;ESPN 2 FHD;cs:channel:espn-2
+espn.2.br;ESPN HD ²;cs:channel:espn-2
+espn.3.br;ESPN 3 HD;cs:channel:espn-3
+espn.3.br;ESPN 3 FHD;cs:channel:espn-3
+espn.3.br;ESPN 3;cs:channel:espn-3
+espn.3.br;ESPN 3 HD ¹;cs:channel:espn-3
+espn.3.br;ESPN 3 HD ²;cs:channel:espn-3
+espn.3.br;ESPN 3 FHD H.265;cs:channel:espn-3
+espn.3.br;ESPN 3 FHD*;cs:channel:espn-3
+espn.3.br;ESPN 3 4K;cs:channel:espn-3
+espn.4.br;ESPN 4 FHD;cs:channel:espn-4
+espn.4.br;ESPN 4 HD;cs:channel:espn-4
+espn.4.br;ESPN 4;cs:channel:espn-4
+espn.4.br;ESPN 4 HD ²;cs:channel:espn-4
+espn.4.br;ESPN 4 HD ¹;cs:channel:espn-4
+espn.4.br;ESPN 4 FHD H.265;cs:channel:espn-4
+espn.5.br;ESPN 5 FHD;cs:channel:espn-5
+espn.5.br;ESPN 5 HD;cs:channel:espn-5
+espn.5.br;ESPN 5;cs:channel:espn-5
+espn.5.br;ESPN 5  HD ¹;cs:channel:espn-5
+espn.5.br;ESPN 5 HD ²;cs:channel:espn-5
+espn.5.br;ESPN 5 FHD H.265;cs:channel:espn-5
+espn.6.br;ESPN 6  HD;cs:channel:espn-6
+espn.6.br;ESPN 6 HD ¹;cs:channel:espn-6
+espn.6.br;ESPN 6 FHD H.265;cs:channel:espn-6
+espn.6.br;ESPN 6 FHD;cs:channel:espn-6
+espn.br;ESPN 4K;cs:channel:espn
+espn.br;ESPN FHD H.265;cs:channel:espn
+espn.br;ESPN;cs:channel:espn
+espn.br;ESPN FHD;cs:channel:espn
+espn.br;ESPN HD;cs:channel:espn
+espn.br;ESPN HD ¹;cs:channel:espn
+fishtv.br;FISH TV FHD;cs:channel:fish-tv
+fishtv.br;FISH TV HD;cs:channel:fish-tv
+food.network.br;FOOD NETWORK HD;cs:channel:food-network
+food.network.br;FOOD NETWORK FHD;cs:channel:food-network
+food.network.br;FOOD NETWOORK;cs:channel:food-network
+globo.br;GLOBO NOW;
+globo.brasilia.br;GLOBO TV BRASÍLIA FHD;
+globo.brasilia.br;GLOBO TV BRASÍLIA HD;
+globo.minas.br;GLOBO MINAS FHD;cs:channel:globo-minas
+globo.minas.br;GLOBO MINAS HD;cs:channel:globo-minas
+globo.minas.br;GLOBO MINAS HD;cs:channel:globo-minas
+globo.news.br;GLOBO NEWS FHD;cs:channel:globo-news
+globo.news.br;GLOBO NEWS HD;cs:channel:globo-news
+globo.news.br;GLOBO NEWS;cs:channel:globo-news
+globo.news.br;GLOBO NEWS HD ¹;cs:channel:globo-news
+globo.news.br;GLOBO NEWS HD ²;cs:channel:globo-news
+globo.news.br;GLOBO NEWS FHD H.265;cs:channel:globo-news
+globo.nordeste.br;GLOBO NORDESTE FHD;cs:channel:globo-nordeste
+globo.nordeste.br;GLOBO NORDESTE HD;cs:channel:globo-nordeste
+globo.nordeste.br;GLOBO NORDESTE HD;cs:channel:globo-nordeste
+globo.rj.br;GLOBO 4K;cs:channel:globo-rj
+globo.rj.br;Rádio Globo RJ;cs:channel:globo-rj
+globo.rj.br;GLOBO RJ H.265;cs:channel:globo-rj
+globo.rj.br;GLOBO RJ FHD;cs:channel:globo-rj
+globo.rj.br;GLOBO RJ HD;cs:channel:globo-rj
+globo.rpc.br;GLOBO RPC CURITIBA FHD;cs:channel:globo-rpc-tv-curitiba
+globo.rpc.br;GLOBO RPC CURITIBA HD;cs:channel:globo-rpc-tv-curitiba
+globo.rpc.br;GLOBO RPC CURITIBA HD;cs:channel:globo-rpc-tv-curitiba
+globo.sp.br;SÃO PAULO X CORINTHIANS 02 ÁS: 21:30;cs:channel:globo-sp
+globo.sp.br;Rádio Globo hits SP;cs:channel:globo-sp
+globo.sp.br;GLOBO SP H.265;cs:channel:globo-sp
+globo.sp.br;GLOBO SP FHD;cs:channel:globo-sp
+globo.sp.br;GLOBO SP HD;cs:channel:globo-sp
+globo.tv.bahia.br;GLOBO BAHIA SANTA CRUZ H.265;
+globo.tv.bahia.br;GLOBO BAHIA VDC H.265;
+globo.tv.bahia.br;GLOBO TV BAHIA FHD;
+globo.tv.bahia.br;GLOBO TV BAHIA HD;
+globo.tv.bahia.br;GLOBO TV BAHIA HD;
+globo.tv.fronteira.president.br;GLOBO TV FRONTEIRA PAULISTA HD;
+globo.tv.internacional.br;GLOBO INTER PT HD;
+globoplay.novelas.br;NOVELAS GLOBOPLAY FHD;
+globoplay.novelas.br;NOVELAS GLOBOPLAY HD;
+globoplay.novelas.br;NOVELAS GLOBOPLAY;
+globoplay.novelas.br;NOVELAS GLOBOPLAY HD ¹;
+globoplay.novelas.br;NOVELAS GLOBOPLAY ²;
+globoplay.novelas.br;NOVELAS GLOBOPLAY FHD H.265;
+globoplay.novelas.br;NOVELAS GLOBOPLAY FHD*;
+gloob.br;GLOOB FHD;cs:channel:gloob
+gloob.br;GLOOB HD;cs:channel:gloob
+gloob.br;GLOOB;cs:channel:gloob
+gloobinho.br;GLOOBINHO;cs:channel:gloobinho
+gloobinho.br;GLOOBINHO HD;cs:channel:gloobinho
+gnt.br;GNT HD;cs:channel:gnt
+gnt.br;GNT FHD;cs:channel:gnt
+gnt.br;GNT;cs:channel:gnt
+gnt.br;GNT HD ¹;cs:channel:gnt
+gnt.br;GNT HD ²;cs:channel:gnt
+gnt.br;GNT FHD H.265;cs:channel:gnt
+hbo.br;HBO FHD;cs:channel:hbo
+hbo.br;HBO HD;cs:channel:hbo
+hbo.br;HBO HD ¹;cs:channel:hbo
+hbo.br;HBO FHD H.265;cs:channel:hbo
+hbo.family.br;HBO FAMILY HD;cs:channel:hbo-family
+hbo.family.br;HBO FAMILY FHD;cs:channel:hbo-family
+hbo.family.br;HBO FAMILY;cs:channel:hbo-family
+hbo.family.br;HBO FAMILY HD ¹;cs:channel:hbo-family
+hbo.family.br;HBO FAMILY HD ²;cs:channel:hbo-family
+hbo.family.br;HBO FAMILY FHD H.265;cs:channel:hbo-family
+hbo.mundi.br;HBO MUNDI FHD;cs:channel:hbo-mundi
+hbo.mundi.br;HBO MUNDI HD;cs:channel:hbo-mundi
+hbo.mundi.br;HBO MUNDI;cs:channel:hbo-mundi
+hbo.mundi.br;HBO MUNDI HD ¹;cs:channel:hbo-mundi
+hbo.mundi.br;HBO MUNDI HD ²;cs:channel:hbo-mundi
+hbo.mundi.br;HBO MUNDI FHD H.265;cs:channel:hbo-mundi
+hbo.plus.br;HBO PLUS HD;cs:channel:hbo-plus
+hbo.plus.br;HBO PLUS FHD;cs:channel:hbo-plus
+hbo.plus.br;HBO PLUS HD ¹;cs:channel:hbo-plus
+hbo.plus.br;HBO PLUS HD ²;cs:channel:hbo-plus
+hbo.plus.br;HBO PLUS FHD H.265;cs:channel:hbo-plus
+hbo.pop.br;HBO POP HD;cs:channel:hbo-pop
+hbo.pop.br;HBO POP;cs:channel:hbo-pop
+hbo.pop.br;HBO POP FHD;cs:channel:hbo-pop
+hbo.pop.br;HBO POP HD ¹;cs:channel:hbo-pop
+hbo.pop.br;HBO POP HD ²;cs:channel:hbo-pop
+hbo.pop.br;HBO POP FHD H.265;cs:channel:hbo-pop
+hbo.signature.br;HBO SIGNATURE FHD;cs:channel:hbo-signature
+hbo.signature.br;HBO SIGNATURE HD;cs:channel:hbo-signature
+hbo.signature.br;HBO SIGNATURE;cs:channel:hbo-signature
+hbo.signature.br;HBO SIGNATURE HD ¹;cs:channel:hbo-signature
+hbo.signature.br;HBO SIGNATURE HD ²;cs:channel:hbo-signature
+hbo.signature.br;HBO SIGNATURE FHD H.265;cs:channel:hbo-signature
+hbo.xtreme.br;HBO XTREME HD;cs:channel:hbo-xtreme
+hbo.xtreme.br;HBO XTREME FHD;cs:channel:hbo-xtreme
+hbo.xtreme.br;HBO XTREME;cs:channel:hbo-xtreme
+hbo.xtreme.br;HBO XTREME HD ¹;cs:channel:hbo-xtreme
+hbo2.br;HBO 2 FHD;cs:channel:hbo-2
+hbo2.br;HBO 2 HD;cs:channel:hbo-2
+hbo2.br;HBO 2;cs:channel:hbo-2
+hbo2.br;HBO 2 HD ¹;cs:channel:hbo-2
+hbo2.br;HBO 2 HD ²;cs:channel:hbo-2
+hbo2.br;HBO 2 FHD H.265;cs:channel:hbo-2
+hgtv.br;HGTV FHD;cs:channel:hgtv
+hgtv.br;HGTV FHD H.265;cs:channel:hgtv
+hgtv.br;HGTV HD;cs:channel:hgtv
+history.2.br;HISTORY 2 FHD;cs:channel:history
+history.2.br;HISTORY 2 FHD H.265;cs:channel:history
+history.2.br;HISTORY 2 HD;cs:channel:history
+history.2.br;HISTORY 2;cs:channel:history
+history.br;HISTORY FHD;cs:channel:history
+history.br;HISTORY FHD H.265;cs:channel:history
+history.br;HISTORY HD;cs:channel:history
+history.br;HISTORY;cs:channel:history
+hustler.br;XXX: Blue Hustler HD;
+inter.tv.alto.litoral.globo.br;GLOBO RJ INTER ALTO LITORAL H.265;cs:channel:globo-inter-tv-alto-litoral
+inter.tv.alto.litoral.globo.br;GLOBO RJ INTER TV ALTO LITORAL FHD;cs:channel:globo-inter-tv-alto-litoral
+inter.tv.dos.vales.br;GLOBO INTER TV DOS VALES FHD;cs:channel:globo-inter-tv-dos-vales
+inter.tv.dos.vales.br;GLOBO INTER TV DOS VALES HD;cs:channel:globo-inter-tv-dos-vales
+inter.tv.dos.vales.br;GLOBO INTER TV GOVERNADOR VALADARES HD;cs:channel:globo-inter-tv-dos-vales
+inter.tv.planicie.tv.globo.br;GLOBO RJ PLANÍCIE HD;
+intertv.costa.branca.br;GLOBO INTER TV COSTA BRANCA HD;cs:channel:globo-inter-tv-costa-branca
+intertv.grande.minas.br;GLOBO INTER TV GRANDE MINAS FHD;cs:channel:globo-inter-tv-grande-minas
+intertv.grande.minas.br;GLOBO INTER TV GRANDE MINAS HD;cs:channel:globo-inter-tv-grande-minas
+intertv.grande.minas.br;GLOBO INTER TV GRANDE MINAS HD;cs:channel:globo-inter-tv-grande-minas
+investigacao.discovery.br;ID - INVESTIGAÇÃO DISCOVERY FHD;
+investigacao.discovery.br;ID - INVESTIGAÇÃO DISCOVERY HD;
+investigacao.discovery.br;ID - INVESTIGAÇÃO DISCOVERY HD ²;
+investigacao.discovery.br;ID - INVESTIGAÇÃO DISCOVERY HD ³;
+investigacao.discovery.br;ID - INVESTIGAÇÃO DISCOVERY FHD H.265;
+jovem.pan.news.br;JOVEM PAN NEWS HD;cs:channel:jovem-pan-news
+jovem.pan.news.br;JOVEM PAN NEWS FHD;cs:channel:jovem-pan-news
+jovem.pan.news.br;JOVEM PAN FHD ¹;cs:channel:jovem-pan-news
+jovem.pan.news.br;JOVEM PAN HD ¹;cs:channel:jovem-pan-news
+jovem.pan.news.br;Jovem Pan SP;cs:channel:jovem-pan-news
+lifetime.br;LIFETIME FHD;cs:channel:lifetime
+lifetime.br;LIFETIME HD;cs:channel:lifetime
+lifetime.br;LIFETIME;cs:channel:lifetime
+megapix.br;MEGAPIX FHD;cs:channel:megapix
+megapix.br;MEGAPIX HD;cs:channel:megapix
+megapix.br;MEGAPIX HD ¹;cs:channel:megapix
+megapix.br;MEGAPIX HD ²;cs:channel:megapix
+megapix.br;MEGAPIX;cs:channel:megapix
+megapix.br;MEGAPIX FHD H.265;cs:channel:megapix
+modo.viagem.br;MODO VIAGEM FHD;cs:channel:modo-viagem
+modo.viagem.br;MODO VIAGEM HD;cs:channel:modo-viagem
+multishow.br;MULTISHOW HD;cs:channel:multishow
+multishow.br;MULTISHOW FHD;cs:channel:multishow
+multishow.br;MULTISHOW;cs:channel:multishow
+netflix.br;NETFLIX LUTAS;
+nsc.tv.blumenau.tv.globo.br;GLOBO NSC TV BLUMENAU FHD;cs:channel:globo-nsc-tv-blumenau
+nsc.tv.blumenau.tv.globo.br;GLOBO NSC TV BLUMENAU HD;cs:channel:globo-nsc-tv-blumenau
+nsc.tv.centro.oeste.tv.globo.br;GLOBO NSC CENTRO OESTE FHD;cs:channel:globo-nsc-tv-centro-oeste
+nsc.tv.chapeco.tv.globo.br;GLOBO NSC TV CHAPECÓ FHD;cs:channel:globo-nsc-tv-chapeco
+nsc.tv.chapeco.tv.globo.br;GLOBO NSC TV CHAPECÓ HD;cs:channel:globo-nsc-tv-chapeco
+nsc.tv.criciuma.tv.globo.br;GLOBO NSC TV CRICIÚMA FHD;cs:channel:globo-nsc-tv-criciuma
+nsc.tv.florianopolis.tv.globo.br;GLOBO NSC FLORIANÓPOLIS FHD;cs:channel:globo-nsc-tv-florianopolis
+nsc.tv.florianopolis.tv.globo.br;GLOBO NSC FLORIANÓPOLIS HD;cs:channel:globo-nsc-tv-florianopolis
+nsc.tv.florianopolis.tv.globo.br;GLOBO NSC FLORIANÓPOLIS HD;cs:channel:globo-nsc-tv-florianopolis
+nsc.tv.joinville.tv.globo.br;GLOBO NSC TV JOINVILLE FHD;cs:channel:globo-nsc-tv-joinville
+off.br;OFF;cs:channel:off
+off.br;OFF FHD;cs:channel:off
+off.br;OFF HD;cs:channel:off
+paramount.plus.1.br;PARAMOUNT + 1;
+paramount.plus.1.br;PARAMOUNT + 5;
+paramount.plus.1.br;PARAMOUNT + 6;
+paramount.plus.1.br;PARAMOUNT + 7;
+paramount.plus.1.br;PARAMOUNT + 8;
+paramount.plus.1.br;PARAMOUNT + 9;
+paramount.plus.2.br;PARAMOUNT + 2;
+paramount.plus.3.br;PARAMOUNT + 3;
+paramount.plus.4.br;PARAMOUNT + 4;
+playboy.br;PLAY BOY FHD;
+premiere.2.br;PREMIERE 2 FHD;cs:channel:premiere-2
+premiere.2.br;PREMIERE 2 FHD ¹;cs:channel:premiere-2
+premiere.2.br;PREMIERE 2 HD;cs:channel:premiere-2
+premiere.2.br;PREMIERE 2 HD ¹;cs:channel:premiere-2
+premiere.2.br;PREMIERE 2 FHD ²;cs:channel:premiere-2
+premiere.2.br;PREMIERE 2 FHD H.265;cs:channel:premiere-2
+premiere.2.br;CORITIBA X GRÊMIO 02 ÁS: 19:30;cs:channel:premiere-2
+premiere.2.br;CORITIBA X GRÊMIO 01 ÁS: 19:30;cs:channel:premiere-2
+premiere.3.br;PREMIERE 3 HD ²;cs:channel:premiere-3
+premiere.3.br;PREMIERE 3 FHD;cs:channel:premiere-3
+premiere.3.br;PREMIERE 3 HD ¹;cs:channel:premiere-3
+premiere.3.br;PREMIERE 3 FHD ¹;cs:channel:premiere-3
+premiere.3.br;PREMIERE 3 HD;cs:channel:premiere-3
+premiere.3.br;PREMIERE 3 FHD H.265;cs:channel:premiere-3
+premiere.3.br;BOTAFOGO X ATLÉTICO - MG 02 ÁS: 21:30;cs:channel:premiere-3
+premiere.3.br;BOTAFOGO X ATLÉTICO - MG 01 ÁS: 21:30;cs:channel:premiere-3
+premiere.4.br;PREMIERE 4 FHD H.265;cs:channel:premiere-4
+premiere.4.br;SÃO PAULO X CORINTHIANS 01 ÁS: 21:30;cs:channel:premiere-4
+premiere.4.br;PREMIERE 4 FHD;cs:channel:premiere-4
+premiere.4.br;PREMIERE 4 FHD ¹;cs:channel:premiere-4
+premiere.4.br;PREMIERE 4 HD;cs:channel:premiere-4
+premiere.4.br;PREMIERE 4 HD ¹;cs:channel:premiere-4
+premiere.4.br;PREMIERE 4 HD ²;cs:channel:premiere-4
+premiere.4.br;VASCO X FLAMENGO 01 ÁS: 20:00;cs:channel:premiere-4
+premiere.5.br;PREMIERE 5 FHD H.265;cs:channel:premiere-5
+premiere.5.br;PREMIERE 5 FHD;cs:channel:premiere-5
+premiere.5.br;PREMIERE 5 FHD ¹;cs:channel:premiere-5
+premiere.5.br;PREMIERE 5 HD;cs:channel:premiere-5
+premiere.5.br;PREMIERE 5 HD ¹;cs:channel:premiere-5
+premiere.5.br;PREMIERE 5 FHD ²;cs:channel:premiere-5
+premiere.5.br;PREMIERE 5 HD ²;cs:channel:premiere-5
+premiere.6.br;PREMIERE 6 FHD H.265;cs:channel:premiere-6
+premiere.6.br;PREMIERE 6 FHD;cs:channel:premiere-6
+premiere.6.br;PREMIERE 6 FHD ¹;cs:channel:premiere-6
+premiere.6.br;PREMIERE 6 HD;cs:channel:premiere-6
+premiere.6.br;PREMIERE 6 HD ¹;cs:channel:premiere-6
+premiere.7.br;PREMIERE 7 FHD;cs:channel:premiere-7
+premiere.7.br;PREMIERE 7 FHD ¹;cs:channel:premiere-7
+premiere.7.br;PREMIERE 7 HD;cs:channel:premiere-7
+premiere.7.br;PREMIERE 7 HD ¹;cs:channel:premiere-7
+premiere.7.br;PREMIERE 7 FHD ²;cs:channel:premiere-7
+premiere.8.br;PREMIERE 8 HD;cs:channel:premiere-8
+premiere.8.br;PREMIERE 8 FHD;cs:channel:premiere-8
+premiere.8.br;PREMIERE 8 FHD MOSAICO;cs:channel:premiere-8
+premiere.clubes.br;PREMIERE CLUBES FHD;
+premiere.clubes.br;PREMIERE CLUBES;
+premiere.clubes.br;PREMIERE CLUBES FHD ²;
+premiere.clubes.br;PREMIERE CLUBES HD;
+premiere.clubes.br;PREMIERE CLUBES FHD H.265;
+premiere.clubes.br;VASCO X FLAMENGO 02 ÁS: 20:00;
+premiere.clubes.br;FLUMINENSE X VITÓRIA 02 ÁS: 20:00;
+premiere.clubes.br;FLUMINENSE X VITÓRIA 01 ÁS: 20:00;
+premiere.clubes.br;FLAMENGO X ATLÉTICO - MG 02 ÁS: 20:00;
+premiere.clubes.br;PREMIERE CLUBES 4K;
+premiere.clubes.br;FLAMENGO X ATLÉTICO - MG 01 ÁS: 20:00;
+premiere.clubes.br;VASCO X PALMEIRAS 01 ÁS: 17:00;
+prime.video.br;PRIME VIDEO 02;
+prime.video.br;PRIME VIDEO 03;
+prime.video.br;PRIME VIDEO 04;
+prime.video.br;PRIME VIDEO 05;
+prime.video.br;PRIME VIDEO 01;
+rbs.tv.bage.globo.br;GLOBO TV RBS BAGÉ HD;
+rbs.tv.caxias.do.sul.br;GLOBO RBS TV CAXIAS DO SUL HD;cs:channel:globo-rbs-tv-caxias-do-sul
+rbs.tv.cruz.alta.br;GLOBO RBS TV CRUZ ALTA HD;cs:channel:globo-rbs-tv-cruz-alta
+rbs.tv.erechim.tv.globo.br;GLOBO RBS TV ERECHIM HD;cs:channel:globo-rbs-tv-erechim
+rbs.tv.pelotas.tv.globo.br;GLOBO RBS TV PELOTAS FHD;cs:channel:globo-rbs-tv-pelotas
+rbs.tv.porto.alegre.br;GLOBO RBS TV PORTO ALEGRE FHD;cs:channel:globo-rbs-tv-porto-alegre
+rbs.tv.porto.alegre.br;GLOBO RBS TV PORTO ALEGRE HD;cs:channel:globo-rbs-tv-porto-alegre
+rbs.tv.santa.cruz.do.sul.br;GLOBO RBS SANTA CRUZ FHD;
+rbs.tv.santa.cruz.do.sul.br;GLOBO RBS SANTA CRUZ HD;
+rbs.tv.santa.maria.br;GLOBO RBS TV SANTA MARIA HD;cs:channel:globo-rbs-tv-santa-maria
+rbs.tv.santa.rosa.tv.globo.br;GLOBO RBS TV SANTA ROSA HD;cs:channel:globo-rbs-tv-santa-rosa
+rbs.tv.uruguaiana.br;GLOBO RBS TV URUGUAIANA HD;cs:channel:globo-rbs-tv-uruguaiana
+record.br;RECORD SP FHD;
+record.br;RECORD SP HD;
+record.br;RECORD HD ¹;
+record.br;RECORD SP FHD H.265;
+record.br;RECORD 4K;
+record.brasilia.br;RECORD BRASILIA HD;
+record.interior.br;Rádio futebol interior SP;
+record.news.br;RECORD NEWS HD;cs:channel:record-news
+record.news.br;RECORD NEWS FHD;cs:channel:record-news
+record.news.br;RECORD NEWS HD ¹;cs:channel:record-news
+record.news.br;Rádio Ourem News;cs:channel:record-news
+record.news.sc.br;RECORD SANTA CATARINA HD;
+record.news.sc.br;RECORD NSC SANTA CATARINA HD;
+record.rio.br;RECORD RJ HD;
+record.rio.br;RECORD RJ FHD;
+record.rio.br;RECORD RJ;
+record.rs.br;RECORD RS HD;
+record.rs.br;RECORD RS FHD;
+record.rs.br;RECORD RS HD ¹;
+record.tv.bahia.br;RECORD BAHIA ¹;
+record.tv.bahia.br;RECORD BAHIA HD;
+record.tv.belem.br;RECORD BELEM;
+record.tv.cabralia.br;RECORD SANTA CATARINA HD¹;
+record.tv.cascavel.br;RECORD TV PARANA HD;
+record.tv.goias.br;RECORD GOIAS;
+record.tv.goias.br;RECORD GOIAS HD;
+record.tv.itapoan.br;Rádio Itapoan BA;
+record.tv.minas.br;RECORD MINAS HD;
+record.tv.minas.br;RECORD MINAS;
+record.tv.minas.br;RECORD TV MINAS HD;
+rede.amazonica.acre.br;GLOBO AMAZÔNICA CRUZEIRO ACRE H.265;
+rede.amazonica.macapaglobo.br;GLOBO AMAZÔNICA MACAPÁ HD;
+rede.amazonica.manaus.br;GLOBO AMAZONICA MANAUS HD;
+rede.amazonica.rio.branco.br;GLOBO AMAZÔNICA RIO BRANCO HD;
+rede.amazonica.rondonia.br;GLOBO AMAZONICA RO H.265;
+rede.clube.br;Rádio Clube DF;
+rede.clube.br;Rádio Clube PE;
+rede.clube.br;Rádio Clube PI;
+rede.difusora.br;Rádio Difusora PB;
+rede.gazeta.br;Rádio Gazeta SP;
+rede.gospel.br;REDE GOSPEL FHD;cs:channel:rede-gospel
+rede.gospel.br;Rádio gospel capital;cs:channel:rede-gospel
+rede.massa.hd.sbt.br;Rádio Massa SP;
+rede.super.br;REDE SUPER HD;
+rede.super.br;Rádio Super MG;
+rede.super.br;Rádio Super RD SP;
+rede.vida.br;REDE VIDA HD;cs:channel:rede-vida
+rede.vida.br;REDE VIDA;cs:channel:rede-vida
+rede.vida.br;Rádio Viola PR;cs:channel:rede-vida
+redetv.br;REDETV HD;cs:channel:redetv
+redetv.br;REDETV FHD;cs:channel:redetv
+redetv.br;REDETV FHD ¹;cs:channel:redetv
+redetv.br;REDETV HD ¹;cs:channel:redetv
+redetv.rio.de.janeiro.br;Rádio Rio de janeiro RJ;
+rpc.foz.do.iguacu.hd.tv.globo.br;GLOBO RPC FOZ DO IGUAÇU FHD;cs:channel:globo-rpc-tv-foz-do-iguacu
+rpc.guarapuava.hd.tv.globo.br;GLOBO RPC GUARAPUAVA HD;cs:channel:globo-rpc-tv-guarapuava
+rpc.londrina.br;GLOBO RPC LONDRINA HD;cs:channel:globo-rpc-londrina
+rpc.maringa.br;GLOBO RPC MARINGÁ FHD;cs:channel:globo-rpc-tv-maringa
+rpc.maringa.br;GLOBO RPC MARINGÁ HD;cs:channel:globo-rpc-tv-maringa
+rpc.paranavai.br;GLOBO RPC PARANAVAÍ HD;cs:channel:globo-rpc-paranavai
+rpc.ponta.grossa.br;GLOBO RPC PONTA GROSSA FHD;cs:channel:globo-rpc-tv-ponta-grossa
+rpc.ponta.grossa.br;GLOBO RPC PONTA GROSSA HD;cs:channel:globo-rpc-tv-ponta-grossa
+rpc.ponta.grossa.br;GLOBO RPC PONTA GROSSA HD;cs:channel:globo-rpc-tv-ponta-grossa
+sbt.br;SBT FHD;
+sbt.br;SBT HD;
+sbt.br;SBT;
+sbt.br;SBT HD ¹;
+sbt.br;SBT FHD ¹;
+sbt.br;SBT FHD ²;
+Sbt.br;SBT PARANA HD;
+sbt.br;SBT 4K;
+sbt.br;SBT NEWS FHD H.265;
+sbt.br;SBT NEWS FHD;
+sbt.piaui.br;SBT PIAUI HD;
+sbt.rio.br;SBT RJ HD;cs:channel:sbt-rj
+sbt.rio.br;SBT RJ FHD;cs:channel:sbt-rj
+sbt.rs.br;SBT RS HD;cs:channel:sbt-rs
+sexprive.brasileirinhas.br;XXX: Brasileirinhas FHD;
+sexy.hot.br;SEXY HOT;
+sony.br;SONY FHD;
+sony.br;SONY HD;
+sony.br;SONY;
+sony.br;SONY HD ¹;
+sony.br;SONY HD ²;
+sony.br;SONY FHD H.265;
+space.br;SPACE FHD;cs:channel:space
+space.br;SPACE HD;cs:channel:space
+space.br;SPACE;cs:channel:space
+space.br;SPACE HD ¹;cs:channel:space
+space.br;SPACE HD ²;cs:channel:space
+space.br;SPACE FHD H.265;cs:channel:space
+space.br;FINAL SPACE;cs:channel:space
+sportv.4.br;SPORTV 4 FHD;cs:channel:sportv-4
+sportv.br;SPORTV FHD;cs:channel:sportv, cs:channel:sportv-2
+sportv.br;SPORTV HD;cs:channel:sportv, cs:channel:sportv-2
+sportv.br;SPORTV HD ¹;cs:channel:sportv, cs:channel:sportv-2
+sportv.br;SPORTV HD ²;cs:channel:sportv, cs:channel:sportv-2
+sportv.br;SPORTV;cs:channel:sportv, cs:channel:sportv-2
+sportv.br;SPORTV FHD H.265;cs:channel:sportv, cs:channel:sportv-2
+sportv.br;VASCO X PALMEIRAS 02 ÁS: 17:00;cs:channel:sportv, cs:channel:sportv-2
+sportv2.br;SPORTV 2 FHD;cs:channel:sportv-2
+sportv2.br;SPORTV 2 HD;cs:channel:sportv-2
+sportv2.br;SPORTV 2;cs:channel:sportv-2
+sportv2.br;SPORTV 2 HD ¹;cs:channel:sportv-2
+sportv2.br;SPORTV 2 HD ²;cs:channel:sportv-2
+sportv2.br;SPORTV 2 FHD H.265;cs:channel:sportv-2
+sportv3.br;SPORTV 3 FHD;cs:channel:sportv-3, cs:channel:sportv3
+sportv3.br;SPORTV 3 HD;cs:channel:sportv-3, cs:channel:sportv3
+sportv3.br;SPORTV 3 HD ¹;cs:channel:sportv-3, cs:channel:sportv3
+sportv3.br;SPORTV 3 HD ²;cs:channel:sportv-3, cs:channel:sportv3
+sportv3.br;SPORTV 3 FHD H.265;cs:channel:sportv-3, cs:channel:sportv3
+sportynet.br;SPORTYNET;cs:channel:sportynet
+studio.universal.br;STUDIO UNIVERSAL FHD;cs:channel:studio-universal
+studio.universal.br;STUDIO UNIVERSAL HD;cs:channel:studio-universal
+studio.universal.br;STUDIO UNIVERSAL HD ¹;cs:channel:studio-universal
+studio.universal.br;STUDIO UNIVERSAL HD ²;cs:channel:studio-universal
+studio.universal.br;STUDIO UNIVERSAL FHD H.265;cs:channel:studio-universal
+tcm.br;TCM HD;
+telecine.action.br;TELECINE ACTION FHD;cs:channel:telecine-action
+telecine.action.br;TELECINE ACTION HD;cs:channel:telecine-action
+telecine.action.br;TELECINE ACTION;cs:channel:telecine-action
+telecine.action.br;TELECINE ACTION HD ¹;cs:channel:telecine-action
+telecine.action.br;TELECINE ACTION HD ²;cs:channel:telecine-action
+telecine.action.br;TELECINE ACTION FHD H.265;cs:channel:telecine-action
+telecine.action.br;TELECINE ACTION 4K;cs:channel:telecine-action
+telecine.cult.br;TELECINE CULT HD;cs:channel:telecine-cult
+telecine.cult.br;TELECINE CULT FHD;cs:channel:telecine-cult
+telecine.cult.br;TELECINE CULT;cs:channel:telecine-cult
+telecine.cult.br;TELECINE CULT HD ¹;cs:channel:telecine-cult
+telecine.cult.br;TELECINE CULT HD ²;cs:channel:telecine-cult
+telecine.cult.br;TELECINE CULT FHD H.265;cs:channel:telecine-cult
+telecine.fun.br;TELECINE FUN FHD;cs:channel:telecine-fun
+telecine.fun.br;TELECINE FUN HD;cs:channel:telecine-fun
+telecine.fun.br;TELECINE FUN;cs:channel:telecine-fun
+telecine.fun.br;TELECINE FUN HD ¹;cs:channel:telecine-fun
+telecine.fun.br;TELECINE FUN HD ²;cs:channel:telecine-fun
+telecine.fun.br;TELECINE FUN FHD H.265;cs:channel:telecine-fun
+telecine.pipoca.br;TELECINE PIPOCA FHD;
+telecine.pipoca.br;TELECINE PIPOCA HD;
+telecine.pipoca.br;TELECINE PIPOCA;
+telecine.pipoca.br;TELECINE PIPOCA HD ¹;
+telecine.pipoca.br;TELECINE PIPOCA HD ²;
+telecine.pipoca.br;TELECINE PIPOCA FHD H.265;
+telecine.pipoca.br;TELECINE PIPOCA 4K;
+telecine.premium.br;TELECINE PREMIUM FHD;cs:channel:telecine-premium
+telecine.premium.br;TELECINE PREMIUM HD;cs:channel:telecine-premium
+telecine.premium.br;TELECINE PREMIUM;cs:channel:telecine-premium
+telecine.premium.br;TELECINE PREMIUM HD ¹;cs:channel:telecine-premium
+telecine.premium.br;TELECINE PREMIUM FHD H.265;cs:channel:telecine-premium
+telecine.premium.br;TELECINE PREMIUM 4K;cs:channel:telecine-premium
+telecine.touch.br;TELECINE TOUCH FHD;cs:channel:telecine-touch
+telecine.touch.br;TELECINE TOUCH HD;cs:channel:telecine-touch
+telecine.touch.br;TELECINE TOUCH;cs:channel:telecine-touch
+telecine.touch.br;TELECINE TOUCH HD ¹;cs:channel:telecine-touch
+telecine.touch.br;TELECINE TOUCH HD ²;cs:channel:telecine-touch
+telecine.touch.br;TELECINE TOUCH FHD H.265;cs:channel:telecine-touch
+tlc.br;DISCOVERY TLC FHD;
+tlc.br;DISCOVERY TLC HD;
+tlc.br;DISCOVERY TLC;
+tnt.br;TNT FHD H.265;cs:channel:tnt
+tnt.br;TNT FHD;cs:channel:tnt
+tnt.br;TNT;cs:channel:tnt
+tnt.br;TNT HD;cs:channel:tnt
+tnt.br;TNT HD ¹;cs:channel:tnt
+tnt.br;TNT HD ²;cs:channel:tnt
+tnt.novelas.br;TNT NOVELAS;cs:channel:tnt-novelas
+tnt.novelas.br;TNT NOVELAS FHD .265;cs:channel:tnt-novelas
+tnt.novelas.br;TNT NOVELAS FHD;cs:channel:tnt-novelas
+tnt.novelas.br;TNT NOVELAS HD;cs:channel:tnt-novelas
+tnt.series.br;TNT SÉRIES FHD;cs:channel:tnt-series
+tnt.series.br;TNT SÉRIES HD;cs:channel:tnt-series
+tnt.series.br;TNT SÉRIES;cs:channel:tnt-series
+tnt.series.br;TNT SÉRIES HD ¹;cs:channel:tnt-series
+tnt.series.br;TNT SÉRIES HD ²;cs:channel:tnt-series
+tnt.series.br;TNT SÉRIES FHD H.265;cs:channel:tnt-series
+tooncast.br;TOONCAST HD;
+tooncast.br;TOONCAST FHD;
+tooncast.br;TOONSCAST;
+tv.alvorada.do.sul.br;GLOBO TV ALVORADA DO SUL HD;cs:channel:globo-tv-alvorada-do-sul
+tv.anhanguera.goiania.br;GLOBO TV ANHANGUERA GOIÂNIA FHD;
+tv.anhanguera.goiania.br;GLOBO TV ANHANGUERA GOIÂNIA HD;
+tv.anhanguera.goiania.br;GLOBO TV ANHANGUERA GOIÂNIA HD;
+tv.anhanguera.tocantins.br;GLOBO TV ANHANGUERA TOCANTINS HD;
+tv.antena.10.br;Rádio antena + PR;
+tv.aparecida.br;TV APARECIDA HD;cs:channel:tv-aparecida
+tv.aparecida.br;TV APARECIDA FHD;cs:channel:tv-aparecida
+tv.aparecida.br;Rádio Aparecida SP;cs:channel:tv-aparecida
+tv.arapuan.br;Rádio Arapuan PB;
+tv.aratu.br;SBT ARATU BAHIA HD;
+tv.asa.branca.br;GLOBO TV ASA BRANCA FHD;cs:channel:globo-tv-asa-branca
+tv.atalaia.br;RECORD SERGIPE - ATALAIA HD;
+tv.brasil.br;TV BRASIL;cs:channel:tv-brasil
+tv.brasil.br;TV BRASIL FHD;cs:channel:tv-brasil
+tv.cabo.branco.br;GLOBO TV CABO BRANCO FHD;cs:channel:globo-tv-cabo-branco
+tv.cabo.branco.br;GLOBO TV CABO BRANCO HD;cs:channel:globo-tv-cabo-branco
+tv.camara.br;TV CÂMARA;
+tv.capital.br;Rádio Capital SP;
+tv.centro.america.br;GLOBO CENTRO AMERICA H.265;cs:channel:globo-tv-centro-america
+tv.centro.america.br;GLOBO CENTRO AMERICA HD;cs:channel:globo-tv-centro-america
+tv.centro.america.br;GLOBO CENTRO AMERICA HD;cs:channel:globo-tv-centro-america
+tv.cidade.br;Cidade 99.1;
+tv.cidade.verde.br;Rádio cidade verde PI;
+tv.correio.br;Rádio 98 Correio Sat PB;
+tv.diario.br;TV DIÁRIO HD;
+tv.diario.br;GLOBO TV DIÁRIO HD;
+tv.diario.mogi.das.cruzes.br;GLOBO TV DIÁRIO MOGI DAS CRUZES HD;cs:channel:globo-tv-diario-mogi-das-cruzes
+tv.gazeta.al.br;GLOBO TV GAZETA ALAGOAS FHD;cs:channel:globo-tv-gazeta-alagoas
+tv.gazeta.al.br;GLOBO TV GAZETA ALAGOAS HD;cs:channel:globo-tv-gazeta-alagoas
+tv.gazeta.br;TV GAZETA;cs:channel:tv-gazeta
+tv.gazeta.es.br;TV GAZETA VITÓRIA ES FHD;
+tv.gazeta.es.br;TV GAZETA VITÓRIA ES HD;
+tv.gazeta.es.br;GLOBO TV GAZETA ES HD;
+tv.globo.recife.br;GLOBO TV RECIFE FHD;
+tv.globo.recife.br;GLOBO TV RECIFE HD;
+tv.globo.rpc.cascavel.br;GLOBO RPC CASCAVEL HD;cs:channel:globo-rpc-cascavel
+tv.guajaramirim.br;GLOBO TV GUAJARÁ MIRIM HD;
+tv.imperial.br;Rádio Imperial RS;
+tv.integracao.araxa.br;GLOBO TV INTEGRAÇÃO ARAXÁ HD;cs:channel:globo-tv-integracao-araxa
+tv.integracao.hd.tv.globo.br;GLOBO INTER TV CORONEL FABRICIANO HD;
+tv.integracao.ituiutaba.br;GLOBO TV INTEGRAÇÃO ITUITABA HD;cs:channel:globo-tv-integracao-ituiutaba
+tv.integracao.juiz.de.fora.br;GLOBO TV INTEGRAÇÃO JUIZ DE FORA HD;cs:channel:globo-tv-integracao-juiz-de-fora
+tv.integracao.juiz.de.fora.br;GLOBO TV INTEGRAÇÃO JUIZ DE FORA MG FHD;cs:channel:globo-tv-integracao-juiz-de-fora
+tv.integracao.juiz.de.fora.br;GLOBO TV INTEGRAÇÃO JUIZ DE FORA MG HD;cs:channel:globo-tv-integracao-juiz-de-fora
+tv.integracao.uberaba.br;GLOBO TV INTEGRAÇÃO UBERABA HD;cs:channel:globo-tv-integracao-uberaba
+tv.integracao.uberlandia.br;GLOBO INTEGRAÇÃO UBERLÂNDIA HD;cs:channel:globo-tv-integracao-uberlandia
+tv.integracao.uberlandia.br;GLOBO TV INTEGRAÇÃO UBERLANDIA FHD;cs:channel:globo-tv-integracao-uberlandia
+tv.integracao.uberlandia.br;GLOBO TV INTEGRAÇÃO UBERLÂNDIA HD;cs:channel:globo-tv-integracao-uberlandia
+tv.inter.cabugi.hd.tv.globo.br;GLOBO INTER CABUGI FHD;cs:channel:globo-inter-tv-cabugi
+tv.inter.cabugi.hd.tv.globo.br;GLOBO INTER CABUGI RN HD;cs:channel:globo-inter-tv-cabugi
+tv.itacoatiara.br;GLOBO TV ITACOTIARA HD;
+tv.jangadeiro.br;Rádio Jangadeiro CE;
+tv.jangadeiro.br;SBT JANGADEIRO FHD;
+tv.jiparana.br;GLOBO TV JI-PARANA HD;
+tv.justica.br;TV JUSTIÇA;
+tv.liberal.belem.hd.tv.globo.br;GLOBO TV LIBERAL BELÉM HD;cs:channel:globo-tv-liberal-belem
+tv.liberal.belem.hd.tv.globo.br;GLOBO TV LIBERAL BELÉM HD;cs:channel:globo-tv-liberal-belem
+tv.liberal.belem.hd.tv.globo.br;GLOBO TV LIBERAL ALTAMIRA HD;cs:channel:globo-tv-liberal-belem
+tv.liberal.castanhalglobo.br;GLOBO TV LIBERAL CASTANHAL HD;cs:channel:globo-tv-liberal-castanhal
+tv.liberal.paragominas.br;GLOBO TV LIBERAL PARAGOMINAS HD;
+tv.liberal.parauapebas.br;GLOBO TV LIBERAL PARAUABEBAS HD;
+tv.liberal.redencao.br;GLOBO TV LIBERAL REDENÇÃO HD;
+tv.metropolitana.hd.band.br;Rádio Metropolitana SP;
+tv.mirante.cocais.br;GLOBO TV MIRANTE COCAIS FHD;cs:channel:globo-tv-mirante-cocais
+tv.mirante.cocais.br;GLOBO TV MIRANTE COCAIS HD;cs:channel:globo-tv-mirante-cocais
+tv.mirante.hd.tv.globo.br;GLOBO TV CLUBE PIAUÍ FHD;
+tv.mirante.hd.tv.globo.br;GLOBO TV CLUBE PIAUÍ HD;
+tv.mirante.imperatriz.br;GLOBO TV MIRANTE IMPERATRIZ HD;cs:channel:globo-tv-mirante-imperatriz
+tv.mirante.sao.luis.br;Rádio Mirante MA;cs:channel:globo-tv-mirante-sao-luis
+tv.mirante.sao.luis.br;GLOBO TV MIRANTE SÃO LUIS FHD;cs:channel:globo-tv-mirante-sao-luis
+tv.mirante.sao.luis.br;GLOBO TV MIRANTE SÃO LUIS HD;cs:channel:globo-tv-mirante-sao-luis
+tv.morena.br;GLOBO TV MORENA FHD;cs:channel:globo-tv-morena
+tv.morena.br;GLOBO TV MORENA HD;cs:channel:globo-tv-morena
+tv.morena.br;GLOBO TV MORENA HD;cs:channel:globo-tv-morena
+tv.morena.corumba.br;GLOBO TV MORENA CORUMBÁ HD;
+tv.morena.ponta.pora.hd.tv.globo.br;GLOBO TV MORENA PONTAPORÃ HD;cs:channel:globo-tv-morena-ponta-pora
+tv.novo.tempo.br;NOVO TEMPO;
+tv.pai.eterno.br;TV PAI ETERNO HD;
+tv.pampa.sul.hd.rede.br;Rádio Pampa RS;
+tv.pantanal.br;Rádio Difusora Pantanal MS;
+tv.paraiba.br;GLOBO TV PARAIBA HD;cs:channel:globo-tv-paraiba
+tv.parintins.br;GLOBO TV PARINTINS HD;
+tv.ra.tim.bum.br;TV RA TIM BUM;cs:channel:tv-ra-tim-bum
+tv.rio.sul.br;GLOBO TV RIO SUL HD;cs:channel:globo-tv-rio-sul
+tv.rio.sul.br;GLOBO TV RIO SUL HD;cs:channel:globo-tv-rio-sul
+tv.rio.sul.br;TV RIO SUL HD;cs:channel:globo-tv-rio-sul
+tv.senado.br;TV SENADO HD;
+tv.senado.br;Rádio Senado DF;
+tv.sergipe.br;GLOBO TV SERGIPE FHD;cs:channel:globo-tv-sergipe
+tv.sergipe.br;GLOBO TV SERGIPE HD;cs:channel:globo-tv-sergipe
+tv.subae.br;GLOBO TV SUBAÉ BA HD;
+tv.sudoeste.br;GLOBO TV SUDOESTE FHD;cs:channel:globo-tv-sudoeste
+tv.tapajos.br;GLOBO TAPAJÓS PA HD;
+tv.tapajos.br;GLOBO TAPAJÓS SANTARÉM HD;
+tv.tem.bauru.br;TV TEM BAURU FHD;
+tv.tem.bauru.br;TV TEM BAURU HD;
+tv.tem.bauru.br;TV TEM BAURU HD;
+tv.tem.itapetininga.br;GLOBO TV TEM ITAPETININGA HD;cs:channel:globo-tv-tem-itapetininga
+tv.tem.sao.jose.do.rio.preto.br;GLOBO SÃO JOSÉ DO RIO PRETO HD;
+tv.tem.sao.jose.do.rio.preto.br;GLOBO SÃO JOSÉ DO RIO PRETO HD;
+tv.tem.sorocaba.br;GLOBO TV TEM SOROCABA HD;cs:channel:globo-tv-tem-sorocaba
+tv.tem.sorocaba.br;GLOBO TV TEM SOROCABA FHD;cs:channel:globo-tv-tem-sorocaba
+tv.tribuna.santos.br;GLOBO TV TRIBUNA SANTOS HD;cs:channel:globo-tv-tribuna-santos
+tv.tropical.br;Rádio Tropical SP;
+tv.tropical.hd.record.br;RECORD TROPICAL FHD;
+tv.vanguarda.br;GLOBO TV VANGUARDA SJC FHD;
+tv.vanguarda.br;GLOBO TV VANGUARDA SJC HD;
+tv.vanguarda.taubate.br;GLOBO TV VANGUARDA TTE HD;
+tv.verdes.mares.br;GLOBO TV VERDES MARES CE FHD;cs:channel:globo-tv-verdes-mares
+tv.verdes.mares.br;GLOBO TV VERDES MARES CE HD;cs:channel:globo-tv-verdes-mares
+tv.verdes.mares.br;GLOBO TV VERDES MARES CE HD;cs:channel:globo-tv-verdes-mares
+tv.verdes.mares.caririglobo.br;GLOBO TV VERDES MARES CARIRI HD;cs:channel:globo-tv-verdes-mares-cariri
+universal.br;UNIVERSAL CHANNEL HD;
+universal.br;UNIVERSAL CHANNEL FHD;
+universal.br;UNIVERSAL CHANNEL;
+universal.br;UNIVERSAL CHANNEL HD ¹;
+universal.br;UNIVERSAL CHANNEL HD ²;
+universal.br;UNIVERSAL CHANNEL FHD H.265;
+venus.br;VENUS FHD;
+viva.br;Web Rádio viva bem;
+warner.br;WARNER FHD;
+warner.br;WARNER HD;
+warner.br;WARNER;
+warner.br;WARNER HD ¹;
+warner.br;WARNER HD ²;
+warner.br;WARNER FHD H.265;
+woohoo.br;WOOHOO HD;cs:channel:woohoo
+woohoo.br;WOOHOO FHD H.265;cs:channel:woohoo
+zoomoo.br;ZOOMOO HD;cs:channel:zoomoo

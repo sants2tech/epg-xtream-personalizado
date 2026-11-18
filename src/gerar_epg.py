@@ -91,37 +91,63 @@ def normalize(value):
 
 
 def regional_aliases(value):
-    """
-    Gera chaves de afiliadas regionais sem misturar redes diferentes.
-    Padroniza Record TV/RecordTV e remove apenas prefixos redundantes,
-    preservando a marca Record, SBT ou Band e a localidade.
-    """
+    """Expande abreviações geográficas sem remover a marca da emissora."""
     text = unicodedata.normalize("NFKD", str(value or ""))
     text = "".join(c for c in text if not unicodedata.combining(c)).casefold()
+    text = re.sub(r"\[[^]]*\]|\([^)]*\)", " ", text)
+    text = re.sub(r"\b(hd|fhd|uhd|4k|sd|br|brasil)\b", " ", text)
     text = re.sub(r"\brecord\s*tv\b|\brecordtv\b", "record", text)
     text = re.sub(r"\binter\s*tv\b|\bintertv\b", "inter", text)
-    text = re.sub(r"\b(globo|regional|regionais|tv|canal)\b", " ", text)
-
+    text = re.sub(r"^\s*tv\s+", "", text)
     geography = {
-        "sp": "sao paulo", "rj": "rio de janeiro", "rio": "rio de janeiro",
-        "rs": "rio grande do sul", "mg": "minas gerais",
-        "pa": "para", "ba": "bahia", "sc": "santa catarina",
-        "pr": "parana", "go": "goias", "df": "brasilia",
-        "am": "amazonas", "es": "espirito santo",
-        "ce": "ceara", "pb": "paraiba", "pe": "pernambuco",
+        "sp": "sao paulo", "rj": "rio de janeiro", "rs": "rio grande do sul",
+        "mg": "minas gerais", "pa": "para", "ba": "bahia", "sc": "santa catarina",
+        "pr": "parana", "go": "goias", "df": "brasilia", "am": "amazonas",
+        "es": "espirito santo", "ce": "ceara", "pb": "paraiba", "pe": "pernambuco",
         "ma": "maranhao", "pi": "piaui", "rn": "rio grande do norte"
     }
     text = " ".join(geography.get(word, word) for word in text.split())
-    alias = re.sub(r"[^a-z0-9]+", "", text)
+    alias = normalize(text)
     original = normalize(value)
-    if len(alias) >= 4 and alias != original:
-        return [alias]
-    return []
+    return [alias] if len(alias) >= 4 and alias != original else []
 
 def channel_name_keys(value):
     keys = [normalize(value)]
     keys.extend(regional_aliases(value))
     return list(dict.fromkeys(key for key in keys if key))
+
+
+def load_alias_library(channels):
+    """Aplica aliases curados pelo usuário, sem apagar a identidade regional."""
+    path = Path("biblioteca_aliases.json")
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    configured = data.get("channels", {}) if isinstance(data, dict) else {}
+    result = {}
+    for channel in channels:
+        name = str(channel.get("name", "")).strip()
+        entry = configured.get(name, {})
+        if isinstance(entry, dict):
+            result[str(channel.get("stream_id", ""))] = {
+                "aliases": list(entry.get("aliases", [])),
+                "preferred_epg_ids": list(entry.get("preferred_epg_ids", []))
+            }
+    return result
+
+
+def xmltv_channel_keys(source_channel):
+    values = [str(source_channel.get("id", "")).strip()]
+    values.extend((node.text or "").strip() for node in source_channel.findall("display-name"))
+    keys = set()
+    for value in values:
+        if not value:
+            continue
+        keys.update(channel_name_keys(value))
+        without_domain = re.sub(r"\.[a-z]{2,}(?:\.[a-z]{2,})?$", "", value, flags=re.I)
+        if without_domain != value:
+            keys.update(channel_name_keys(without_domain))
+    return keys
 
 
 def xtream_get(session, base, username, password, **params):
@@ -195,59 +221,41 @@ def fetch_external_xmltv(session, source):
     return parse_xmltv(data)
 
 
-def match_external_channel(source_channel, id_to_channels,
-                           name_to_channels, fuzzy_candidates,
-                           threshold):
-    """Associa canal externo por ID, nome exato ou nome muito próximo."""
+def match_external_channel(source_channel, name_to_channels,
+                           fuzzy_candidates, threshold, preferred_ids=None):
+    """Associa apenas quando a identificação é única e segura."""
     source_id = str(source_channel.get("id", "")).strip()
-    direct = id_to_channels.get(source_id, [])
-    if direct:
-        return list(dict.fromkeys(direct)), "id"
+    preferred_ids = preferred_ids or {}
+    preferred_hits = [sid for sid, ids in preferred_ids.items() if source_id in ids]
+    if len(preferred_hits) == 1:
+        return preferred_hits, "id_curado"
+    if len(preferred_hits) > 1:
+        return [], "ambiguo"
 
-    display_names = [
-        (item.text or "").strip()
-        for item in source_channel.findall("display-name")
-    ]
+    exact = set()
+    for key in xmltv_channel_keys(source_channel):
+        exact.update(name_to_channels.get(key, []))
+    if len(exact) == 1:
+        return list(exact), "nome_exato"
+    if len(exact) > 1:
+        return [], "ambiguo"
 
-    exact = []
-    for display_name in display_names:
-        for norm in channel_name_keys(display_name):
-            if norm in name_to_channels:
-                exact.extend(name_to_channels[norm])
-
-    if exact:
-        return list(dict.fromkeys(exact)), "nome"
-
-    best_score = 0.0
-    second_score = 0.0
-    best_streams = []
-
-    for display_name in display_names:
-        norm = normalize(display_name)
-        if len(norm) < 5:
+    best_by_stream = {}
+    for node in source_channel.findall("display-name"):
+        norm = normalize(node.text or "")
+        if len(norm) < 6:
             continue
-
-        ranked = []
-        for candidate_norm, stream_ids in fuzzy_candidates:
+        for candidate_norm, stream_id in fuzzy_candidates:
             score = SequenceMatcher(None, norm, candidate_norm).ratio()
-            ranked.append((score, stream_ids))
-
-        ranked.sort(key=lambda item: item[0], reverse=True)
-        if not ranked:
-            continue
-
-        score = ranked[0][0]
-        second = ranked[1][0] if len(ranked) > 1 else 0.0
-
-        if score > best_score:
-            best_score = score
-            second_score = second
-            best_streams = ranked[0][1]
-
-    if best_score >= threshold and best_score - second_score >= 0.08:
-        return list(dict.fromkeys(best_streams)), "aproximado"
-
-    return [], "sem_correspondencia"
+            best_by_stream[stream_id] = max(score, best_by_stream.get(stream_id, 0.0))
+    ranked = sorted(best_by_stream.items(), key=lambda item: item[1], reverse=True)
+    if not ranked:
+        return [], "sem_correspondencia"
+    best_id, best_score = ranked[0]
+    second_score = ranked[1][1] if len(ranked) > 1 else 0.0
+    if best_score >= threshold and best_score - second_score >= 0.10:
+        return [best_id], "aproximado_inequivoco"
+    return [], "ambiguo" if best_score >= threshold else "sem_correspondencia"
 
 
 def programme_key(programme):
@@ -544,18 +552,32 @@ def main():
 
     print(f"Canais encontrados no catálogo Stremio: {len(channels)}", flush=True)
 
-    id_to_channels = defaultdict(list)
+    curated_aliases = load_alias_library(channels)
     name_to_channels = defaultdict(list)
+    fuzzy_candidates = []
+    preferred_epg_ids = {}
+    channel_library = {}
     for channel in channels:
-        channel_id = str(channel["stream_id"]).strip()
-        for key in channel_name_keys(channel.get("name", "")):
-            if channel_id not in name_to_channels[key]:
-                name_to_channels[key].append(channel_id)
-
-    fuzzy_candidates = [
-        (key, ids) for key, ids in name_to_channels.items()
-        if len(key) >= 5
-    ]
+        sid = str(channel["stream_id"]).strip()
+        name = str(channel.get("name", "")).strip()
+        aliases = [name] + curated_aliases.get(sid, {}).get("aliases", [])
+        keys = set()
+        for alias in aliases:
+            keys.update(channel_name_keys(alias))
+        for key in keys:
+            if sid not in name_to_channels[key]:
+                name_to_channels[key].append(sid)
+            if len(key) >= 6:
+                fuzzy_candidates.append((key, sid))
+        preferred_epg_ids[sid] = set(
+            str(value).strip()
+            for value in curated_aliases.get(sid, {}).get("preferred_epg_ids", [])
+        )
+        channel_library[sid] = {
+            "id": sid, "name": name, "normalized_name": normalize(name),
+            "aliases": sorted(set(aliases)), "categories": channel.get("categories", []),
+            "epg_matches": [], "has_epg": False, "programme_count": 0
+        }
 
     # A programação vem apenas das fontes XMLTV públicas configuradas abaixo.
     source_channels = []
@@ -595,12 +617,7 @@ def main():
     external_source_stats = []
 
     external_sources = CONFIG.get("external_xmltv_sources", [])
-    fuzzy_candidates = [
-        (norm, stream_ids)
-        for norm, stream_ids in name_to_channels.items()
-        if len(norm) >= 5
-    ]
-    fuzzy_threshold = float(CONFIG.get("external_fuzzy_threshold", 0.96))
+    fuzzy_threshold = float(CONFIG.get("external_fuzzy_threshold", 0.93))
 
     for source in external_sources:
         source_name = str(source.get("name", "Fonte XMLTV")).strip()
@@ -621,10 +638,10 @@ def main():
 
                 targets, method = match_external_channel(
                     external_channel,
-                    id_to_channels,
                     name_to_channels,
                     fuzzy_candidates,
-                    fuzzy_threshold
+                    fuzzy_threshold,
+                    preferred_epg_ids
                 )
                 targets = [
                     sid for sid in targets
@@ -635,6 +652,18 @@ def main():
                 if targets:
                     external_map[source_id] = targets
                     external_matches += len(targets)
+                    display_names = [
+                        (node.text or "").strip()
+                        for node in external_channel.findall("display-name")
+                    ]
+                    for target_id in targets:
+                        channel_library[target_id]["epg_matches"].append({
+                            "source": source_name,
+                            "xmltv_id": source_id,
+                            "display_names": display_names,
+                            "method": method,
+                            "status": "identificado"
+                        })
 
             # Copia todos os programas da mesma fonte para cada canal associado.
             # A prioridade entre fontes é definida ao montar external_map:
@@ -1080,10 +1109,19 @@ def main():
         flush=True
     )
 
-    # BANCO DE DADOS PRÓPRIO: catálogo completo do FrostStream + estado da EPG.
-    # O banco preserva todos os canais, inclusive os que ainda não possuem grade.
+    # Biblioteca inteligente: cadastro, aliases, correspondências e cobertura real.
+    for sid, record in channel_library.items():
+        record["has_epg"] = bool(programmes_per_channel.get(sid, 0))
+        record["programme_count"] = programmes_per_channel.get(sid, 0)
+        if not record["has_epg"] and not record["epg_matches"]:
+            record["status"] = "sem_correspondencia"
+        elif record["has_epg"]:
+            record["status"] = "epg_disponivel"
+        else:
+            record["status"] = "canal_identificado_sem_programacao_no_periodo"
+
     channel_database = {
-        "schema_version": 1,
+        "schema_version": 2,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source": {
             "name": "FrostStream",
@@ -1091,41 +1129,25 @@ def main():
             "catalog_type": "tv",
             "catalog_id": "froststream-channels"
         },
-        "total_channels": len(channels),
-        "channels_with_epg": channels_with_epg if "channels_with_epg" in locals() else sum(
-            1 for sid in valid_streams if programmes_per_channel.get(sid, 0) > 0
-        ),
-        "channels_without_epg": sum(
-            1 for sid in valid_streams if programmes_per_channel.get(sid, 0) == 0
-        ),
+        "matching_policy": "Correspondência exata/alias curado; fuzzy somente se inequívoco. Sem programação inventada.",
+        "total_channels": len(channel_library),
+        "channels_with_epg": sum(1 for row in channel_library.values() if row["has_epg"]),
+        "channels_without_epg": sum(1 for row in channel_library.values() if not row["has_epg"]),
         "total_programmes": indexed_programme_count,
-        "channels": []
+        "channels": list(channel_library.values())
     }
 
-    for channel in channels:
-        sid = str(channel.get("stream_id", "")).strip()
-        channel_database["channels"].append({
-            "id": sid,
-            "name": channel.get("name", ""),
-            "logo": channel.get("stream_icon", ""),
-            "categories": channel.get("categories", []),
-            "normalized_name": normalize(channel.get("name", "")),
-            "aliases": channel_name_keys(channel.get("name", "")),
-            "has_epg": bool(programmes_per_channel.get(sid, 0)),
-            "programme_count": programmes_per_channel.get(sid, 0),
-            "epg_id": sid
-        })
-
     db_tmp = DB_OUT.with_suffix(".json.tmp")
-    db_tmp.write_text(
-        json.dumps(channel_database, ensure_ascii=False, separators=(",", ":")),
-        encoding="utf-8"
-    )
+    db_tmp.write_text(json.dumps(channel_database, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     db_tmp.replace(DB_OUT)
+    library_path = OUT.parent / "biblioteca_canais.json"
+    library_tmp = library_path.with_suffix(".json.tmp")
+    library_tmp.write_text(json.dumps(channel_database, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    library_tmp.replace(library_path)
     print(
-        f"Banco de canais: {len(channel_database['channels'])} registros; "
-        f"{channel_database['channels_with_epg']} com EPG; "
-        f"{channel_database['channels_without_epg']} sem EPG; arquivo: {DB_OUT}",
+        f"Biblioteca: {len(channel_database['channels'])} canais; "
+        f"{channel_database['channels_with_epg']} com EPG real; "
+        f"{channel_database['channels_without_epg']} sem EPG.",
         flush=True
     )
 

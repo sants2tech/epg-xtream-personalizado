@@ -3,8 +3,8 @@
   "prev_days": 1,
   "next_days": 1,
   "fallback_short_epg": true,
-  "max_programmes_per_channel": 20,
-  "max_fallback_channels_per_run": 800,
+  "max_programmes_per_channel": 30,
+  "max_fallback_channels_per_run": 1500,
   "fallback_workers": 8,
   "external_xmltv_sources": [
     {
@@ -38,7 +38,27 @@
     {
       "name": "XSports",
       "url": "https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/xsports.xml"
+    },
+    {
+      "name": "EPG Brasil IPTV-ORG mi.tv",
+      "url": "https://iptv-org.github.io/epg/guides/br/mi.tv.epg.xml"
+    },
+    {
+      "name": "EPG Brasil epg.pw",
+      "url": "https://epg.pw/xmltv/epg_BR.xml"
+    },
+    {
+      "name": "EPG Brasil rootcoder",
+      "url": "https://raw.githubusercontent.com/rootcoder/epgtv/main/guide.xml.gz"
+    },
+    {
+      "name": "EPG Brasil systemof",
+      "url": "https://raw.githubusercontent.com/systemof/EPG/master/guide.xml.gz"
+    },
+    {
+      "name": "EPG Share Brasil",
+      "url": "https://epgshare01.online/epgshare01/epg_ripper_BR2.xml.gz"
     }
   ],
-  "external_fuzzy_threshold": 0.96
+  "external_fuzzy_threshold": 0.93
 }

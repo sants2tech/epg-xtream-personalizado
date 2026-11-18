@@ -403,19 +403,30 @@ def fetch_short_epg(base, username, password, sid, limit):
 
 
 def fetch_stremio_channels(session):
-    """Extrai todos os canais do mesmo addon Stremio usado pelo KamuflaTV."""
-    addon = "https://froststream.cloutteam.com/usr_9cb7788d82cd6157e7c1"
+    """Obtém a lista oficial de canais ao vivo do addon FrostView (Stremio)."""
+    addon = "https://frostview.cloutteam.com"
     headers = {"User-Agent": "KamuflaTV-EPG/1.0", "Accept": "application/json"}
-    response = session.get(f"{addon}/manifest.json", timeout=(10, 30), headers=headers)
+    response = session.get(f"{addon}/manifest.json", timeout=(15, 45), headers=headers)
     response.raise_for_status()
     manifest = response.json()
-    catalogs = [item for item in manifest.get("catalogs", []) if item.get("type") == "tv" and item.get("id")]
+
+    # A FrostView publica canais como type=channel; aceitamos também tv
+    # para manter compatibilidade caso o manifesto seja alterado.
+    catalogs = [
+        item for item in manifest.get("catalogs", [])
+        if item.get("type") in ("channel", "tv") and item.get("id")
+    ]
     if not catalogs:
-        raise RuntimeError("O manifesto Stremio não publicou nenhum catálogo do tipo tv.")
+        declared = ", ".join(manifest.get("types", []) or []) or "nenhum"
+        raise RuntimeError(
+            "O manifesto FrostView respondeu, mas não publicou catálogo de canais "
+            f"(tipos declarados: {declared})."
+        )
 
     channels_by_id = {}
     for catalog in catalogs:
         catalog_id = str(catalog["id"])
+        catalog_type = str(catalog.get("type") or "channel")
         extras = catalog.get("extra", []) or []
         genre_extra = next((item for item in extras if item.get("name") == "genre"), None)
         genres = (genre_extra or {}).get("options") or [""]
@@ -429,8 +440,11 @@ def fetch_stremio_channels(session):
                 if skip:
                     parts.append("skip=" + str(skip))
                 suffix = "/" + "&".join(parts) if parts else ""
-                url = f"{addon}/catalog/tv/{requests.utils.quote(catalog_id, safe='')}{suffix}.json"
-                result = session.get(url, timeout=(10, 40), headers=headers)
+                url = (
+                    f"{addon}/catalog/{catalog_type}/"
+                    f"{requests.utils.quote(catalog_id, safe='')}{suffix}.json"
+                )
+                result = session.get(url, timeout=(15, 45), headers=headers)
                 result.raise_for_status()
                 payload = result.json()
                 metas = payload.get("metas", []) if isinstance(payload, dict) else []
@@ -445,14 +459,20 @@ def fetch_stremio_channels(session):
                     name = str(meta.get("name", "")).strip()
                     if channel_id and name:
                         channels_by_id[channel_id] = {
-                            "stream_id": channel_id, "name": name,
+                            "stream_id": channel_id,
+                            "name": name,
                             "stream_icon": meta.get("logo") or meta.get("poster") or "",
-                            "epg_channel_id": "", "custom_sid": ""
+                            "epg_channel_id": "",
+                            "custom_sid": ""
                         }
                 skip += len(metas)
+
     channels = list(channels_by_id.values())
     if not channels:
-        raise RuntimeError("O addon Stremio respondeu, mas não retornou canais no catálogo tv.")
+        raise RuntimeError(
+            "A FrostView respondeu ao manifesto, mas não retornou canais no catálogo."
+        )
+    print(f"Addon FrostView: {len(channels)} canais importados.", flush=True)
     return channels
 
 

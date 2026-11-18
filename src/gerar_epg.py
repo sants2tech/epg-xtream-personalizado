@@ -420,14 +420,72 @@ def fetch_stremio_channels(session):
     return channels
 
 
+def fetch_xtream_live_channels(session, base, username, password):
+    """Obtém os IDs numéricos reais usados pelo player KamuflaTV via API Xtream."""
+    response = xtream_get(
+        session, base, username, password,
+        action="get_live_streams"
+    )
+    response.raise_for_status()
+    payload = response.json()
+    if not isinstance(payload, list):
+        raise RuntimeError(
+            "A API Xtream não retornou uma lista válida em get_live_streams."
+        )
+
+    channels_by_id = {}
+    for item in payload:
+        sid = str(item.get("stream_id", "")).strip()
+        name = str(item.get("name", "")).strip()
+        if not sid or not name:
+            continue
+        channels_by_id[sid] = {
+            "stream_id": sid,
+            "name": name,
+            "stream_icon": item.get("stream_icon") or "",
+            "epg_channel_id": item.get("epg_channel_id") or "",
+            "custom_sid": item.get("custom_sid") or ""
+        }
+
+    if not channels_by_id:
+        raise RuntimeError(
+            "A API Xtream respondeu, mas não retornou canais ao vivo válidos."
+        )
+    return list(channels_by_id.values())
+
+
 def main():
 
-    print("Iniciando gerador EPG para a lista Stremio do KamuflaTV...", flush=True)
+    print("Iniciando gerador EPG para KamuflaTV (Xtream + Stremio)...", flush=True)
 
     session = requests.Session()
     session.headers.update({"User-Agent": "KamuflaTV-EPG/1.0"})
-    channels = fetch_stremio_channels(session)
-    print(f"Total de canais extraídos do Stremio: {len(channels)}", flush=True)
+
+    # O player publicado consulta canais Xtream com stream_id numérico.
+    # Mantemos também os IDs cs:channel do catálogo Stremio, para compatibilidade
+    # com as entradas Stremio já extraídas pelo projeto.
+    base = clean_base_url(required_env("XTREAM_BASE_URL"))
+    username = required_env("XTREAM_USERNAME")
+    password = required_env("XTREAM_PASSWORD")
+
+    xtream_channels = fetch_xtream_live_channels(
+        session, base, username, password
+    )
+    stremio_channels = fetch_stremio_channels(session)
+
+    channels_by_id = {}
+    for channel in xtream_channels + stremio_channels:
+        sid = str(channel.get("stream_id", "")).strip()
+        if sid:
+            channels_by_id[sid] = channel
+    channels = list(channels_by_id.values())
+
+    print(
+        f"Canais ao vivo Xtream do player: {len(xtream_channels)}; "
+        f"canais do catálogo Stremio: {len(stremio_channels)}; "
+        f"total de IDs no XML: {len(channels)}.",
+        flush=True
+    )
 
     # ÍNDICES DE CANAIS
     # --------------------------------------------------
@@ -473,16 +531,11 @@ def main():
     # --------------------------------------------------
     # BAIXAR XMLTV ORIGINAL DO PROVEDOR CONFIGURADO
     # --------------------------------------------------
-    # A lista de reprodução vem do Stremio, mas a programação pode
-    # vir da conta Xtream já configurada nos Secrets do GitHub.
-    # Os IDs de saída continuam sendo exclusivamente os IDs Stremio.
+    # A lista de canais inclui os IDs numéricos Xtream usados pelo player e
+    # os IDs Stremio cs:channel. A programação é associada por ID e nome.
     # --------------------------------------------------
 
-    base = clean_base_url(required_env("XTREAM_BASE_URL"))
-    username = required_env("XTREAM_USERNAME")
-    password = required_env("XTREAM_PASSWORD")
-
-    print("Baixando XMLTV original para associar aos canais Stremio...", flush=True)
+    print("Baixando XMLTV original para associar aos IDs Xtream e Stremio...", flush=True)
 
     xml_data = request_bytes(
         session,
@@ -1183,7 +1236,7 @@ def main():
     print("       RESULTADO DA ATUALIZAÇÃO")
     print("===================================")
 
-    print(f"Total de canais Stremio: {len(valid_streams)}")
+    print(f"Total de IDs de canais (Xtream + Stremio): {len(valid_streams)}")
 
     print(
         f"Canais com programação: "

@@ -24,6 +24,7 @@ from urllib3.util.retry import Retry
 
 
 OUT = Path("public/epg.xml")
+DB_OUT = Path("public/banco_canais.json")
 CONFIG = json.loads(Path("config.json").read_text(encoding="utf-8"))
 MANUAL_FILE = Path("mapeamento_manual.json")
 
@@ -451,13 +452,17 @@ def fetch_stremio_channels(session):
                     channel_id = str(meta.get("id", "")).strip()
                     name = str(meta.get("name", "")).strip()
                     if channel_id and name:
-                        channels_by_id[channel_id] = {
-                            "stream_id": channel_id,
-                            "name": name,
-                            "stream_icon": meta.get("logo") or meta.get("poster") or "",
-                            "epg_channel_id": "",
-                            "custom_sid": ""
-                        }
+                        if channel_id not in channels_by_id:
+                            channels_by_id[channel_id] = {
+                                "stream_id": channel_id,
+                                "name": name,
+                                "stream_icon": meta.get("logo") or meta.get("poster") or "",
+                                "epg_channel_id": "",
+                                "custom_sid": "",
+                                "categories": []
+                            }
+                        if genre and genre not in channels_by_id[channel_id]["categories"]:
+                            channels_by_id[channel_id]["categories"].append(str(genre))
                 skip += len(metas)
 
     channels = list(channels_by_id.values())
@@ -1072,6 +1077,55 @@ def main():
     print(
         f"Índice EPG Stremio: {len(epg_index['channels'])} canais; "
         f"{indexed_programme_count} programas; arquivo: {json_path}",
+        flush=True
+    )
+
+    # BANCO DE DADOS PRÓPRIO: catálogo completo do FrostStream + estado da EPG.
+    # O banco preserva todos os canais, inclusive os que ainda não possuem grade.
+    channel_database = {
+        "schema_version": 1,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "source": {
+            "name": "FrostStream",
+            "manifest": "https://froststream.cloutteam.com/usr_9cb7788d82cd6157e7c1/manifest.json",
+            "catalog_type": "tv",
+            "catalog_id": "froststream-channels"
+        },
+        "total_channels": len(channels),
+        "channels_with_epg": channels_with_epg if "channels_with_epg" in locals() else sum(
+            1 for sid in valid_streams if programmes_per_channel.get(sid, 0) > 0
+        ),
+        "channels_without_epg": sum(
+            1 for sid in valid_streams if programmes_per_channel.get(sid, 0) == 0
+        ),
+        "total_programmes": indexed_programme_count,
+        "channels": []
+    }
+
+    for channel in channels:
+        sid = str(channel.get("stream_id", "")).strip()
+        channel_database["channels"].append({
+            "id": sid,
+            "name": channel.get("name", ""),
+            "logo": channel.get("stream_icon", ""),
+            "categories": channel.get("categories", []),
+            "normalized_name": normalize(channel.get("name", "")),
+            "aliases": channel_name_keys(channel.get("name", "")),
+            "has_epg": bool(programmes_per_channel.get(sid, 0)),
+            "programme_count": programmes_per_channel.get(sid, 0),
+            "epg_id": sid
+        })
+
+    db_tmp = DB_OUT.with_suffix(".json.tmp")
+    db_tmp.write_text(
+        json.dumps(channel_database, ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8"
+    )
+    db_tmp.replace(DB_OUT)
+    print(
+        f"Banco de canais: {len(channel_database['channels'])} registros; "
+        f"{channel_database['channels_with_epg']} com EPG; "
+        f"{channel_database['channels_without_epg']} sem EPG; arquivo: {DB_OUT}",
         flush=True
     )
 

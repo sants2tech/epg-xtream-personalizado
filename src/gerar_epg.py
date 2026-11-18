@@ -116,6 +116,81 @@ def parse_xmltv(data):
     return root
 
 
+def fetch_external_xmltv(session, source):
+    """Baixa e valida uma fonte XMLTV externa."""
+    url = str(source.get("url", "")).strip()
+    if not url.startswith(("https://", "http://")):
+        raise ValueError("URL XMLTV externa inválida.")
+
+    response = session.get(
+        url,
+        timeout=CONFIG["request_timeout_seconds"],
+        headers={"Accept": "application/xml,text/xml,*/*"}
+    )
+    response.raise_for_status()
+    data = response.content
+
+    if data.startswith(b"\x1f\x8b"):
+        data = gzip.decompress(data)
+
+    return parse_xmltv(data)
+
+
+def match_external_channel(source_channel, id_to_channels,
+                           name_to_channels, fuzzy_candidates,
+                           threshold):
+    """Associa canal externo por ID, nome exato ou nome muito próximo."""
+    source_id = str(source_channel.get("id", "")).strip()
+    direct = id_to_channels.get(source_id, [])
+    if direct:
+        return list(dict.fromkeys(direct)), "id"
+
+    display_names = [
+        (item.text or "").strip()
+        for item in source_channel.findall("display-name")
+    ]
+
+    exact = []
+    for display_name in display_names:
+        norm = normalize(display_name)
+        if norm and norm in name_to_channels:
+            exact.extend(name_to_channels[norm])
+
+    if exact:
+        return list(dict.fromkeys(exact)), "nome"
+
+    best_score = 0.0
+    second_score = 0.0
+    best_streams = []
+
+    for display_name in display_names:
+        norm = normalize(display_name)
+        if len(norm) < 5:
+            continue
+
+        ranked = []
+        for candidate_norm, stream_ids in fuzzy_candidates:
+            score = SequenceMatcher(None, norm, candidate_norm).ratio()
+            ranked.append((score, stream_ids))
+
+        ranked.sort(key=lambda item: item[0], reverse=True)
+        if not ranked:
+            continue
+
+        score = ranked[0][0]
+        second = ranked[1][0] if len(ranked) > 1 else 0.0
+
+        if score > best_score:
+            best_score = score
+            second_score = second
+            best_streams = ranked[0][1]
+
+    if best_score >= threshold and best_score - second_score >= 0.08:
+        return list(dict.fromkeys(best_streams)), "aproximado"
+
+    return [], "sem_correspondencia"
+
+
 def programme_key(programme):
     return (
         programme.get("channel"),
@@ -637,6 +712,106 @@ def main():
     )
 
     # --------------------------------------------------
+    # FONTES XMLTV EXTERNAS: COMPLEMENTAR CANAIS SEM GUIA
+    # --------------------------------------------------
+
+    external_added = 0
+    external_matches = 0
+    external_source_stats = []
+
+    external_sources = CONFIG.get("external_xmltv_sources", [])
+    fuzzy_candidates = [
+        (norm, stream_ids)
+        for norm, stream_ids in name_to_channels.items()
+        if len(norm) >= 5
+    ]
+    fuzzy_threshold = float(CONFIG.get("external_fuzzy_threshold", 0.96))
+
+    for source in external_sources:
+        source_name = str(source.get("name", "Fonte XMLTV")).strip()
+        try:
+            print(
+                f"Consultando fonte complementar: {source_name}...",
+                flush=True
+            )
+            external_root = fetch_external_xmltv(session, source)
+            external_channels = external_root.findall("channel")
+            external_programmes = external_root.findall("programme")
+
+            external_map = {}
+            for external_channel in external_channels:
+                source_id = str(external_channel.get("id", "")).strip()
+                if not source_id:
+                    continue
+
+                targets, method = match_external_channel(
+                    external_channel,
+                    id_to_channels,
+                    name_to_channels,
+                    fuzzy_candidates,
+                    fuzzy_threshold
+                )
+                targets = [
+                    sid for sid in targets
+                    if sid in valid_streams
+                    and programmes_per_channel.get(sid, 0) == 0
+                ]
+
+                if targets:
+                    external_map[source_id] = targets
+                    external_matches += len(targets)
+
+            source_added = 0
+            for programme in external_programmes:
+                source_id = str(programme.get("channel", "")).strip()
+                target_ids = external_map.get(source_id, [])
+
+                if not target_ids:
+                    continue
+
+                for target_id in target_ids:
+                    # A primeira fonte válida que preencher o canal tem prioridade.
+                    if programmes_per_channel.get(target_id, 0) > 0:
+                        continue
+
+                    copied = ET.fromstring(
+                        ET.tostring(programme, encoding="utf-8")
+                    )
+                    copied.set("channel", target_id)
+                    key = programme_key(copied)
+
+                    if key in seen:
+                        continue
+
+                    seen.add(key)
+                    out.append(copied)
+                    count += 1
+                    external_added += 1
+                    source_added += 1
+                    programmes_per_channel[target_id] += 1
+
+            external_source_stats.append(
+                (source_name, len(external_map), source_added)
+            )
+            print(
+                f"{source_name}: {len(external_map)} canais associados; "
+                f"{source_added} programas adicionados.",
+                flush=True
+            )
+
+        except Exception as exc:
+            external_source_stats.append((source_name, 0, 0))
+            print(
+                f"Aviso: fonte complementar {source_name} indisponível: {exc}",
+                flush=True
+            )
+
+    print(
+        f"Programas adicionados por fontes externas: {external_added}",
+        flush=True
+    )
+
+    # --------------------------------------------------
     # FALLBACK: EPG CURTO XTREAM
     # --------------------------------------------------
 
@@ -1024,6 +1199,17 @@ def main():
     )
 
     print(f"Programas XMLTV: {count}")
+
+    print(
+        f"Programas obtidos por fontes externas: "
+        f"{external_added}"
+    )
+
+    for source_name, matched_channels, source_programmes in external_source_stats:
+        print(
+            f"Fonte {source_name}: {matched_channels} canais; "
+            f"{source_programmes} programas"
+        )
 
     print(
         f"Programas obtidos pelo fallback: "

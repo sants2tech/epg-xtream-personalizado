@@ -1,53 +1,57 @@
-# EPG Xtream Personalizado
+# EPG Xtream Personalizado — KamuflaTV
 
-Gera diariamente um XMLTV com todos os canais ao vivo da conta Xtream configurada. O processo tenta obter o guia completo em `xmltv.php`, associa os canais por `epg_channel_id` e, quando necessário, pelo nome. Se não encontrar programas no XMLTV geral, tenta `get_short_epg` individualmente.
+Este repositório gera e publica diariamente um XMLTV compatível com a **KamuflaTV**.
 
-## 1. Criar o repositório
+## Como funciona
 
-1. No GitHub, crie um repositório chamado `epg-xtream-personalizado`.
-2. Para usar o endereço Raw diretamente no aplicativo IPTV, o repositório precisa ser **público**. O código não contém credenciais; elas ficam em Secrets.
-3. Envie todos os arquivos deste pacote para a raiz do repositório.
+1. O gerador autentica na mesma fonte Xtream usada pela área de canais ao vivo da KamuflaTV.
+2. Consulta novamente `get_live_streams` em cada execução. Canais adicionados ou removidos na fonte são refletidos automaticamente.
+3. Usa primeiro o XMLTV disponibilizado pelo próprio provedor, associando os IDs ao `stream_id` dos canais.
+4. Para canais ainda sem programação, consulta fontes brasileiras complementares: Claro TV+, Vivo Play, Globoplay, Pluto TV, +SBT, uma seleção EPG Brasil e XSports.
+5. A associação externa prioriza IDs e nomes exatos. Correspondências aproximadas usam um limite alto e exigem diferença suficiente para evitar atribuições duvidosas.
+6. Gera `public/epg.xml` com os IDs originais dos canais da KamuflaTV e publica os relatórios de cobertura.
 
-> Atenção: o XMLTV publicado será público. Ele contém nomes de canais, logos e programação, mas não deve conter usuário, senha ou links de transmissão.
+A programação do provedor tem prioridade. Uma fonte complementar só preenche um canal que ainda não recebeu programação, evitando substituir a grade principal por outra fonte.
 
-## 2. Configurar os Secrets
+## Secrets necessários
 
-No repositório, abra **Settings → Secrets and variables → Actions → New repository secret** e crie:
+Em **Settings → Secrets and variables → Actions**, mantenha estes três secrets apontando para a mesma conta/catálogo de canais ao vivo usada pela KamuflaTV:
 
-| Nome do Secret | Valor |
+| Secret | Conteúdo |
 |---|---|
-| `XTREAM_BASE_URL` | URL base do servidor, incluindo protocolo e porta, sem `/player_api.php` |
-| `XTREAM_USERNAME` | Seu usuário Xtream |
-| `XTREAM_PASSWORD` | Sua senha Xtream |
+| `XTREAM_BASE_URL` | URL base do servidor, sem `/player_api.php` |
+| `XTREAM_USERNAME` | Usuário da conta |
+| `XTREAM_PASSWORD` | Senha da conta |
 
-Exemplo de formato para a URL base: `https://servidor.exemplo:porta`. Não coloque credenciais dentro da URL.
+Não coloque credenciais no código, no XMLTV ou em arquivos públicos.
 
-## 3. Executar o primeiro teste
+## Atualização automática
 
-1. Abra **Actions → Atualizar EPG Xtream**.
-2. Clique em **Run workflow**.
-3. Abra a execução e confira os logs.
-4. Se terminar com sucesso, confira `public/epg.xml` no repositório.
+O GitHub Actions executa diariamente às **06:20 UTC (03:20 em Brasília)**. Também é possível iniciar uma execução manual em **Actions → Atualizar EPG Xtream → Run workflow**.
 
-O agendamento está configurado para todos os dias às 06:20 UTC (03:20 em Brasília). O GitHub pode atrasar execuções agendadas em períodos de alta carga.
+O processo publica:
+- `public/epg.xml`: guia XMLTV usado pela KamuflaTV;
+- `public/canais_com_epg.csv`: canais com programação;
+- `public/canais_sem_epg.csv`: canais ainda sem programação;
+- `public/canais_xmltv_disponiveis.csv`: IDs e nomes XMLTV encontrados no provedor.
 
-## 4. URL para o aplicativo IPTV
+## URL fixa para a KamuflaTV
 
-Depois da primeira execução bem-sucedida, use:
+A KamuflaTV já está configurada para consumir este endereço:
 
-`https://raw.githubusercontent.com/SEU_USUARIO/epg-xtream-personalizado/main/public/epg.xml`
+`https://raw.githubusercontent.com/sants2tech/epg-xtream-personalizado/main/public/epg.xml`
 
-Substitua `SEU_USUARIO` pelo seu nome de usuário do GitHub. No IPTV Smarters, procure a configuração de EPG remoto/XMLTV e cole esse endereço.
+O link não muda quando o arquivo é atualizado. Basta o aplicativo carregar novamente o XMLTV.
 
-## 5. Limitações importantes
+## Cobertura e limitações
 
-- O sistema não cria programação do nada. Ele organiza o EPG que o provedor realmente disponibiliza.
-- O `xmltv.php` e `get_short_epg` podem estar desativados ou limitados pelo provedor.
-- A associação automática depende de `epg_channel_id` ou de nomes suficientemente parecidos. Canais sem correspondência continuam no XMLTV, mas sem programas.
-- Este primeiro pacote não consulta bases externas de programação. Uma segunda etapa pode adicionar fontes XMLTV públicas/licenciadas e uma tabela de correspondência manual.
-- O arquivo XMLTV é público se o repositório for público. Não publique playlist M3U nem URLs de transmissão com credenciais.
+Não é possível criar uma grade correta quando nenhuma fonte publica a programação daquele canal. Nesses casos o canal continua no XML e aparece no relatório `canais_sem_epg.csv`, sem horários ou programas inventados. A cobertura real será informada nos logs de cada execução.
 
-## Execução local para diagnóstico
+As fontes complementares são projetos independentes e podem alterar disponibilidade, conteúdo ou frequência de atualização. Consulte os repositórios originais:
+- [BrazilTVEPG](https://github.com/limaalef/BrazilTVEPG)
+- [IPTV-com EPG](https://github.com/iptv-com/epg)
+
+## Diagnóstico local
 
 ```bash
 pip install -r requirements.txt

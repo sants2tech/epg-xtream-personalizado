@@ -5,5 +5,36 @@
   "fallback_short_epg": true,
   "max_programmes_per_channel": 20,
   "max_fallback_channels_per_run": 800,
-  "fallback_workers": 8
+  "fallback_workers": 8,
+  "external_xmltv_sources": [
+    {
+      "name": "Claro TV+",
+      "url": "https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/claro.xml"
+    },
+    {
+      "name": "Vivo Play",
+      "url": "https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/vivoplay.xml"
+    },
+    {
+      "name": "Globoplay",
+      "url": "https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/globo.xml"
+    },
+    {
+      "name": "Pluto TV",
+      "url": "https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/plutotv.xml"
+    },
+    {
+      "name": "+SBT",
+      "url": "https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/maissbt.xml"
+    },
+    {
+      "name": "EPG Brasil selecionado",
+      "url": "https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/epg.xml"
+    },
+    {
+      "name": "XSports",
+      "url": "https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/xsports.xml"
+    }
+  ],
+  "external_fuzzy_threshold": 0.96
 }

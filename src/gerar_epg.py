@@ -471,15 +471,39 @@ def main():
                 name_to_channels[norm].append(stream_id)
 
     # --------------------------------------------------
+    # BAIXAR XMLTV ORIGINAL DO PROVEDOR CONFIGURADO
     # --------------------------------------------------
-    # A EPG é obtida das fontes XMLTV públicas e associada
-    # aos canais Stremio por nome/alias, nunca pelo ID Xtream.
+    # A lista de reprodução vem do Stremio, mas a programação pode
+    # vir da conta Xtream já configurada nos Secrets do GitHub.
+    # Os IDs de saída continuam sendo exclusivamente os IDs Stremio.
     # --------------------------------------------------
 
-    source_root = ET.Element("tv")
-    source_channels = []
-    source_programmes = []
-    print("Canais Stremio prontos para associação com fontes XMLTV.", flush=True)
+    base = clean_base_url(required_env("XTREAM_BASE_URL"))
+    username = required_env("XTREAM_USERNAME")
+    password = required_env("XTREAM_PASSWORD")
+
+    print("Baixando XMLTV original para associar aos canais Stremio...", flush=True)
+
+    xml_data = request_bytes(
+        session,
+        f"{base}/xmltv.php",
+        {
+            "username": username,
+            "password": password,
+            "prev_days": CONFIG["prev_days"],
+            "next_days": CONFIG["next_days"]
+        }
+    )
+
+    source_root = parse_xmltv(xml_data)
+    source_channels = source_root.findall("channel")
+    source_programmes = source_root.findall("programme")
+
+    print(
+        f"Fonte XMLTV original: {len(source_channels)} canais e "
+        f"{len(source_programmes)} programas.",
+        flush=True
+    )
 
     # MAPEAMENTO AUTOMÁTICO
     # --------------------------------------------------

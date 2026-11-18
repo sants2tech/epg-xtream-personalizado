@@ -576,7 +576,9 @@ def main():
         channel_library[sid] = {
             "id": sid, "name": name, "normalized_name": normalize(name),
             "aliases": sorted(set(aliases)), "categories": channel.get("categories", []),
-            "epg_matches": [], "has_epg": False, "programme_count": 0
+            "epg_id": sid, "epg_source_ids": [], "epg_source_names": [],
+            "epg_match_methods": [], "epg_matches": [],
+            "has_epg": False, "programme_count": 0, "coverage_source": "none"
         }
 
     # A programação vem apenas das fontes XMLTV públicas configuradas abaixo.
@@ -665,6 +667,14 @@ def main():
                             "method": method,
                             "status": "identificado"
                         })
+                        if source_id not in channel_library[target_id]["epg_source_ids"]:
+                            channel_library[target_id]["epg_source_ids"].append(source_id)
+                        channel_library[target_id]["epg_source_names"].extend(
+                            name for name in display_names
+                            if name not in channel_library[target_id]["epg_source_names"]
+                        )
+                        if method not in channel_library[target_id]["epg_match_methods"]:
+                            channel_library[target_id]["epg_match_methods"].append(method)
                         # Aprende os nomes reais publicados pela fonte EPG.
                         channel_library[target_id]["aliases"] = sorted(set(
                             channel_library[target_id]["aliases"] + display_names + [source_id]
@@ -1119,6 +1129,13 @@ def main():
     for sid, record in channel_library.items():
         record["has_epg"] = bool(programmes_per_channel.get(sid, 0))
         record["programme_count"] = programmes_per_channel.get(sid, 0)
+        if record["epg_matches"]:
+            record["coverage_source"] = "xmltv_source"
+        elif record["has_epg"]:
+            # A programação pode ter sido preservada da execução anterior.
+            # Ela continua útil para a UI, mas não é uma nova associação
+            # verificada nesta execução.
+            record["coverage_source"] = "previous_valid_epg"
         if not record["has_epg"] and not record["epg_matches"]:
             record["status"] = "sem_correspondencia"
         elif record["has_epg"]:
@@ -1127,7 +1144,7 @@ def main():
             record["status"] = "canal_identificado_sem_programacao_no_periodo"
 
     channel_database = {
-        "schema_version": 2,
+        "schema_version": 3,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source": {
             "name": "FrostStream",
@@ -1135,7 +1152,7 @@ def main():
             "catalog_type": "tv",
             "catalog_id": "froststream-channels"
         },
-        "matching_policy": "Correspondência exata/alias curado; fuzzy somente se inequívoco. Sem programação inventada.",
+        "matching_policy": "ID do catálogo; alias/região exatos; fuzzy somente se inequívoco. Cada canal registra IDs XMLTV e a procedência da cobertura. Sem programação inventada.",
         "total_channels": len(channel_library),
         "channels_with_epg": sum(1 for row in channel_library.values() if row["has_epg"]),
         "channels_without_epg": sum(1 for row in channel_library.values() if not row["has_epg"]),

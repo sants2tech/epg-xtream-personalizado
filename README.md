@@ -72,3 +72,9 @@ python src/gerar_epg.py
 A geração consulta também o feed XMLTV Brasil do FreeEPG (`https://free-epg.de/api/epg/br.xml.gz`), que publica grades para centenas de canais e inclui afiliadas regionais, como EPTV Sul de Minas, InterTV Grande Minas, RecordTV Minas, RecordTV Goiás, RPC TV, RBS TV, NSC TV e SBT regionais. O gerador normaliza variações de nomes e qualidade (HD/FHD), mantendo a identificação da rede e da localidade para evitar cruzar afiliadas de regiões diferentes.
 
 A associação regional é feita pelo nome/identidade da emissora; quando a fonte não oferece uma grade correspondente, o canal permanece identificado como sem EPG real e recebe o marcador de programação contínua, sem inventar programas.
+
+## Biblioteca de identidade dos canais
+
+A `public/biblioteca_canais.json` é o índice oficial de identidade usado pela KamuflaTV. Cada registro conserva o ID do catálogo em `id`/`epg_id`, o nome canônico, aliases e os campos de auditoria `epg_source_ids`, `epg_source_names`, `epg_match_methods` e `coverage_source`. A regra é determinística: ID primeiro, alias/região exatos depois e fuzzy apenas quando inequívoco. Assim, `Globo Minas`, `TV Globo Minas`, `Globo MG`, `Globo BH` e `TVGloboMinas.br` apontam para a mesma identidade regional, sem herdar a programação de outra praça.
+
+`coverage_source=xmltv_source` significa que a associação foi encontrada na execução atual em uma fonte XMLTV configurada. `coverage_source=previous_valid_epg` significa que a grade foi preservada porque a fonte falhou ou não a publicou nesta execução; ela é exibida para manter continuidade, mas não é apresentada como uma nova correspondência verificada.

@@ -59,5 +59,19 @@ jobs:
             echo "EPG e relatórios sem alterações."
           else
             git commit -m "Atualiza EPG e relatórios de canais"
-            git push
+            # Integra commits feitos enquanto a geração estava em andamento.
+            # Tenta novamente para evitar perder a EPG quando outro commit chega primeiro.
+            for tentativa in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                echo "EPG publicada com sucesso."
+                break
+              fi
+              if [ "$tentativa" -eq 5 ]; then
+                echo "Não foi possível publicar após 5 tentativas."
+                exit 1
+              fi
+              sleep 3
+            done
           fi

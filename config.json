@@ -8,6 +8,10 @@
   "fallback_workers": 8,
   "external_xmltv_sources": [
     {
+      "name": "FreeEPG Brasil (828 canais, incluindo afiliadas regionais)",
+      "url": "https://free-epg.de/api/epg/br.xml.gz"
+    },
+    {
       "name": "IPTV-EPG.org Brasil",
       "url": "https://iptv-epg.org/files/epg-br.xml"
     },

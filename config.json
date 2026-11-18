@@ -8,6 +8,10 @@
   "fallback_workers": 8,
   "external_xmltv_sources": [
     {
+      "name": "IPTV-EPG.org Brasil",
+      "url": "https://iptv-epg.org/files/epg-br.xml"
+    },
+    {
       "name": "Claro TV+",
       "url": "https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/claro.xml"
     },

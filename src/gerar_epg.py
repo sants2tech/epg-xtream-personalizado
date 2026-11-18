@@ -987,6 +987,46 @@ def main():
                     )
 
     # --------------------------------------------------
+    # PROTEÇÃO: NÃO SUBSTITUIR UM EPG COM MAIOR COBERTURA
+    # --------------------------------------------------
+
+    if OUT.exists():
+        try:
+            previous_root = parse_xmltv(OUT.read_bytes())
+            previous_programmes = previous_root.findall("programme")
+            previous_channel_coverage = len({
+                item.get("channel")
+                for item in previous_programmes
+                if item.get("channel")
+            })
+            new_channel_coverage = len({
+                item.get("channel")
+                for item in out.findall("programme")
+                if item.get("channel")
+            })
+
+            if (
+                previous_channel_coverage > 0
+                and new_channel_coverage < previous_channel_coverage
+                and count < len(previous_programmes)
+            ):
+                print(
+                    "AVISO: a nova geração ficou abaixo da cobertura "
+                    f"publicada ({new_channel_coverage} canais / {count} "
+                    f"programas contra {previous_channel_coverage} canais / "
+                    f"{len(previous_programmes)} programas). "
+                    "O XMLTV e os relatórios anteriores foram preservados.",
+                    flush=True
+                )
+                return
+
+        except Exception as exc:
+            print(
+                f"Aviso: não foi possível comparar com o EPG anterior: {exc}",
+                flush=True
+            )
+
+    # --------------------------------------------------
     # RELATÓRIO: CANAIS SEM EPG
     # --------------------------------------------------
 

@@ -7,11 +7,15 @@ Este repositório gera e publica diariamente um XMLTV compatível com a **Kamufl
 1. O gerador autentica na mesma fonte Xtream usada pela área de canais ao vivo da KamuflaTV.
 2. Consulta novamente `get_live_streams` em cada execução. Canais adicionados ou removidos na fonte são refletidos automaticamente.
 3. Usa primeiro o XMLTV disponibilizado pelo próprio provedor, associando os IDs ao `stream_id` dos canais.
-4. Para canais ainda sem programação, consulta fontes brasileiras complementares: Claro TV+, Vivo Play, Globoplay, Pluto TV, +SBT, uma seleção EPG Brasil e XSports.
+4. Para canais ainda sem programação, consulta fontes brasileiras complementares: IPTV-EPG.org Brasil, Claro TV+, Vivo Play, Globoplay, Pluto TV, +SBT, uma seleção EPG Brasil e XSports.
 5. A associação externa prioriza IDs e nomes exatos. Correspondências aproximadas usam um limite alto e exigem diferença suficiente para evitar atribuições duvidosas.
 6. Gera `public/epg.xml` com os IDs originais dos canais da KamuflaTV e publica os relatórios de cobertura.
 
-A programação do provedor tem prioridade. Uma fonte complementar só preenche um canal que ainda não recebeu programação, evitando substituir a grade principal por outra fonte.
+A programação do provedor tem prioridade. As fontes complementares só preenchem canais que ainda não receberam programação, evitando substituir a grade principal por outra fonte.
+
+## Proteção contra perda de cobertura
+
+Antes de publicar, o gerador compara a nova EPG com a última versão válida. Se a nova geração tiver simultaneamente menos canais cobertos e menos programas, ela é descartada e o XMLTV anterior é mantido. Isso evita que uma falha ou redução temporária na fonte apague uma grade melhor.
 
 ## Secrets necessários
 
@@ -49,6 +53,7 @@ Não é possível criar uma grade correta quando nenhuma fonte publica a program
 
 As fontes complementares são projetos independentes e podem alterar disponibilidade, conteúdo ou frequência de atualização. Consulte os repositórios originais:
 - [BrazilTVEPG](https://github.com/limaalef/BrazilTVEPG)
+- [IPTV-EPG.org](https://iptv-epg.org/guides)
 - [IPTV-com EPG](https://github.com/iptv-com/epg)
 
 ## Diagnóstico local

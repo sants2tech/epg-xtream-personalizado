@@ -492,7 +492,7 @@ def fetch_xtream_live_channels(session, base, username, password):
 
 def main():
 
-    print("Iniciando gerador EPG para KamuflaTV (Xtream + Stremio)...", flush=True)
+    print("Iniciando EPG exclusivamente para os canais do catálogo Stremio...", flush=True)
 
     session = requests.Session()
     retry_policy = Retry(
@@ -505,370 +505,72 @@ def main():
         allowed_methods=frozenset(["GET"]),
         raise_on_status=False
     )
-    adapter = HTTPAdapter(
-        max_retries=retry_policy,
-        pool_connections=20,
-        pool_maxsize=20
-    )
+    adapter = HTTPAdapter(max_retries=retry_policy, pool_connections=20, pool_maxsize=20)
     session.mount("https://", adapter)
     session.mount("http://", adapter)
     session.headers.update({
-        "User-Agent": "KamuflaTV-EPG/1.0",
+        "User-Agent": "KamuflaTV-EPG/2.0",
         "Accept": "application/json, application/xml, text/xml, */*"
     })
-    print(
-        "Proteção de rede ativa: até 6 tentativas automáticas por conexão.",
-        flush=True
-    )
 
-    # O player publicado consulta canais Xtream com stream_id numérico.
-    # Mantemos também os IDs cs:channel do catálogo Stremio, para compatibilidade
-    # com as entradas Stremio já extraídas pelo projeto.
-    base = clean_base_url(required_env("XTREAM_BASE_URL"))
-    username = required_env("XTREAM_USERNAME")
-    password = required_env("XTREAM_PASSWORD")
+    # A lista Stremio é a única fonte de identidade dos canais.
+    # Não consulta Xtream, credenciais, XMLTV do provedor nem IDs numéricos.
+    channels = fetch_stremio_channels(session)
+    valid_streams = {
+        str(channel.get("stream_id", "")).strip()
+        for channel in channels
+        if str(channel.get("stream_id", "")).strip()
+    }
+    channels = [
+        channel for channel in channels
+        if str(channel.get("stream_id", "")).strip() in valid_streams
+    ]
 
-    xtream_channels = fetch_xtream_live_channels(
-        session, base, username, password
-    )
-    stremio_channels = fetch_stremio_channels(session)
-
-    channels_by_id = {}
-    for channel in xtream_channels + stremio_channels:
-        sid = str(channel.get("stream_id", "")).strip()
-        if sid:
-            channels_by_id[sid] = channel
-    channels = list(channels_by_id.values())
-
-    print(
-        f"Canais ao vivo Xtream do player: {len(xtream_channels)}; "
-        f"canais do catálogo Stremio: {len(stremio_channels)}; "
-        f"total de IDs no XML: {len(channels)}.",
-        flush=True
-    )
-
-    # ÍNDICES DE CANAIS
-    # --------------------------------------------------
+    print(f"Canais encontrados no catálogo Stremio: {len(channels)}", flush=True)
 
     id_to_channels = defaultdict(list)
     name_to_channels = defaultdict(list)
+    for channel in channels:
+        channel_id = str(channel["stream_id"]).strip()
+        for key in channel_name_keys(channel.get("name", "")):
+            if channel_id not in name_to_channels[key]:
+                name_to_channels[key].append(channel_id)
 
-    valid_streams = set()
+    fuzzy_candidates = [
+        (key, ids) for key, ids in name_to_channels.items()
+        if len(key) >= 5
+    ]
 
-    for ch in channels:
-
-        stream_id = str(
-            ch.get("stream_id", "")
-        ).strip()
-
-        if not stream_id:
-            continue
-
-        valid_streams.add(stream_id)
-
-        name = (
-            ch.get("name")
-            or f"Canal {stream_id}"
-        ).strip()
-
-        candidates = {
-            str(ch.get("epg_channel_id") or "").strip(),
-            str(ch.get("custom_sid") or "").strip()
-        }
-
-        for candidate in candidates:
-
-            if candidate:
-                if stream_id not in id_to_channels[candidate]:
-                    id_to_channels[candidate].append(stream_id)
-
-        for norm in channel_name_keys(name):
-            if stream_id not in name_to_channels[norm]:
-                name_to_channels[norm].append(stream_id)
-
-    # --------------------------------------------------
-    # BAIXAR XMLTV ORIGINAL DO PROVEDOR CONFIGURADO
-    # --------------------------------------------------
-    # A lista de canais inclui os IDs numéricos Xtream usados pelo player e
-    # os IDs Stremio cs:channel. A programação é associada por ID e nome.
-    # --------------------------------------------------
-
-    print("Baixando XMLTV original para associar aos IDs Xtream e Stremio...", flush=True)
-
-    xml_data = request_bytes(
-        session,
-        f"{base}/xmltv.php",
-        {
-            "username": username,
-            "password": password,
-            "prev_days": CONFIG["prev_days"],
-            "next_days": CONFIG["next_days"]
-        }
-    )
-
-    source_root = parse_xmltv(xml_data)
-    source_channels = source_root.findall("channel")
-    source_programmes = source_root.findall("programme")
-
-    print(
-        f"Fonte XMLTV original: {len(source_channels)} canais e "
-        f"{len(source_programmes)} programas.",
-        flush=True
-    )
-
-    # MAPEAMENTO AUTOMÁTICO
-    # --------------------------------------------------
-
+    # A programação vem apenas das fontes XMLTV públicas configuradas abaixo.
+    source_channels = []
+    source_programmes = []
+    source_root = ET.Element("tv")
     source_id_map = {}
-
     id_matches = 0
     exact_matches = 0
     fuzzy_matches = 0
-
-    fuzzy_candidates = [
-        (norm, stream_ids)
-        for norm, stream_ids in name_to_channels.items()
-        if len(norm) >= 5
-    ]
-
-    print("Associando IDs XMLTV aos canais...", flush=True)
-
-    for source_channel in source_channels:
-
-        source_id = str(
-            source_channel.get("id", "")
-        ).strip()
-
-        if not source_id:
-            continue
-
-        # Primeiro tenta correspondência direta por ID.
-        target_ids = id_to_channels.get(source_id, [])
-
-        if target_ids:
-
-            for sid in target_ids:
-                add_mapping(source_id_map, source_id, sid)
-
-            id_matches += 1
-            continue
-
-        display_names = [
-            item.text or ""
-            for item in source_channel.findall("display-name")
-        ]
-
-        target_ids = []
-
-        # Segundo: correspondência exata por nome.
-        for display_name in display_names:
-
-            matches = []
-            for norm in channel_name_keys(display_name):
-                matches.extend(name_to_channels.get(norm, []))
-
-            if matches:
-
-                target_ids = list(dict.fromkeys(matches))
-                exact_matches += 1
-                break
-
-        # Terceiro: correspondência aproximada.
-        if not target_ids:
-
-            best_score = 0.0
-            second_score = 0.0
-            best_streams = []
-
-            for display_name in display_names:
-
-                norm = normalize(display_name)
-
-                if len(norm) < 5:
-                    continue
-
-                ranked = []
-
-                for candidate_norm, stream_ids in fuzzy_candidates:
-
-                    score = SequenceMatcher(
-                        None,
-                        norm,
-                        candidate_norm
-                    ).ratio()
-
-                    ranked.append(
-                        (score, stream_ids)
-                    )
-
-                ranked.sort(
-                    key=lambda item: item[0],
-                    reverse=True
-                )
-
-                if not ranked:
-                    continue
-
-                current_score = ranked[0][0]
-                current_second = (
-                    ranked[1][0]
-                    if len(ranked) > 1
-                    else 0.0
-                )
-
-                if current_score > best_score:
-
-                    best_score = current_score
-                    second_score = current_second
-                    best_streams = ranked[0][1]
-
-            if (
-                best_score >= 0.93
-                and best_score - second_score >= 0.08
-            ):
-
-                target_ids = list(best_streams)
-                fuzzy_matches += 1
-
-        # Um ID XMLTV pode alimentar vários canais Xtream.
-        for sid in target_ids:
-            add_mapping(source_id_map, source_id, sid)
-
-    # --------------------------------------------------
-    # MAPEAMENTO MANUAL
-    # --------------------------------------------------
-
-    manual_map, manual_matches = load_manual_mapping(
-        channels,
-        source_root
-    )
-
-    # O mapeamento manual substitui a associação automática
-    # somente para os IDs que foram definidos manualmente.
-    for xmltv_id, stream_ids in manual_map.items():
-
-        source_id_map[xmltv_id] = list(stream_ids)
-
-    # Remove IDs inexistentes por segurança.
-    for xmltv_id in list(source_id_map.keys()):
-
-        source_id_map[xmltv_id] = [
-            sid
-            for sid in source_id_map[xmltv_id]
-            if sid in valid_streams
-        ]
-
-        if not source_id_map[xmltv_id]:
-            del source_id_map[xmltv_id]
-
-    # --------------------------------------------------
-    # CRIAR XMLTV DE SAÍDA
-    # --------------------------------------------------
+    manual_map, manual_matches = load_manual_mapping(channels, source_root)
 
     out = ET.Element(
         "tv",
         {
-            "generator-info-name": "EPG Xtream Personalizado",
-            "generator-info-url": (
-                "https://github.com/"
-                "sants2tech/epg-xtream-personalizado"
-            )
+            "generator-info-name": "KamuflaTV EPG Stremio",
+            "generator-info-url": "https://github.com/sants2tech/epg-xtream-personalizado"
         }
     )
 
-    emitted = set()
-
-    for ch in channels:
-
-        sid = str(
-            ch.get("stream_id", "")
-        ).strip()
-
-        if not sid or sid in emitted:
-            continue
-
-        emitted.add(sid)
-
-        node = ET.SubElement(
-            out,
-            "channel",
-            {"id": sid}
-        )
-
-        add_text(
-            node,
-            "display-name",
-            ch.get("name") or f"Canal {sid}"
-        )
-
-        logo = (
-            ch.get("stream_icon") or ""
-        ).strip()
-
+    for channel in channels:
+        channel_id = str(channel["stream_id"]).strip()
+        node = ET.SubElement(out, "channel", {"id": channel_id})
+        add_text(node, "display-name", channel.get("name") or channel_id)
+        logo = str(channel.get("stream_icon") or "").strip()
         if logo.startswith(("http://", "https://")):
-
-            ET.SubElement(
-                node,
-                "icon",
-                {"src": logo}
-            )
-
-    # --------------------------------------------------
-    # COPIAR PROGRAMAÇÃO PARA TODOS OS CANAIS ASSOCIADOS
-    # --------------------------------------------------
-
-    print(
-        "Distribuindo a programação XMLTV...",
-        flush=True
-    )
+            ET.SubElement(node, "icon", {"src": logo})
 
     count = 0
     seen = set()
-
     programmes_per_channel = defaultdict(int)
 
-    for programme in source_programmes:
-
-        source_id = str(
-            programme.get("channel", "")
-        ).strip()
-
-        target_ids = source_id_map.get(source_id, [])
-
-        if not target_ids:
-            continue
-
-        # A mesma programação é replicada para cada canal
-        # Xtream associado ao ID XMLTV de origem.
-        for target_id in target_ids:
-
-            copied = ET.fromstring(
-                ET.tostring(
-                    programme,
-                    encoding="utf-8"
-                )
-            )
-
-            copied.set("channel", target_id)
-
-            key = programme_key(copied)
-
-            if key in seen:
-                continue
-
-            seen.add(key)
-            out.append(copied)
-
-            count += 1
-
-            programmes_per_channel[target_id] += 1
-
-    print(
-        f"Programas XMLTV distribuídos: {count}",
-        flush=True
-    )
-
-    # --------------------------------------------------
     # FONTES XMLTV EXTERNAS: COMPLEMENTAR CANAIS SEM GUIA
     # --------------------------------------------------
 
@@ -1061,63 +763,17 @@ def main():
             )
 
     # --------------------------------------------------
-    # GRADE CONTÍNUA PARA CANAIS SEM PROGRAMAÇÃO REAL
-    # --------------------------------------------------
-    # Não inventa nomes de programas ou horários de emissoras.
-    # Quando nenhuma fonte fornece EPG para um canal, publica blocos
-    # explícitos de "Programação contínua" para que o canal nunca fique
-    # sem faixa na grade do aplicativo.
-    # --------------------------------------------------
-
+    # Não criar programação fictícia. Canais sem correspondência real
+    # permanecem sem grade e são listados no relatório.
     real_programmes_per_channel = dict(programmes_per_channel)
     continuous_channels = set()
-    now_utc = datetime.now(timezone.utc)
-    window_start = (
-        now_utc - timedelta(days=int(CONFIG.get("prev_days", 1)))
-    ).replace(minute=0, second=0, microsecond=0)
-    window_end = now_utc + timedelta(days=int(CONFIG.get("next_days", 3)))
     continuous_added = 0
-
-    for channel in channels:
-        sid = str(channel.get("stream_id", "")).strip()
-        if not sid or programmes_per_channel.get(sid, 0) > 0:
-            continue
-
-        cursor = window_start
-        while cursor < window_end:
-            stop = min(cursor + timedelta(hours=1), window_end)
-            programme = ET.Element(
-                "programme",
-                {
-                    "start": cursor.strftime("%Y%m%d%H%M%S +0000"),
-                    "stop": stop.strftime("%Y%m%d%H%M%S +0000"),
-                    "channel": sid
-                }
-            )
-            add_text(programme, "title", "Programação contínua")
-            add_text(
-                programme,
-                "desc",
-                "A emissora não disponibilizou a grade detalhada nas fontes consultadas. "
-                "Este bloco mantém a programação visível sem atribuir programas ou "
-                "horários fictícios."
-            )
-            add_text(programme, "category", "Programação contínua")
-            out.append(programme)
-            count += 1
-            continuous_added += 1
-            programmes_per_channel[sid] += 1
-            cursor = stop
-
-        continuous_channels.add(sid)
-
-    print(
-        f"Programação contínua criada para {len(continuous_channels)} canais "
-        f"({continuous_added} blocos horários).",
-        flush=True
+    channels_without_real_epg = sum(
+        1 for ch in channels
+        if programmes_per_channel.get(str(ch.get("stream_id", "")), 0) == 0
     )
+    print(f"Canais sem programação real: {channels_without_real_epg}", flush=True)
 
-    # --------------------------------------------------
     # PROTEÇÃO: NÃO SUBSTITUIR UM EPG COM MAIOR COBERTURA
     # --------------------------------------------------
 
@@ -1125,24 +781,24 @@ def main():
         try:
             previous_root = parse_xmltv(OUT.read_bytes())
             previous_programmes = previous_root.findall("programme")
-            previous_channel_coverage = len({
-                item.get("channel")
-                for item in previous_programmes
-                if item.get("channel")
-            })
+            previous_ids = {
+                item.get("channel") for item in previous_programmes
+                if item.get("channel") in valid_streams
+            }
+            previous_channel_coverage = len(previous_ids)
+            previous_relevant_count = sum(
+                1 for item in previous_programmes
+                if item.get("channel") in valid_streams
+            )
             new_channel_coverage = len({
                 item.get("channel")
                 for item in out.findall("programme")
-                if item.get("channel")
+                if item.get("channel") in valid_streams
             })
-
-            previous_ids = {item.get("channel") for item in previous_programmes if item.get("channel")}
-            same_channel_universe = bool(previous_ids.intersection(valid_streams))
             if (
-                same_channel_universe
-                and previous_channel_coverage > 0
+                previous_channel_coverage > 0
                 and new_channel_coverage < previous_channel_coverage
-                and count < len(previous_programmes)
+                and count < previous_relevant_count
             ):
                 print(
                     "AVISO: a nova geração ficou abaixo da cobertura "
@@ -1342,9 +998,7 @@ def main():
     tmp.replace(OUT)
 
     # --------------------------------------------------
-    # ÍNDICE JSON LEVE PARA A KAMUFLATV (CATÁLOGO STREMIO)
-    # Evita baixar e interpretar o XMLTV completo de 38+ MB
-    # no navegador. Mantém os mesmos IDs cs:channel do addon.
+    # ÍNDICE JSON DA EPG EXCLUSIVA DO CATÁLOGO STREMIO.
     # --------------------------------------------------
 
     all_channel_ids = {
@@ -1405,7 +1059,7 @@ def main():
     json_tmp.replace(json_path)
 
     print(
-        f"Índice EPG completo: {len(epg_index['channels'])} canais; "
+        f"Índice EPG Stremio: {len(epg_index['channels'])} canais; "
         f"{indexed_programme_count} programas; arquivo: {json_path}",
         flush=True
     )
@@ -1436,7 +1090,7 @@ def main():
     print("       RESULTADO DA ATUALIZAÇÃO")
     print("===================================")
 
-    print(f"Total de IDs de canais (Xtream + Stremio): {len(valid_streams)}")
+    print(f"Total de canais Stremio: {len(valid_streams)}")
 
     print(
         f"Canais com programação: "

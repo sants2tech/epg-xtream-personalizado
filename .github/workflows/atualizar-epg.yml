@@ -63,7 +63,7 @@ jobs:
             # Tenta novamente para evitar perder a EPG quando outro commit chega primeiro.
             for tentativa in 1 2 3 4 5; do
               git fetch origin main
-              git rebase origin/main
+              git rebase -X theirs origin/main
               if git push origin HEAD:main; then
                 echo "EPG publicada com sucesso."
                 break

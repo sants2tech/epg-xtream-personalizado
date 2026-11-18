@@ -1,368 +1,628 @@
-﻿stream_id;nome_xtream;epg_channel_id;programas
-35225;A&E HD ²;;0
-13071;CINE SKY 01;;0
-13072;CINE SKY 02;;0
-13073;CINE SKY 03;;0
-13075;CINE SKY 05;;0
-227520;CAZÉ TV HD;;0
-245798;CAZÉ TV HD ¹;;0
-245797;CAZE TV FHD;;0
-275100;CANAL GOAT 01;;0
-289540;CANAL GOAT 02;;0
-289541;CANAL GOAT 03;;0
-21022;CULTURA PA;;0
-91400;DISCOVERY TLC FHD H.265;;0
-54928;DAZN FHD;DAZN.br;0
-21645;DAZN 2;DAZN.br;0
-20532;EVANGELIZAR HD;Boomerang.br;0
-38065;RECORD SP HD ¹;;0
-88432;SBT PARANA HD;Sbt.br;0
-69257;TV EVANGELIZAR HD ¹;Boomerang.br;0
-339310;JOGOS DE HOJE;;0
-594625;RADIO R&B;;0
-594626;RADIO K-Pop;;0
-594627;RADIO Folk;;0
-594628;RADIO Gospel Internacional;;0
-594629;RADIO Gospel;;0
-594630;RADIO Reggae;;0
-594631;RADIO Rock;;0
-594632;RADIO ForrÃ³;;0
-594633;RADIO Pop;;0
-594634;RADIO Latina;;0
-594635;RADIO EletrÃ´nica;;0
-594636;RADIO Hip-Hop;;0
-594637;RADIO Pop Rock;;0
-594638;RADIO Funk;;0
-594639;RADIO Pagode;;0
-594640;RADIO Rock;;0
-594641;RADIO MPB;;0
-594642;RADIO Sertanejo;;0
-594643;RADIO Sertanejo RomÃ¢ntico;;0
-594644;RADIO Anos 80;;0
-594645;RADIO Anos 90;;0
-594646;RADIO Anos 2000;;0
-594647;RADIO Pop Nacional;;0
-594648;RADIO Pop Rock Nacional;;0
-594649;RADIO J-Pop;;0
-594650;RADIO RomÃ¢nticas;;0
-594651;RADIO Cachoeira AM;;0
-594652;RADIO Nova FM;;0
-594653;RADIO Clube BagÃ© AM;;0
-594654;RADIO Alegria FM;;0
-594655;RADIO EsperanÃ§a AM;;0
-594656;RADIO Itapema FM;;0
-594657;RADIO Novo Tempo FM;;0
-594658;RADIO GuaÃ­ba FM/AM;;0
-594659;RADIO AtlÃ¢ntida FM;;0
-594661;RADIO Farroupilha FM/AM;;0
-594662;RADIO GaÃºcha FM/AM;;0
-594663;RADIO Bandeirantes FM/AM;;0
-594664;Gr6 Explode FM;;0
-594665;RADIO FM O Dia;;0
-594666;RADIO Mix FM;;0
-594667;RADIO Coca Cola FM;;0
-594668;RADIO Mania FM;;0
-594669;RADIO Transamerica FM;;0
-594670;RADIO Jovem Pan FM;;0
-594671;RADIO 99.5 FM;;0
-594672;RADIO Princesa FM;;0
-594673;Radio Missao Catolica de Garrafao do Norte - PA;;0
-594674;Radio Garra Norte FM de Garrafao do Norte - PA;;0
-594675;Radio Ouro Verde de Capitao-poco - PA;;0
-594676;Serra Azul FM;;0
-594677;99FM Belém PA;;0
-594678;Góspel FM Curitiba PR;;0
-594679;Rádio Góspel Campinas;;0
-594680;Udi Jovem Web Rádio;;0
-594681;TOP MUSICAL WEB RADIO;;0
-594683;Radio Jipuúba - Garrafão do Norte -PA;;0
-594684;Rádio gaúcha AM 600;;0
-594685;Rádio Itatiaia MG;;0
-594686;Rádio Grenal RS;;0
-594687;Rádio CBN SP;;0
-594688;Rádio Saudade SP;;0
-594689;Rádio Antena 1 SP;;0
-594690;Rádio Evangelizar PR;;0
-594691;Rádio Transamérica SP;;0
-594692;Rádio JB RJ;;0
-594693;Rádio Melodia RJ;;0
-594696;Rádio Sociedade BA;;0
-594697;Rádio Alpha SP;;0
-594698;Rádio Mix SP;;0
-594700;Rádio Jovem Pan SP;;0
-594701;Rádio Nova Brasil SP;;0
-594703;Rádio GFM BA;;0
-594706;Rádio Rock SP;;0
-594707;Rádio Conquista SP;;0
-594709;Rádio Kiss SP;;0
-594710;Rádio 105 SP;;0
-594712;Rádio CBN grande Lagos SP;;0
-594713;Rádio Energia Fm SP;;0
-594714;Rádio Liberdade MG;;0
-594715;Radio 98 MG;;0
-594719;Rádio Assunção Cearense CE;;0
-594721;Rádio Inconfidência MG;;0
-594724;Rádio Banda B PR;;0
-594727;Rádio Transcontinental SP;;0
-594728;Rádio 90.3 MG;;0
-594729;Rádio Continental RS;;0
-594731;Rádio Rauland PA;;0
-594733;Rádio Dom Bosco CE;;0
-594735;Rádio Cidade Fortaleza CE;;0
-594736;Rádio 89 Fm CE;;0
-594737;Rádio Ouro Verde Capitão Poço;;0
-594738;Rádio Cidade CE;;0
-594739;Rádio Ministério Canaã CE;;0
-594740;Rádio Liderança CE;;0
-594741;Rádio Positivo GO;;0
-594742;Rádio Novas de Paz PE;;0
-594744;Rádio Hot SP;;0
-594747;Rádio Liberdade RS;;0
-594748;Rádio Marumby SP;;0
-594749;Rádio SulAmérica Paradiso RJ;;0
-594751;Rádio Piatã BA;;0
-594753;Rádio Disney SP;;0
-594754;Apenas Acústico;;0
-594756;Radio nostalgia Toscana italia;;0
-594757;Rádio vfm Portugal;;0
-594758;Rádio WA Argentina;;0
-594759;Antenne Bayern Coffee Music Alemanha;;0
-594760;Aeroporto Internacional do Rio de Janeiro;;0
-594763;FM o dia;;0
-594765;Esporte total;;0
-594766;FM flashback;;0
-594767;Rádio carioca RJ;;0
-594768;Rádio Bandeirantes GO;;0
-594769;Nativa FM cuiaba;;0
-594770;Music Five SP;;0
-594772;Rádio evangélica vida RN;;0
-594773;Rádio amor incondicional RJ;;0
-594774;Rádio nova play RJ;;0
-594775;Rádio som jovem.PE;;0
-594776;Rádio melodia RJ;;0
-594778;Rádio antena 1 SP;;0
-594780;Fita Cassete;;0
-594781;Soft radio web DF;;0
-594782;Rádio sem limites gospel RJ;;0
-594783;Flash Disc dance 80 SP;;0
-594784;Conexão Reggae AM;;0
-594785;Rádio central da mídia PE;;0
-594786;Rádio OpalaRock MG;;0
-594789;Rádio CBN SC;;0
-594791;Jovem Pan MS;;0
-594792;Rádio Play Hits MG;;0
-594793;Rádio Real SP;;0
-594794;Rádio comunicadora Iguassu Foz;;0
-594795;Rádio da Bispa;;0
-594796;Jovem Pan AP;;0
-594797;Rádio CBN PE;;0
-594800;Rádio novela SP;;0
-594803;Rádio Nova RJ;;0
-594804;Rádio do K7 RJ;;0
-594805;Rádio JB RJ;;0
-594806;Rádio sintonia esportiva RJ;;0
-594807;Rádio Bicuda RJ;;0
-594808;Rádio carioca futebol RJ;;0
-594809;Gama esportiva RJ;;0
-594810;Rádio roquette pinto RJ;;0
-594811;Super Rádio Tupi RJ;;0
-594812;Rádio sertaneja Web RJ;;0
-594813;Rádio costa do sol RJ;;0
-594814;Rádio antena 1 lite RJ;;0
-594815;Rádio Transamérica RJ;;0
-594816;Rádio CBN RJ;;0
-594817;Rádio Ferj RJ;;0
-594818;Mega Rádio Axé SP;;0
-594819;ABM axé music BA;;0
-594820;Agogô carioca RJ;;0
-594821;Axé Brasil BA;;0
-594822;Barra Funda SP;;0
-594823;Ju samba show RJ;;0
-594824;Micareta FM RJ;;0
-594825;Rádio respirando carnaval RS;;0
-594826;Rádio Kpop Litoral;;0
-594827;Essência Kpop - Espanha;;0
-594828;Jovem Rádio SP;;0
-594829;Rádio Adore Gabriel;;0
-594830;CLUBE 105.5 FM;;0
-594831;RADIO CLUBE PARÁ;;0
-594832;TOP RADIO SERTANEJO;;0
-594833;TOP RADIO AMADO BATISTA;;0
-594834;TOP RADIO GÓSPEL;;0
-594835;TOP RADIO SERTÃO;;0
-594836;RADIO PARÁCAP;;0
-594837;Radio Sorriso FM 87,9 - São Miguel do Guamá;;0
-594838;Rádio Nazaré 91.3 FM;;0
-594839;Rádio Web Basílica de Nazaré;;0
-598890;NBA TV;;0
-598888;NBA | League Pass 02;;0
-598889;NBA | League Pass 01;;0
-598887;NBA | League Pass 03;;0
-598886;NBA | League Pass 04;;0
-598885;NBA | League Pass 05;;0
-598884;NBA | League Pass 06;;0
-598883;NBA | League Pass 07;;0
-598882;NBA | League Pass 08;;0
-598881;NBA | League Pass 09;;0
-1168924;GLOBO RJ INTERIOR HD;;0
-1168929;GLOBO AMAZÔNICA PORTO VELHO FHD;;0
-1168931;GLOBO BOA VISTA RORAIMA HD;;0
-1168947;GLOBO TV BELÉM FHD;;0
-1168948;GLOBO TV BELÉM HD;;0
-1168958;GLOBO TV PORTO VELHO HD;;0
-1168965;GLOBO CACOAL H.265;;0
-1168969;GLOBO DIVINÓPOLIS HD;;0
-1168984;GLOBO NACIONAL FHD;;0
-1168995;GLOBO RBS PASSO FUNDO HD;;0
-1169049;GLOBO TV LIBERAL MARABÁ HD;;0
-1169052;GLOBO TV MIRANTE BALSAS HD;;0
-1169063;GLOBO TV OESTE HD;;0
-1169073;GLOBO TV SERRA MAR HD;;0
-1169076;GLOBO TV SÃO FRANCISCO HD;;0
-1169079;GLOBO TV TEM TAUBATÉ HD;;0
-1169088;GLOBO TV VILHENA HD;;0
-1169089;TV DIÁRIO FORTALEZA HD;;0
-1169095;DISNEY + 01 HD;;0
-1169096;DISNEY + 02 HD;;0
-1169097;DISNEY + 03 HD;;0
-1169098;DISNEY + 04 HD;;0
-1169099;DISNEY + 05 HD;;0
-1169100;DISNEY + 06 HD;;0
-1169101;DISNEY + 07 HD;;0
-1169102;DISNEY + 08 HD;;0
-1169103;DISNEY + 09 HD;;0
-1169104;DISNEY + 10 HD;;0
-2403505;UFC FIGHT 01;;0
-2403506;UFC FIGHT 02;;0
-2403507;UFC FIGHT 03;;0
-2470067;A FAZENDA 18 MOSAICO;;0
-2470061;A FAZENDA 18 01;;0
-2470062;A FAZENDA 18 02;;0
-2470063;A FAZENDA 18 03;;0
-2470064;A FAZENDA 18 04;;0
-2470065;A FAZENDA 18 05;;0
-2470066;A FAZENDA 18 06;;0
-2474071;HBO MAX 01;;0
-2474081;HBO MAX 02;;0
-2474082;HBO MAX 03;;0
-2474083;HBO MAX 04;;0
-2474084;HBO MAX 05;;0
-2474085;HBO MAX 06;;0
-2474068;HBO MAX 07;;0
-2474069;HBO MAX 08;;0
-2474070;HBO MAX 09;;0
-2474072;HBO MAX 10;;0
-2474073;HBO MAX 11;;0
-2474074;HBO MAX 12;;0
-2474075;HBO MAX 13;;0
-2474076;HBO MAX 14;;0
-2474077;HBO MAX 15;;0
-2474078;HBO MAX 16;;0
-2474079;HBO MAX 17;;0
-2474080;HBO MAX 18;;0
-1169265;101 DÁLMATAS;;0
-1169266;3 ESPIÃS DEMAIS;;0
-1169203;3 PALAVRINHAS;;0
-1169267;3 PALAVRINHAS;;0
-1169268;4 CONTRA APOCALIPSE 24 HS;;0
-1169269;A CASA DO MICKEY;;0
-1169204;A CASA DO MICKEY MOUSE;;0
-1169270;A GUARDA DO LEÃO;;0
-1169273;A HORA DE AVENTURA;;0
-1169205;A PANTERA COR DE ROSA;;0
-1169271;A PEQUENA SEREIA;;0
-1169272;A VACA E O FRANGO;;0
-1169274;ALADIN 01;;0
-1169275;ALADIN 02;;0
-1169206;AMERICAN DAD;;0
-1169276;ANIMANIACS;;0
-1169277;APENAS UM SHOW;;0
-1169207;AQUAMAN;;0
-1169208;AS AVENTURAS DE JACKIE CHAN;;0
-1169279;AS AVENTURAS DE JACKIE CHAN 02;;0
-1169282;AS AVENTURAS DE SUNNY BUNNIES 24 HS;;0
-1169280;AS MENINAS SUPER PODEROSAS 24 HS;;0
-1169281;AS TARTARUGAS NINJAS;;0
-1169209;AS VISÕES DA RAVEN;;0
-1169283;B THE BEGINNING 24 HS;;0
-1169284;BABY LOONEY TOONES;;0
-1169285;BARBIE;;0
-1169286;BATMAN DO FUTURO;;0
-1169287;BEBÊ OGGY 24 HS;;0
-1169262;BEN 10;;0
-1169288;BEN 10;;0
-1169289;BEN 10 OMINIVERSE;;0
-1169211;BIG BANG THEORY;;0
-1169290;BOB ESPONJA 02;;0
-1169291;BOB ESPONJA 03;;0
-1169292;BOBS BURGERS 01;;0
-1169293;BOBS BURGERS 02;;0
-1169212;BOKU NO HERO ACADEMIA;;0
-1169294;BUBBLE GUPPIES;;0
-1169213;CADILLACS E DINOSSAUROS;;0
-1169214;CAVALEIROS DO ZODIACO 1;;0
-1169216;CHAPOLIN;;0
-1169217;CHAPOLIN COLORADO;;0
-1169218;CHAVES;;0
-1169219;CHAVES;;0
-1169297;CHAVES ANIMADO;;0
-1169220;CHAVES DESENHO;;0
-1169298;CHEFINHO DE VOLTA AO BERÇO;;0
-1169299;CHEFINHO DE VOLTA AOS NEGÓCIOS;;0
-1169300;CLEO E CUQUIN;;0
-1169302;COELHO RICOCHETE;;0
-1169303;CORRIDA MALUCA;;0
-1169264;DESENCANTO;;0
-1169222;DESENHOS BIBLICOS;;0
-1169221;DOIS HOMENS E MEIO;;0
-1169304;DORA AVENTUREIRA;;0
-1169305;DOUG;;0
-1169224;DRAGON BALL 1;;0
-1169223;DRAGON BALL GT;;0
-1169225;DRAGON BALL SUPER;;0
-1169226;DRAGON BALL Z;;0
-1169306;DRAGÕES CORRIDA ATÉ O LIMITE;;0
-1169307;DUCK TALES OS CAÇADORES DE AVENTURAS;;0
-1169228;EU A PATROA E AS CRIANÇAS 1;;0
-1169230;FAMILIA DINOUSSAUROS;;0
-1169309;FORMIGA ATOMICA;;0
-1169231;FORMIGA ATÔMICA;;0
-1169232;GALINHA PINTADINHA;;0
-1169233;GATO FELIX;;0
-1169259;HULK;;0
-1169235;ICARLY REVIVAL;;0
-1169236;JASPION;;0
-1169258;JIRAYA;;0
-1169260;O CÃO COVARDE;;0
-1169244;OS SIMPSONS;;0
-1169246;OS TRAPALHÕES;;0
-1169247;PATRULHA CANINA;;0
-1169248;PICA PAU 1;;0
-1169256;SITIO DO PICA PAU AMARELO;;0
-1169255;SMALLVILLE;;0
-1169254;SPIDER MAN;;0
-1169249;TODO MUNDO ODEIA O CHRIS;;0
-1169252;UM MALUCO NO PEDAÇO;;0
-1169253;VAI QUE COLA;;0
-1169310;PREMIUM 01;;0
-1169311;PREMIUM 02;;0
-1169312;PREMIUM 03;;0
-1169315;PREMIUM 06;;0
-1169316;PREMIUM 07;;0
-1169317;PREMIUM 08;;0
-1169318;PREMIUM 09;;0
-1169319;PREMIUM 10;;0
-1169320;PREMIUM 11;;0
-1169321;PREMIUM 12;;0
-1169322;PREMIUM 13;;0
-1169323;PREMIUM 14;;0
-1169324;PREMIUM 15;;0
-1169325;PREMIUM 16;;0
-2410434;XXX: Balkan Erotic FHD;;0
-2410435;XXX: Bang U FHD;;0
-2410436;XXX: Barely Legal TV;;0
-2410439;XXX: Brazzers TV Europe FHD;;0
-2410440;XXX: Desire FHD;;0
-2410441;XXX: Dorcel FHD;;0
-2410442;XXX: Dorcel XXX FHD;;0
-2410443;XXX: Ero XXX FHD;;0
+﻿stream_id;nome_stremio;epg_channel_id;programas
+cs:channel:globo-brasilia;Globo Brasilia;;0
+cs:channel:globo-tv-anhanguera-anapolis;Globo TV Anhanguera Anapolis;;0
+cs:channel:globo-tv-anhanguera-itumbiara;Globo TV Anhanguera Itumbiara;;0
+cs:channel:globo-tv-anhanguera-luziania;Globo TV Anhanguera Luziania;;0
+cs:channel:globo-tv-anhanguera-rio-verde;Globo TV Anhanguera Rio Verde;;0
+cs:channel:globo-tv-centro-america;Globo TV Centro America;;0
+cs:channel:globo-tv-centro-america-rondonopolis;Globo TV Centro America Rondonopolis;;0
+cs:channel:globo-tv-centro-america-sinop;Globo TV Centro America Sinop;;0
+cs:channel:globo-tv-morena;Globo TV Morena;;0
+cs:channel:globo-tv-morena-ponta-pora;Globo TV Morena Ponta Pora;;0
+cs:channel:globo-inter-tv-cabugi;Globo Inter TV Cabugi;;0
+cs:channel:globo-inter-tv-costa-branca;Globo Inter TV Costa Branca;;0
+cs:channel:globo-nordeste;Globo Nordeste;;0
+cs:channel:globo-rede-bahia;Globo Rede Bahia;;0
+cs:channel:globo-rede-bahia-tv-oeste;Globo Rede Bahia TV Oeste;;0
+cs:channel:globo-rede-bahia-tv-santa-cruz;Globo Rede Bahia TV Santa Cruz;;0
+cs:channel:globo-tv-asa-branca;Globo TV Asa Branca;;0
+cs:channel:globo-tv-cabo-branco;Globo TV Cabo Branco;;0
+cs:channel:globo-tv-clube-teresina;Globo TV Clube Teresina;;0
+cs:channel:globo-tv-gazeta-alagoas;Globo TV Gazeta Alagoas;;0
+cs:channel:globo-tv-grande-rio;Globo TV Grande Rio;;0
+cs:channel:globo-tv-mirante-cocais;Globo TV Mirante Cocais;;0
+cs:channel:globo-tv-mirante-imperatriz;Globo TV Mirante Imperatriz;;0
+cs:channel:globo-tv-mirante-sao-luis;Globo TV Mirante Sao Luis;;0
+cs:channel:globo-tv-paraiba;Globo TV Paraiba;;0
+cs:channel:globo-tv-sao-francisco;Globo TV Sao Francisco;;0
+cs:channel:globo-tv-sergipe;Globo TV Sergipe;;0
+cs:channel:globo-tv-subae;Globo TV Subae;;0
+cs:channel:globo-tv-sudoeste;Globo TV Sudoeste;;0
+cs:channel:globo-tv-verdes-mares;Globo TV Verdes Mares;;0
+cs:channel:globo-tv-verdes-mares-cariri;Globo TV Verdes Mares Cariri;;0
+cs:channel:globo-rede-amazonas-arquemes;Globo Rede Amazonas Arquemes;;0
+cs:channel:globo-rede-amazonas-macapa;Globo Rede Amazonas Macapa;;0
+cs:channel:globo-rede-amazonica-amapa;Globo Rede Amazonica Amapa;;0
+cs:channel:globo-rede-amazonica-boa-vista;Globo Rede Amazonica Boa Vista;;0
+cs:channel:globo-rede-amazonica-manaus;Globo Rede Amazonica Manaus;;0
+cs:channel:globo-rede-amazonica-porto-velho;Globo Rede Amazonica Porto Velho;;0
+cs:channel:globo-rede-amazonica-rio-branco;Globo Rede Amazonica Rio Branco;;0
+cs:channel:globo-tv-anhanguera-palmas;Globo TV Anhanguera Palmas;;0
+cs:channel:globo-tv-liberal-belem;Globo TV Liberal Belem;;0
+cs:channel:globo-tv-liberal-castanhal;Globo TV Liberal Castanhal;;0
+cs:channel:globo-tv-liberal-maraba;Globo TV Liberal Maraba;;0
+cs:channel:globo-eptv-campinas;Globo EPTV Campinas;;0
+cs:channel:globo-eptv-ribeirao-preto;Globo EPTV Ribeirao Preto;;0
+cs:channel:globo-eptv-sao-carlos;Globo EPTV Sao Carlos;;0
+cs:channel:globo-eptv-sul-de-minas;Globo EPTV Sul de Minas;;0
+cs:channel:globo-inter-tv-alto-litoral;Globo Inter TV Alto Litoral;;0
+cs:channel:globo-inter-tv-dos-vales;Globo Inter TV dos Vales;;0
+cs:channel:globo-inter-tv-grande-minas;Globo Inter TV Grande Minas;;0
+cs:channel:globo-inter-tv-serra-mar;Globo Inter TV Serra Mar;;0
+cs:channel:globo-minas;Globo Minas;;0
+cs:channel:globo-tv-diario-mogi-das-cruzes;Globo TV Diario Mogi das Cruzes;;0
+cs:channel:globo-tv-fronteira-presidente-prudente;Globo TV Fronteira Presidente Prudente;;0
+cs:channel:globo-tv-gazeta-sul;Globo TV Gazeta Sul;;0
+cs:channel:globo-tv-gazeta-vitoria;Globo TV Gazeta Vitoria;;0
+cs:channel:globo-tv-integracao-araxa;Globo TV Integracao Araxa;;0
+cs:channel:globo-tv-integracao-ituiutaba;Globo TV Integracao Ituiutaba;;0
+cs:channel:globo-tv-integracao-juiz-de-fora;Globo TV Integracao Juiz de Fora;;0
+cs:channel:globo-tv-integracao-uberaba;Globo TV Integracao Uberaba;;0
+cs:channel:globo-tv-integracao-uberlandia;Globo TV Integracao Uberlandia;;0
+cs:channel:globo-tv-rio-sul;Globo TV Rio Sul;;0
+cs:channel:globo-tv-tem-bauru;Globo TV TEM Bauru;;0
+cs:channel:globo-tv-tem-itapetininga;Globo TV TEM Itapetininga;;0
+cs:channel:globo-tv-tem-sao-jose-do-rio-preto;Globo TV TEM Sao Jose do Rio Preto;;0
+cs:channel:globo-tv-tem-sorocaba;Globo TV TEM Sorocaba;;0
+cs:channel:globo-tv-tribuna-santos;Globo TV Tribuna Santos;;0
+cs:channel:globo-tv-vanguarda-s-j-dos-campos;Globo TV Vanguarda S.J dos Campos;;0
+cs:channel:globo-tv-vanguarda-taubate;Globo TV Vanguarda Taubate;;0
+cs:channel:globo-nsc-tv-blumenau;Globo NSC TV Blumenau;;0
+cs:channel:globo-nsc-tv-centro-oeste;Globo NSC TV Centro Oeste;;0
+cs:channel:globo-nsc-tv-chapeco;Globo NSC TV Chapeco;;0
+cs:channel:globo-nsc-tv-criciuma;Globo NSC TV Criciuma;;0
+cs:channel:globo-nsc-tv-florianopolis;Globo NSC TV Florianopolis;;0
+cs:channel:globo-nsc-tv-joinville;Globo NSC TV Joinville;;0
+cs:channel:globo-rbs-tv-bage;Globo RBS TV Bage;;0
+cs:channel:globo-rbs-tv-caxias-do-sul;Globo RBS TV Caxias do Sul;;0
+cs:channel:globo-rbs-tv-cruz-alta;Globo RBS TV Cruz Alta;;0
+cs:channel:globo-rbs-tv-erechim;Globo RBS TV Erechim;;0
+cs:channel:globo-rbs-tv-passo-fundo;Globo RBS TV Passo Fundo;;0
+cs:channel:globo-rbs-tv-pelotas;Globo RBS TV Pelotas;;0
+cs:channel:globo-rbs-tv-porto-alegre;Globo RBS TV Porto Alegre;;0
+cs:channel:globo-rbs-tv-santa-cruz-do-sul;Globo RBS TV Santa Cruz do Sul;;0
+cs:channel:globo-rbs-tv-santa-maria;Globo RBS TV Santa Maria;;0
+cs:channel:globo-rbs-tv-santa-rosa;Globo RBS TV Santa Rosa;;0
+cs:channel:globo-rbs-tv-uruguaiana;Globo RBS TV Uruguaiana;;0
+cs:channel:globo-rpc-cascavel;Globo RPC Cascavel;;0
+cs:channel:globo-rpc-londrina;Globo RPC Londrina;;0
+cs:channel:globo-rpc-paranavai;Globo RPC Paranavai;;0
+cs:channel:globo-rpc-tv-curitiba;Globo RPC TV Curitiba;;0
+cs:channel:globo-rpc-tv-foz-do-iguacu;Globo RPC TV Foz do Iguacu;;0
+cs:channel:globo-rpc-tv-guarapuava;Globo RPC TV Guarapuava;;0
+cs:channel:globo-rpc-tv-maringa;Globo RPC TV Maringa;;0
+cs:channel:globo-rpc-tv-ponta-grossa;Globo RPC TV Ponta Grossa;;0
+cs:channel:globo-tv-alvorada-do-sul;Globo TV Alvorada do Sul;;0
+cs:channel:recordtv-guararapes;RecordTV Guararapes;;0
+cs:channel:recordtv-itapoan;RecordTV Itapoan;;0
+cs:channel:recordtv-leste;RecordTV Leste;;0
+cs:channel:recordtv-litoral-vale-do-parnaiba;RecordTV Litoral Vale do Parnaiba;;0
+cs:channel:recordtv-manaus;RecordTV Manaus;;0
+cs:channel:recordtv-paraiba-tv-correio;RecordTV Paraiba TV Correio;;0
+cs:channel:recordtv-paranaiba-de-uberlandia;RecordTV Paranaiba de Uberlandia;;0
+cs:channel:recordtv-paranaiba-uberlandia;RecordTV Paranaiba Uberlandia;;0
+cs:channel:recordtv-paulista;RecordTV Paulista;;0
+cs:channel:recordtv-piaui-a10;RecordTV Piaui A10;;0
+cs:channel:recordtv-ribeirao;RecordTV Ribeirao;;0
+cs:channel:recordtv-rio-preto;RecordTV Rio Preto;;0
+cs:channel:recordtv-rj-interior;RecordTV RJ Interior;;0
+cs:channel:recordtv-roraima;RecordTV Roraima;;0
+cs:channel:recordtv-rs;RecordTV RS;;0
+cs:channel:recordtv-sic-rondonia;RecordTV SIC Rondonia;;0
+cs:channel:recordtv-thathi-campinas;RecordTV Thathi Campinas;;0
+cs:channel:recordtv-vila-real;RecordTV Vila Real;;0
+cs:channel:tv-cidade-recordtv;TV Cidade - RecordTV;;0
+cs:channel:band-ribeirao-preto;Band Ribeirao Preto;;0
+cs:channel:sbt-rede-massa-pr;SBT Rede Massa PR;;0
+cs:channel:sbt-ribeirao-preto;SBT Ribeirao Preto;;0
+cs:channel:sbt-rs;SBT RS;;0
+cs:channel:sbt-thathi-vale;SBT Thathi Vale;;0
+cs:channel:sbt-tv-alterosa;SBT TV Alterosa;;0
+cs:channel:sbt-vtv-santos-campinas;SBT VTV Santos Campinas;;0
+cs:channel:tv-gazeta-sp;TV Gazeta SP;;0
+cs:channel:tv-uniao;TV Uniao;;0
+cs:channel:tv-uniao-fortaleza;TV Uniao Fortaleza;;0
+cs:channel:disney-plus-1;Disney Plus 1;;0
+cs:channel:disney-plus-2;Disney Plus 2;;0
+cs:channel:disney-plus-3;Disney Plus 3;;0
+cs:channel:disney-plus-4;Disney Plus 4;;0
+cs:channel:paramount-plus-1;Paramount Plus 1;;0
+cs:channel:paramount-plus-2;Paramount Plus 2;;0
+cs:channel:paramount-plus-3;Paramount Plus 3;;0
+cs:channel:paramount-plus-4;Paramount Plus 4;;0
+cs:channel:league-cup;League Cup;;0
+cs:channel:max-1;Max 1;;0
+cs:channel:max-2;Max 2;;0
+cs:channel:max-3;Max 3;;0
+cs:channel:max-4;Max 4;;0
+cs:channel:max-5;Max 5;;0
+cs:channel:max-6;Max 6;;0
+cs:channel:syfy;SYFY;;0
+cs:channel:sportv-4;SporTV 4;;0
+cs:channel:dazn-1;DAZN 1;;0
+cs:channel:dazn-2;DAZN 2;;0
+cs:channel:nba-league-pass-1;NBA League Pass 1;;0
+cs:channel:nba-league-pass-2;NBA League Pass 2;;0
+cs:channel:nba-league-pass-3;NBA League Pass 3;;0
+cs:channel:nba-league-pass-4;NBA League Pass 4;;0
+cs:channel:nba-league-pass-5;NBA League Pass 5;;0
+cs:channel:nba-league-pass-6;NBA League Pass 6;;0
+cs:channel:barretos-2026;Barretos 2026;;0
+cs:channel:bjj-stars;BJJ STARS;;0
+cs:channel:canal-goat;Canal Goat;;0
+cs:channel:canal-goat-2;Canal Goat 2;;0
+cs:channel:caze-tv;Caze TV;;0
+cs:channel:caze-tv-2;Caze TV 2;;0
+cs:channel:fcf-tv-1;FCF TV 1;;0
+cs:channel:fcf-tv-2;FCF TV 2;;0
+cs:channel:formula-1-tv;Formula 1 TV;;0
+cs:channel:furacao-live;Furacao Live;;0
+cs:channel:mr-olympia-tv;Mr. Olympia TV;;0
+cs:channel:onefootball-1;OneFootball 1;;0
+cs:channel:ufc-fight-pass;UFC Fight Pass;;0
+cs:channel:cnbc-brasil;CNBC Brasil;;0
+cs:channel:discovery-h-h;Discovery H&H;;0
+cs:channel:live-tv;Live TV;;0
+cs:channel:mega-tv;Mega TV;;0
+cs:channel:trace-brazuca;Trace Brazuca;;0
+cs:channel:h2;H2;;0
+cs:channel:a-fazenda-cam-1;A Fazenda Cam 1;;0
+cs:channel:a-fazenda-cam-2;A Fazenda Cam 2;;0
+cs:channel:a-fazenda-cam-3;A Fazenda Cam 3;;0
+cs:channel:a-fazenda-cam-4;A Fazenda Cam 4;;0
+cs:channel:a-fazenda-cam-5;A Fazenda Cam 5;;0
+cs:channel:a-fazenda-cam-6;A Fazenda Cam 6;;0
+cs:channel:brasileirao-serie-c-1;Brasileirao Serie C 1;;0
+cs:channel:brasileirao-serie-c-2;Brasileirao Serie C 2;;0
+cs:channel:brasileirao-serie-c-3;Brasileirao Serie C 3;;0
+cs:channel:sportynet-4;SportyNet 4;;0
+cs:channel:tve-bahia;TVE Bahia;;0
+cs:channel:liga-futsal-1;Liga Futsal 1;;0
+cs:channel:liga-futsal-2;Liga Futsal 2;;0
+cs:channel:liga-futsal-3;Liga Futsal 3;;0
+cs:channel:liga-futsal-4;Liga Futsal 4;;0
+cs:channel:brasileirao-serie-a;Brasileirao Serie A;;0
+cs:channel:copa-do-brasil-1;Copa do Brasil 1;;0
+cs:channel:copa-do-brasil-2;Copa do Brasil 2;;0
+cs:channel:copa-do-brasil-3;Copa do Brasil 3;;0
+cs:channel:copa-do-brasil-4;Copa do Brasil 4;;0
+cs:channel:a-festa-da-salsicha-comilandia;A Festa da Salsicha Comilandia;;0
+cs:channel:a-guarda-do-leao;A Guarda do Leao;;0
+cs:channel:a-vida-secreta-dos-animais;A Vida Secreta dos Animais;;0
+cs:channel:amphibia;Amphibia;;0
+cs:channel:angry-birds-a-ilha-misteriosa;Angry Birds A Ilha Misteriosa;;0
+cs:channel:bbb-24;BBB 24;;0
+cs:channel:biduzidos;Biduzidos;;0
+cs:channel:bob-o-construtor;Bob O Construtor;;0
+cs:channel:doug-o-robo-curioso;Doug O Robo Curioso;;0
+cs:channel:dra-mercy-alem-da-pele;Dra Mercy Alem da Pele;;0
+cs:channel:ferinha-e-a-fabrica-de-tudo;Ferinha e a Fabrica de Tudo;;0
+cs:channel:futebol-de-rua;Futebol de Rua;;0
+cs:channel:garota-da-lua-e-o-dinossauro-demonio;Garota da Lua e o Dinossauro Demonio;;0
+cs:channel:go-go-loser-ranger;Go Go Loser Ranger;;0
+cs:channel:lilo-e-stitch-a-serie;Lilo e Stitch A Serie;;0
+cs:channel:mansoes-em-frente-ao-lago;Mansoes em Frente ao Lago;;0
+cs:channel:molang;Molang;;0
+cs:channel:monstros-no-trabalho;Monstros no Trabalho;;0
+cs:channel:o-aquario;O Aquario;;0
+cs:channel:pinha-e-pony;Pinha e Pony;;0
+cs:channel:ra-e-sapo;Ra e Sapo;;0
+cs:channel:salsicha-e-scooby-atras-das-pistas;Salsicha e Scooby Atras das Pistas;;0
+cs:channel:snoopy-vai-acampar;Snoopy Vai Acampar;;0
+cs:channel:sob-nova-direcao;Sob Nova Direcao;;0
+cs:channel:ultimate-homem-aranha;Ultimate Homem Aranha;;0
+cs:channel:uma-maldicao-de-familia;Uma Maldicao de Familia;;0
+cs:channel:uma-verdadeira-vida-de-inseto;Uma Verdadeira Vida de Inseto;;0
+cs:channel:wondla-a-trilogia;WondLa A Trilogia;;0
+cs:channel:zouk-a-bruxinha;Zouk a Bruxinha;;0
+cs:channel:bleach-arrankar-a-chegada;Bleach - Arrankar A Chegada;;0
+cs:channel:bleach-arrankar-a-entrada-sorrateira-no-hueco-mundo;Bleach - Arrankar A Entrada Sorrateira no Hueco Mundo;;0
+cs:channel:bleach-arrankar-a-falsa-cidade-de-karakura;Bleach - Arrankar A Falsa Cidade de Karakura;;0
+cs:channel:bleach-arrankar-a-luta-feroz;Bleach - Arrankar A Luta Feroz;;0
+cs:channel:bleach-arrankar-a-queda;Bleach - Arrankar A Queda;;0
+cs:channel:bleach-arrankar-vs-shinigami;Bleach - Arrankar VS Shinigami;;0
+cs:channel:bleach-o-ataque-dos-bounts-a-sociedade-das-almas;Bleach - O Ataque dos Bounts a Sociedade das Almas;;0
+cs:channel:bleach-o-conto-da-zanpakuto-desconhecida;Bleach - O Conto da Zanpakuto Desconhecida;;0
+cs:channel:bleach-o-exercito-de-invasao-das-13-divisoes;Bleach - O Exercito de Invasao das 13 Divisoes;;0
+cs:channel:bleach-o-novo-capitao-amagai-shusuke;Bleach - O Novo Capitao Amagai Shusuke;;0
+cs:channel:bleach-o-passado;Bleach - O Passado;;0
+cs:channel:bleach-o-shinigami-substituto-desaparecido;Bleach - O Shinigami Substituto Desaparecido;;0
+cs:channel:bleach-o-substituto;Bleach - O Substituto;;0
+cs:channel:bleach-os-bounts;Bleach - Os Bounts;;0
+cs:channel:bleach-sociedade-das-almas-a-entrada;Bleach - Sociedade das Almas A Entrada;;0
+cs:channel:bleach-sociedade-das-almas-o-resgate;Bleach - Sociedade das Almas O Resgate;;0
+cs:channel:boku-no-hero-academia;Boku No Hero Academia;;0
+cs:channel:capitao-tsubasa;Capitao Tsubasa;;0
+cs:channel:sailor-moon;Sailor Moon;;0
+cs:channel:shaman-king;Shaman King;;0
+cs:channel:sonny-boy;Sonny Boy;;0
+cs:channel:101-dalmatas;101 Dalmatas;;0
+cs:channel:3-palavrinhas;3 Palavrinhas;;0
+cs:channel:44-gatos;44 Gatos;;0
+cs:channel:a-bruxinha-sabrina;A Bruxinha Sabrina;;0
+cs:channel:a-casa-da-coruja;A Casa da Coruja;;0
+cs:channel:a-casa-do-mickey-mouse;A Casa do Mickey Mouse;;0
+cs:channel:a-casa-magica-da-gabby;A Casa Magica da Gabby;;0
+cs:channel:a-cegonha-da-perna-fina;A Cegonha da Perna Fina;;0
+cs:channel:a-corrida-maluca;A Corrida Maluca;;0
+cs:channel:a-familia-addams;A Familia Addams;;0
+cs:channel:a-familia-dracula;A Familia Dracula;;0
+cs:channel:a-familia-urso;A Familia Urso;;0
+cs:channel:a-formiga-e-o-tamandua;A Formiga e O Tamandua;;0
+cs:channel:a-lula-lele;A Lula Lele;;0
+cs:channel:a-nova-pantera-cor-de-rosa;A Nova pantera Cor de Rosa;;0
+cs:channel:a-pantera-cor-de-rosa;A Pantera Cor de Rosa;;0
+cs:channel:a-pequena-sereia;A Pequena Sereia;;0
+cs:channel:a-turma-do-charlie-brown-e-snoopy;A Turma do Charlie Brown e Snoopy;;0
+cs:channel:a-turma-do-manda-chuva;A Turma do Manda Chuva;;0
+cs:channel:a-turma-do-pateta;A Turma do Pateta;;0
+cs:channel:a-vaca-e-o-frango;A Vaca e o Frango;;0
+cs:channel:aaahh-monstros;Aaahh!!! Monstros;;0
+cs:channel:acampamento-lakebottom;Acampamento Lakebottom;;0
+cs:channel:aeon-flux;Aeon Flux;;0
+cs:channel:aladdin;Aladdin;;0
+cs:channel:american-dad;American Dad;;0
+cs:channel:ana-pimentinha;Ana Pimentinha;;0
+cs:channel:andy-panda;Andy Panda;;0
+cs:channel:animaniacs;Animaniacs;;0
+cs:channel:as-meninas-superpoderosas;As Meninas Superpoderosas;;0
+cs:channel:baby-looney-tunes;Baby Looney Tunes;;0
+cs:channel:barbie-dreamhouse-adventures;Barbie Dreamhouse Adventures;;0
+cs:channel:ben-10;Ben 10;;0
+cs:channel:beyblade-g-revolution;Beyblade G Revolution;;0
+cs:channel:beyblade-metal-fusion;Beyblade Metal Fusion;;0
+cs:channel:beyblade-v-force;Beyblade V Force;;0
+cs:channel:bibo-pai-e-bobi-filho;Bibo Pai e Bobi Filho;;0
+cs:channel:big-mouth;Big Mouth;;0
+cs:channel:blaze-e-os-monster-machines;Blaze e os Monster Machines;;0
+cs:channel:bojack-horseman;Bojack Horseman;;0
+cs:channel:cacadores-de-bugs;Cacadores de Bugs;;0
+cs:channel:cavalo-de-fogo;Cavalo de Fogo;;0
+cs:channel:caverna-do-dragao;Caverna do Dragao;;0
+cs:channel:chaves-em-desenho-animado;Chaves Em Desenho Animado;;0
+cs:channel:corrida-maluca;Corrida Maluca;;0
+cs:channel:dennis-o-pimentinha;Dennis o Pimentinha;;0
+cs:channel:desenhos-biblicos-historias-inesqueciveis;Desenhos Biblicos Historias Inesqueciveis;;0
+cs:channel:digimon-adventure;Digimon Adventure;;0
+cs:channel:digimon-digital-monsters;Digimon Digital Monsters;;0
+cs:channel:digimon-savers;Digimon Savers;;0
+cs:channel:digimon-tamers;Digimon Tamers;;0
+cs:channel:doug;Doug;;0
+cs:channel:dragon-ball-classico;Dragon Ball Classico;;0
+cs:channel:dragon-ball-gt;Dragon Ball GT;;0
+cs:channel:dragon-ball-super-golden-freeza;Dragon Ball Super - Golden Freeza;;0
+cs:channel:dragon-ball-super-saga-deus-da-destruicao-bills;Dragon Ball Super - Saga Deus da Destruicao Bills;;0
+cs:channel:dragon-ball-super-sobrevivencia-do-universo;Dragon Ball Super - Sobrevivencia do Universo;;0
+cs:channel:dragon-ball-super-trunks-do-futuro;Dragon Ball Super - Trunks do Futuro;;0
+cs:channel:dragon-ball-super-universo-6;Dragon Ball Super - Universo 6;;0
+cs:channel:dragon-ball-z-saga-do-androide-cell;Dragon Ball Z - Saga do Androide Cell;;0
+cs:channel:dragon-ball-z-saga-do-freeza;Dragon Ball Z - Saga do Freeza;;0
+cs:channel:dragon-ball-z-saga-do-garlic-jr;Dragon Ball Z - Saga do Garlic Jr;;0
+cs:channel:dragon-ball-z-saga-do-majin-boo;Dragon Ball Z - Saga do Majin Boo;;0
+cs:channel:dragon-ball-z-saga-do-torneio-do-outro-mundo;Dragon Ball Z - Saga do Torneio do Outro Mundo;;0
+cs:channel:dragon-ball-z-saga-dos-saiyajins;Dragon Ball Z - Saga dos Saiyajins;;0
+cs:channel:ei-arnold;Ei Arnold;;0
+cs:channel:farejando-novos-mundos;Farejando Novos Mundos;;0
+cs:channel:formiga-atomica;Formiga Atomica;;0
+cs:channel:freakazoid-alto-forte-e-maluco;Freakazoid Alto Forte e Maluco;;0
+cs:channel:garfield-e-seus-amigos;Garfield e Seus Amigos;;0
+cs:channel:gasparzinho-o-fantasminha-camarada;Gasparzinho O Fantasminha Camarada;;0
+cs:channel:gus-o-pequeno-cavaleiro;Gus O Pequeno Cavaleiro;;0
+cs:channel:he-man-e-os-defensores-do-universo;He Man e Os Defensores do Universo;;0
+cs:channel:he-man-e-os-mestres-do-universo;He Man E Os Mestres do Universo;;0
+cs:channel:homem-aranha-da-marvel;Homem Aranha da Marvel;;0
+cs:channel:hora-do-recreio;Hora do Recreio;;0
+cs:channel:hotel-transilvania-a-serie;Hotel Transilvania A Serie;;0
+cs:channel:jeannie;Jeannie;;0
+cs:channel:jellystone;Jellystone;;0
+cs:channel:johnny-bravo;Johnny Bravo;;0
+cs:channel:johnny-test;Johnny Test;;0
+cs:channel:jonny-quest;Jonny Quest;;0
+cs:channel:kamp-koral-bob-esponja-primeiros-anos;Kamp Koral Bob Esponja Primeiros Anos;;0
+cs:channel:kick-buttowski;Kick Buttowski;;0
+cs:channel:kung-fu-panda-lendas-do-dragao-guerreiro;Kung Fu Panda Lendas do Dragao Guerreiro;;0
+cs:channel:kung-fu-panda-o-cavaleiro-dragao;Kung Fu Panda O Cavaleiro Dragao;;0
+cs:channel:liga-da-justica;Liga da Justica;;0
+cs:channel:liga-da-justica-sem-limites;Liga da Justica Sem Limites;;0
+cs:channel:luluzinha;Luluzinha;;0
+cs:channel:masha-e-o-urso;Masha e o Urso;;0
+cs:channel:mega-man-potencia-maxima;Mega Man Potencia Maxima;;0
+cs:channel:mestres-do-universo-salvando-eternia;Mestres do Universo Salvando Eternia;;0
+cs:channel:mickey-e-donald;Mickey e Donald;;0
+cs:channel:milo;Milo;;0
+cs:channel:mira-a-detetive-do-reino;Mira A Detetive do Reino;;0
+cs:channel:momonstros;Momonstros;;0
+cs:channel:monstro-do-amor;Monstro do Amor;;0
+cs:channel:mortal-kombat-defensores-da-terra;Mortal Kombat Defensores da Terra;;0
+cs:channel:mucha-lucha;Mucha Lucha;;0
+cs:channel:mundo-bita;Mundo Bita;;0
+cs:channel:mundo-bita-e-a-natureza;Mundo Bita e a Natureza;;0
+cs:channel:mundo-bita-e-as-brincadeiras;Mundo Bita e as Brincadeiras;;0
+cs:channel:mundo-bita-e-o-corpo-humano;Mundo Bita e o Corpo Humano;;0
+cs:channel:mundo-bita-e-o-nosso-dia;Mundo Bita e o Nosso Dia;;0
+cs:channel:mundo-bita-e-os-animais;Mundo Bita e os Animais;;0
+cs:channel:o-acampamento-de-lazlo;O Acampamento de Lazlo;;0
+cs:channel:o-fantastico-mundo-de-bobby;O Fantastico Mundo de Bobby;;0
+cs:channel:o-laboratorio-de-dexter;O Laboratorio de Dexter;;0
+cs:channel:o-marinheiro-popeye;O Marinheiro Popeye;;0
+cs:channel:o-maskara;O Maskara;;0
+cs:channel:o-mundo-de-any-malu;O Mundo de Any Malu;;0
+cs:channel:o-mundo-de-greg;O Mundo de Greg;;0
+cs:channel:o-mundo-maravilhoso-de-mickey-mouse;O Mundo Maravilhoso de Mickey Mouse;;0
+cs:channel:o-novo-show-do-pica-pau;O Novo Show do Pica Pau;;0
+cs:channel:o-show-de-tom-e-jerry;O Show de Tom e Jerry;;0
+cs:channel:o-show-do-garfield;O Show do Garfield;;0
+cs:channel:operacao-big-hero;Operacao Big Hero;;0
+cs:channel:os-apuros-de-penelope-charmosa;Os Apuros de Penélope Charmosa;;0
+cs:channel:os-cavaleiros-do-zodiaco-alma-de-ouro;Os Cavaleiros do Zodiaco - Alma de Ouro;;0
+cs:channel:os-cavaleiros-do-zodiaco-omega;Os Cavaleiros do Zodiaco - Omega;;0
+cs:channel:os-cavaleiros-do-zodiaco-saga-de-asgard;Os Cavaleiros do Zodiaco - Saga de Asgard;;0
+cs:channel:os-cavaleiros-do-zodiaco-saga-de-hades;Os Cavaleiros do Zodiaco - Saga de Hades;;0
+cs:channel:os-cavaleiros-do-zodiaco-saga-de-poseidon;Os Cavaleiros do Zodiaco - Saga de Poseidon;;0
+cs:channel:os-cavaleiros-do-zodiaco-saga-do-santuario;Os Cavaleiros do Zodiaco - Saga do Santuario;;0
+cs:channel:os-cavaleiros-do-zodiaco-the-lost-canvas;Os Cavaleiros do Zodiaco - The Lost Canvas;;0
+cs:channel:os-cavaleiros-do-zodiaco-saint-seiya;Os Cavaleiros do Zodíaco Saint Seiya;;0
+cs:channel:os-herculoides;Os Herculoides;;0
+cs:channel:os-incriveis-espioes;Os Incriveis Espioes;;0
+cs:channel:os-jetsons;Os Jetsons;;0
+cs:channel:os-misterios-de-frajola-e-piu-piu;Os Misterios de Frajola e Piu Piu;;0
+cs:channel:os-ursinhos-carinhosos;Os Ursinhos Carinhosos;;0
+cs:channel:os-ursinhos-gummi;Os Ursinhos Gummi;;0
+cs:channel:peppa-pig;Peppa Pig;;0
+cs:channel:pestinha-e-feroz;Pestinha e Feroz;;0
+cs:channel:phineas-e-ferb;Phineas e Ferb;;0
+cs:channel:pica-pau;Pica Pau;;0
+cs:channel:pocoyo;Pocoyo;;0
+cs:channel:ridley-jones-a-guardia-do-museu;Ridley Jones A Guardia do Museu;;0
+cs:channel:riquinho;Riquinho;;0
+cs:channel:rocketeer;Rocketeer;;0
+cs:channel:rocky-e-hudson-os-caubois-gays;Rocky e Hudson Os Caubois Gays;;0
+cs:channel:rua-dalmatas-101;Rua Dalmatas 101;;0
+cs:channel:rugrats-os-anjinhos;Rugrats Os Anjinhos;;0
+cs:channel:scooby-doo-misterio-sa;Scooby Doo Mistério SA;;0
+cs:channel:she-ra-a-princesa-do-poder;She Ra A Princesa Do Poder;;0
+cs:channel:snoopy-e-sua-turma;Snoopy e Sua Turma;;0
+cs:channel:south-park;South Park;;0
+cs:channel:spidey-e-seus-amigos-espetaculares;Spidey e Seus Amigos Espetaculares;;0
+cs:channel:star-trek-lower-decks;Star Trek Lower Decks;;0
+cs:channel:star-vs-as-forcas-do-mal;Star vs. As Forcas do Mal;;0
+cs:channel:steven-universo;Steven Universo;;0
+cs:channel:steven-universo-futuro;Steven Universo Futuro;;0
+cs:channel:summer-memories;Summer Memories;;0
+cs:channel:super-amigos;Super Amigos;;0
+cs:channel:super-choque;Super Choque;;0
+cs:channel:super-hero-girls;Super Hero Girls;;0
+cs:channel:superman-a-serie-animada;Superman A Serie Animada;;0
+cs:channel:supermansion;Supermansion;;0
+cs:channel:taz-mania;Taz Mania;;0
+cs:channel:the-archie-show;The Archie Show;;0
+cs:channel:the-loud-house;The Loud House;;0
+cs:channel:thundercats;ThunderCats;;0
+cs:channel:tico-e-teco-defensores-da-lei;Tico e Teco Defensores da Lei;;0
+cs:channel:tico-e-teco-vida-no-parque;Tico e Teco Vida no Parque;;0
+cs:channel:tigue-e-lupa-os-detetives;Tigue E Lupa Os Detetives;;0
+cs:channel:tom-e-jerry;Tom e Jerry;;0
+cs:channel:top-wing;Top Wing;;0
+cs:channel:tres-espias-demais;Tres Espias Demais;;0
+cs:channel:tubacao;Tubacao;;0
+cs:channel:tv-quack-o-pato-donald-e-seus-sobrinhos;TV Quack O Pato Donald e Seus Sobrinhos;;0
+cs:channel:ursinhos-em-curso;Ursinhos em Curso;;0
+cs:channel:vampirina;Vampirina;;0
+cs:channel:x-men-evolution;X Men Evolution;;0
+cs:channel:x-men-serie-animada;X Men Serie Animada;;0
+cs:channel:yabba-dabba-dinossauros;Yabba Dabba Dinossauros;;0
+cs:channel:yu-yu-hakusho;Yu Yu Hakusho;;0
+cs:channel:yu-gi-oh-duel-monsters;Yu-Gi-Oh - Duel Monsters;;0
+cs:channel:top-100-catolicas-2021;Top 100 Catolicas 2021;;0
+cs:channel:top-100-catolicas-2024;Top 100 Catolicas 2024;;0
+cs:channel:top-100-gospel-2021;Top 100 Gospel 2021;;0
+cs:channel:top-100-gospel-2022;Top 100 Gospel 2022;;0
+cs:channel:top-100-gospel-2023;Top 100 Gospel 2023;;0
+cs:channel:top-100-gospel-2024;Top 100 Gospel 2024;;0
+cs:channel:top-100-mpb-2021;Top 100 MPB 2021;;0
+cs:channel:top-100-mpb-2022;Top 100 MPB 2022;;0
+cs:channel:top-100-mpb-2023;Top 100 MPB 2023;;0
+cs:channel:top-100-mpb-2024;Top 100 MPB 2024;;0
+cs:channel:top-100-sertanejo-2021;Top 100 Sertanejo 2021;;0
+cs:channel:top-100-sertanejo-2022;Top 100 Sertanejo 2022;;0
+cs:channel:top-100-sertanejo-2023;Top 100 Sertanejo 2023;;0
+cs:channel:top-100-sertanejo-2024;Top 100 Sertanejo 2024;;0
+cs:channel:top-100-spotify-2021;Top 100 Spotify 2021;;0
+cs:channel:top-100-spotify-2022;Top 100 Spotify 2022;;0
+cs:channel:top-100-spotify-2023;Top 100 Spotify 2023;;0
+cs:channel:top-100-spotify-2024;Top 100 Spotify 2024;;0
+cs:channel:top-gospel-2025-2026-as-mais-tocadas;Top Gospel 2025/2026 - As Mais Tocadas;;0
+cs:channel:top-mpb-2025-2026-as-mais-tocadas;Top MPB 2025/2026 - As Mais Tocadas;;0
+cs:channel:top-sertanejo-2025-2026-as-mais-tocadas;Top Sertanejo 2025/2026 - As Mais Tocadas;;0
+cs:channel:a-diarista;A Diarista;;0
+cs:channel:agente-k-c;Agente K.C;;0
+cs:channel:alf-o-eteimoso;Alf O Eteimoso;;0
+cs:channel:alien-tv;Alien TV;;0
+cs:channel:alienigenas-do-passado;Alienigenas do Passado;;0
+cs:channel:arlequina;Arlequina;;0
+cs:channel:b-positive;B Positive;;0
+cs:channel:barney-e-seus-amigos;Barney e Seus Amigos;;0
+cs:channel:beat-bugs;Beat Bugs;;0
+cs:channel:black-kamen-rider;Black Kamen Rider;;0
+cs:channel:brilhante-victoria;Brilhante Victoria;;0
+cs:channel:cacadores-de-dinossauros;Cacadores de Dinossauros;;0
+cs:channel:castelo-ra-tim-bum;Castelo Ra-Tim-Bum;;0
+cs:channel:chesapeake-shores;Chesapeake Shores;;0
+cs:channel:comidas-cheias-de-historia;Comidas Cheias de Historia;;0
+cs:channel:como-funciona-o-universo;Como Funciona O Universo;;0
+cs:channel:cosmos-mundos-possiveis;Cosmos Mundos Possiveis;;0
+cs:channel:criadores-de-diversao;Criadores de Diversao;;0
+cs:channel:dani-se;Dani Se;;0
+cs:channel:escolinha-do-professor-raimundo;Escolinha do Professor Raimundo;;0
+cs:channel:esquadrao-especial-winspector;Esquadrao Especial Winspector;;0
+cs:channel:formula-1-dirigir-para-viver;Formula 1 Dirigir Para Viver;;0
+cs:channel:gigantossauro;Gigantossauro;;0
+cs:channel:grizzy-e-os-lemmings;Grizzy e os Lemmings;;0
+cs:channel:hannah-montana;Hannah Montana;;0
+cs:channel:happy-tree-friends;Happy Tree Friends;;0
+cs:channel:historias-animadas-da-biblia-novo-testamento;Historias Animadas da Biblia - Novo Testamento;;0
+cs:channel:historias-animadas-da-biblia-velho-testamento;Historias Animadas da Biblia - Velho Testamento;;0
+cs:channel:homem-aranha;Homem Aranha;;0
+cs:channel:irmao-do-jorel;Irmao do Jorel;;0
+cs:channel:irmaos-a-obra;Irmaos a Obra;;0
+cs:channel:jovens-construtores;Jovens Construtores;;0
+cs:channel:jurassic-world-acampamento-jurassico;Jurassic World Acampamento Jurassico;;0
+cs:channel:kiff;Kiff;;0
+cs:channel:lab-rats;Lab Rats;;0
+cs:channel:marvels-m-o-d-o-k;Marvels M.O.D.O.K;;0
+cs:channel:mestres-da-sobrevivencia;Mestres da Sobrevivencia;;0
+cs:channel:minha-mae-e-uma-peca;Minha Mae E Uma Peca;;0
+cs:channel:mr-bean-a-serie-animada;Mr. Bean A Serie Animada;;0
+cs:channel:nilba-e-os-desastronautas;Nilba e os Desastronautas;;0
+cs:channel:o-chefinho-de-volta-aos-negocios;O Chefinho De Volta aos Negocios;;0
+cs:channel:o-fantastico-jaspion;O Fantastico Jaspion;;0
+cs:channel:o-incrivel-mundo-de-gumball;O Incrivel Mundo de Gumball;;0
+cs:channel:o-socio;O Socio;;0
+cs:channel:odo;Odo;;0
+cs:channel:operacao-fronteira-america-do-sul;Operacao Fronteira America do Sul;;0
+cs:channel:os-astronautas;Os Astronautas;;0
+cs:channel:os-backyardigans;Os Backyardigans;;0
+cs:channel:os-normais;Os Normais;;0
+cs:channel:os-roni;Os Roni;;0
+cs:channel:oswaldo;Oswaldo;;0
+cs:channel:patrulha-canina;Patrulha Canina;;0
+cs:channel:pesadelo-na-cozinha;Pesadelo Na Cozinha;;0
+cs:channel:quilos-mortais;Quilos Mortais;;0
+cs:channel:royal-crackers;Royal Crackers;;0
+cs:channel:solar-opposites;Solar Opposites;;0
+cs:channel:star-wars-rebels;Star Wars Rebels;;0
+cs:channel:star-wars-the-bad-batch;Star Wars The Bad Batch;;0
+cs:channel:star-wars-visions;Star Wars Visions;;0
+cs:channel:street-fighter-ii-victory;Street Fighter II Victory;;0
+cs:channel:supernatural-academy;Supernatural Academy;;0
+cs:channel:ta-puxado;Ta Puxado;;0
+cs:channel:the-loud-house-uma-verdadeira-familia-barulhenta;The Loud House Uma Verdadeira Familia Barulhenta;;0
+cs:channel:topo-gigio;Topo Gigio;;0
+cs:channel:transformers;Transformers;;0
+cs:channel:transformers-cyberverse;Transformers Cyberverse;;0
+cs:channel:transformers-war-for-cybertron-o-cerco;Transformers War for Cybertron O Cerco;;0
+cs:channel:transformers-war-for-cybertron-o-nascer-da-terra;Transformers War for Cybertron O Nascer da Terra;;0
+cs:channel:transformers-war-for-cybertron-o-reino;Transformers War for Cybertron O Reino;;0
+cs:channel:ufc-24h;UFC 24H;;0
+cs:channel:ursinhos-carinhosos-e-seus-primos;Ursinhos Carinhosos e Seus Primos;;0
+cs:channel:velozes-e-furiosos;Velozes e Furiosos;;0
+cs:channel:velozes-e-furiosos-espioes-do-asfalto;Velozes e Furiosos Espioes do Asfalto;;0
+cs:channel:zorro;Zorro;;0
+cs:channel:cameras-escondidas-silvio-santos;Cameras Escondidas Silvio Santos;;0
+cs:channel:programa-cameras-escondidas;Programa Cameras Escondidas;;0
+cs:channel:a-beleza-secreta-dos-animais;A Beleza Secreta dos Animais;;0
+cs:channel:a-culpa-e-da-carlota;A Culpa e da Carlota;;0
+cs:channel:a-culpa-e-do-cabral;A Culpa e do Cabral;;0
+cs:channel:a-culpa-e-do-cabral-na-estrada;A Culpa e do Cabral Na Estrada;;0
+cs:channel:a-grande-familia;A Grande Familia;;0
+cs:channel:a-sombra-do-batman;A Sombra do Batman;;0
+cs:channel:a-vila;A Vila;;0
+cs:channel:aeroporto-area-restrita;Aeroporto Area Restrita;;0
+cs:channel:anota-ai;Anota Ai;;0
+cs:channel:arquivo-morto;Arquivo Morto;;0
+cs:channel:arquivo-x;Arquivo X;;0
+cs:channel:as-irmas-grimm;As Irmãs Grimm;;0
+cs:channel:as-visoes-da-raven;As Visoes da Raven;;0
+cs:channel:austin-e-ally;Austin e Ally;;0
+cs:channel:bake-off-brasil-celebridades;Bake Off Brasil Celebridades;;0
+cs:channel:bar-do-gogo;Bar do Gogo;;0
+cs:channel:batalha-do-churrasco;Batalha do Churrasco;;0
+cs:channel:batalha-makers-brasil;Batalha Makers Brasil;;0
+cs:channel:betty-a-feia;Betty a Feia;;0
+cs:channel:betty-em-nova-york;Betty Em Nova York;;0
+cs:channel:big-blue-o-grande-oceano;Big Blue: O Grande Oceano;;0
+cs:channel:brasil-visto-de-cima;Brasil Visto de Cima;;0
+cs:channel:carros-irado;Carros Irado;;0
+cs:channel:casamento-as-cegas;Casamento as Cegas;;0
+cs:channel:casamento-as-cegas-brasil;Casamento as Cegas Brasil;;0
+cs:channel:chapolin-colorado;Chapolin Colorado;;0
+cs:channel:chapolin-e-os-colorados;Chapolin e Os Colorados;;0
+cs:channel:chaves;Chaves;;0
+cs:channel:chuck-norris-o-homem-da-lei;Chuck Norris O Homem da Lei;;0
+cs:channel:cirurgioes-no-limite-da-vida;Cirurgioes No Limite da Vida;;0
+cs:channel:cobra-kai;Cobra Kai;;0
+cs:channel:como-defender-um-assassino;Como Defender um Assassino;;0
+cs:channel:como-eu-conheci-sua-mae;Como Eu Conheci Sua Mae;;0
+cs:channel:conan-o-menino-do-futuro;Conan: O Menino do Futuro;;0
+cs:channel:dois-homens-e-meio;Dois Homens e Meio;;0
+cs:channel:donas-de-casa-desesperadas;Donas de Casa Desesperadas;;0
+cs:channel:dra-emma-uma-questao-de-pele;Dra. Emma Uma Questao de Pele;;0
+cs:channel:dra-joya-dermatologista-animal;Dra. Joya Dermatologista Animal;;0
+cs:channel:dra-sandra-lee-a-rainha-dos-cravos;Dra. Sandra Lee A Rainha dos Cravos;;0
+cs:channel:dragoes-a-serie;Dragões: A Série;;0
+cs:channel:drake-e-josh;Drake e Josh;;0
+cs:channel:er-plantao-medico;ER Plantao Medico;;0
+cs:channel:escolinha-do-professor-raimundo-nova-geracao;Escolinha do Professor Raimundo Nova Geracao;;0
+cs:channel:esquadrao-relampago-changeman;Esquadrao Relampago Changeman;;0
+cs:channel:eu-a-patroa-e-as-criancas;Eu a Patroa e as Criancas;;0
+cs:channel:filhos-da-anarquia;Filhos da Anarquia;;0
+cs:channel:folha-magica;Folha Mágica;;0
+cs:channel:food-truck-a-batalha;Food Truck - A Batalha;;0
+cs:channel:friends;Friends;;0
+cs:channel:game-of-thrones;Game of Thrones;;0
+cs:channel:game-shakers;Game Shakers;;0
+cs:channel:gigablaster;Gigablaster;;0
+cs:channel:gladiadores-da-natureza;Gladiadores da Natureza;;0
+cs:channel:high-school-musical-a-serie-o-musical;High School Musical A Serie O Musical;;0
+cs:channel:icarly;iCarly;;0
+cs:channel:ilha-das-formas;Ilha das Formas;;0
+cs:channel:jessie;Jessie;;0
+cs:channel:jiraiya-o-incrivel-ninja;Jiraiya O Incrivel Ninja;;0
+cs:channel:jornada-nas-estrelas-enterprise;Jornada nas Estrelas Enterprise;;0
+cs:channel:jovem-sheldon;Jovem Sheldon;;0
+cs:channel:kevin-pode-esperar;Kevin Pode Esperar;;0
+cs:channel:lady-night;Lady Night;;0
+cs:channel:largados-e-pelados;Largados e Pelados;;0
+cs:channel:largados-e-pelados-a-tribo;Largados e Pelados A Tribo;;0
+cs:channel:largados-e-pelados-brasil;Largados e Pelados Brasil;;0
+cs:channel:lol-se-rir-ja-era;LOL: Se Rir, Já Era!;;0
+cs:channel:mestre-do-sabor;Mestre do Sabor;;0
+cs:channel:mestres-de-ferro;Mestres de Ferro;;0
+cs:channel:mister-brau;Mister Brau;;0
+cs:channel:nao-e-uma-caixa;Não é uma Caixa;;0
+cs:channel:nicky-ricky-dicky-e-dawn;Nicky Ricky Dicky e Dawn;;0
+cs:channel:o-mundo-maravilhosamente-estranho-de-gumball;O Mundo Maravilhosamente Estranho de Gumball;;0
+cs:channel:o-rancho;O Rancho;;0
+cs:channel:operacao-fronteira-brasil;Operacao Fronteira Brasil;;0
+cs:channel:os-busbys-plus-5;Os Busbys Plus 5;;0
+cs:channel:os-feiticeiros-de-waverly-place;Os Feiticeiros De Waverly Place;;0
+cs:channel:os-guerreiros-wasabi;Os Guerreiros Wasabi;;0
+cs:channel:os-homens-sao-de-marte-e-e-pra-la-que-eu-vou;Os Homens Sao de Marte... E e pra La Que Eu Vou;;0
+cs:channel:os-pinguins-de-madagascar;Os Pinguins de Madagascar;;0
+cs:channel:os-simpsons;Os Simpsons;;0
+cs:channel:os-thundermans;Os Thundermans;;0
+cs:channel:pe-na-cova;Pe na Cova;;0
+cs:channel:prison-break-em-busca-da-verdade;Prison Break: Em Busca da Verdade;;0
+cs:channel:quilos-mortais-como-eles-estao-agora;Quilos Mortais Como Eles Estao Agora;;0
+cs:channel:restaurando-casas-com-dave-e-jenny;Restaurando Casas com Dave e Jenny;;0
+cs:channel:sai-de-baixo;Sai de Baixo;;0
+cs:channel:sessao-de-terapia;Sessao de Terapia;;0
+cs:channel:shark-tank-brasil;Shark Tank Brasil;;0
+cs:channel:show-do-milhao-picpay;Show do Milhao PicPay;;0
+cs:channel:sitio-do-picapau-amarelo;Sítio do Picapau Amarelo;;0
+cs:channel:soltos-em-floripa;Soltos em Floripa;;0
+cs:channel:sos-cachorrinhos;SOS Cachorrinhos;;0
+cs:channel:star-trek-discovery;Star Trek Discovery;;0
+cs:channel:supermaes;Supermaes;;0
+cs:channel:supernatural;Supernatural;;0
+cs:channel:tapas-e-beijos;Tapas e Beijos;;0
+cs:channel:the-big-bang-theory;The Big Bang Theory;;0
+cs:channel:the-last-kingdom;The Last Kingdom;;0
+cs:channel:the-o-c-um-estranho-no-paraiso;The O.C. Um Estranho no Paraiso;;0
+cs:channel:to-de-graca;To de Graca;;0
+cs:channel:todo-mundo-odeia-o-chris;Todo Mundo Odeia o Chris;;0
+cs:channel:toma-la-da-ca;Toma La da Ca;;0
+cs:channel:top-chef-brasil;Top Chef Brasil;;0
+cs:channel:tratamento-de-choque;Tratamento de Choque;;0
+cs:channel:ultimate-beastmaster-brasil;Ultimate Beastmaster Brasil;;0
+cs:channel:um-maluco-no-pedaco;Um Maluco no Pedaco;;0
+cs:channel:um-planeta-perfeito;Um Planeta Perfeito;;0
+cs:channel:uma-familia-da-pesada;Uma Familia da Pesada;;0
+cs:channel:vai-que-cola;Vai Que Cola;;0
+cs:channel:vikings;Vikings;;0
+cs:channel:wylde-pak;Wylde Pak;;0
+cs:channel:xena-a-princesa-guerreira;Xena A Princesa Guerreira;;0
+cs:channel:yo-gabba-gabbalandia;Yo Gabba Gabbalândia!;;0
+cs:channel:5-alguma-coisa;5 Alguma Coisa;;0
+cs:channel:fritada;Fritada;;0
+cs:channel:master-trash-e-panicos-chef;Master Trash e Panicos Chef;;0
